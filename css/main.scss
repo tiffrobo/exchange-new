@@ -1,0 +1,17 @@
+---
+###
+---
+
+@import 'fonts';
+@import 'vars';
+@import 'reset';
+
+body {
+  font-family: $font-family;
+}
+
+@include mq(sm){  
+  body{
+    opacity: .25;
+  }
+}

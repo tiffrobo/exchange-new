@@ -1,0 +1,54 @@
+{% assign d = include.data %}
+
+<div class="getStartedCard">
+  <span>{{ d.number }}</span>
+  <a href="#" class="bigButton colorClass{{d.number}}">{{ d.title }}</a>
+  <p>{{ d.content| truncate: 280 }}</p>
+</div>
+
+<style lang="scss" scoped>{% capture to_scss %}@import 'vars';
+
+.getStartedCard{
+  width: 20%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 24px 32px 24px;
+  margin: 48px 96px;
+  position: relative;
+  text-align: center;
+  background: rgba(255,255,255,.125);
+  min-height: 250px;
+
+  span{
+    font-size: 64px;
+    display: inline-block;
+    padding: 24px 0;
+    color: $white;
+    display: block;
+    position: absolute;
+    width: 30px;
+    left: calc(50% - 15px);
+    top: -64px;
+  }
+
+  .bigButton{
+    @extend .bigButton;
+  
+    &.colorClass{{d.number}} {
+      background-color: {{d.color}};
+    }
+  }
+
+  p{
+    position: absolute;
+    text-align: center;
+    top: 128px;
+    left: 10%;
+    width: 80%;
+    font-size: 22px;
+  }
+}
+
+
+
+{% endcapture %}{{ to_scss | scssify }}</style>

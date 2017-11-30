@@ -1,0 +1,139 @@
+<header class="header">
+  <div class="inner">
+  <h1 class="logo">
+    <span>{{ site.title }}</span>
+    <a href="/">{% include svg-logo.html %}</a>
+  </h1>
+
+  {% include signup.html %}  
+
+  <nav id="topnav">
+    <ul>
+      {% for item in site.topnav %}
+      <li>
+      {% if item.href contains 'http' %}
+        <a href="{{ item.href }}">{{ item.title }}</a>
+      {% else %}
+        <a href="{{ item.href | relative_url }}">{{ item.title }}</a>
+      {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
+
+  <nav id="mainnav">
+    <ul>
+    {% for item in site.mainnav %}
+      <li>
+        {% if item.href contains 'http' %}
+          <a href="{{ item.href }}">{{ item.title }}</a>
+        {% else %}
+          <a href="{{ item.href | relative_url }}">{{ item.title }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
+  </div>
+</header>
+
+<style lang="scss" scoped> {% capture to_scss %} @import 'vars';
+
+  header.header{
+    .inner{
+      @extend .inner; 
+
+      h1{
+        position: relative;
+        float: left;
+
+        span{
+          display: block;
+          visibility: hidden;
+          height: 0;
+          width: 0;
+        }
+      }
+
+      #topnav{      
+        float: right;
+        margin-top: 2.5px;
+
+        ul{
+          clear: both;
+
+          li{
+            list-style: none;
+            float: left;
+            position: relative;
+            padding: 0 20px;
+
+            &:not(:last-of-type){
+            border-right: .5px solid $royal;
+            }
+
+            a{
+              display: block;
+              color: $royal;
+              font-weight: bold;
+              &:hover{
+                  color: $cyan;
+                  transition: all .4s;
+              } 
+            }
+          }
+        }
+      }
+
+      #mainnav{
+        float: left;
+        padding-top: 65px;
+        padding-left: 75px;
+
+        ul{
+          clear: both;
+
+          li{
+            list-style: none;
+            float: left;
+            position: relative;
+            padding: 0 20px;
+
+            a{
+              @extend .navlink;
+            }
+          }
+        }
+      }
+    }
+    .graphicBox{ 
+      position: relative;
+      z-index: 3;
+      
+      h2{        
+        position: absolute;
+        top: 86px;
+        left: calc(50% - 520px);
+        color: $royal;
+        font-size: 265%;
+        z-index: 2;
+
+        span{
+          display: block;
+          color: black;
+          font-weight: 300;
+        }
+      }
+      
+      svg{
+        display: block;
+        margin: 0 auto;
+        max-width: 923px;
+        width: 100%;
+        position: relative;
+        left: 100px;
+      }
+    }
+  }
+  
+{% endcapture %}{{ to_scss | scssify }}</style>

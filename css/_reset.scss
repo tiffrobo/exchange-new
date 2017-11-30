@@ -1,0 +1,150 @@
+style{
+  display: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  line-height: 175%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
+}
+
+::-webkit-input-placeholder-shown { /* Chrome/Opera/Safari */
+  color: #ccc;
+}
+::-moz-placeholder-shown { /* Firefox 19+ */
+  color: #ccc;
+}
+:-ms-input-placeholder-shown { /* IE 10+ */
+  color: #ccc;
+}
+:-moz-placeholder-shown { /* Firefox 18- */
+  color: #ccc;
+}
+
+/**
+ * Checkbox Five
+ */
+
+ .ch5 {
+  width: 25px;
+  position: relative;
+  display: inline-block;
+  margin-right: 6px;
+  position: relative;
+  top: -2px;
+}
+
+.ch5 label {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 0;
+  background: #eee;
+  border:1px solid #ddd;
+  padding-bottom: 0 !important;
+}
+
+.ch5 label:after {
+  opacity: 0.1;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 5px;
+  left: 5px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+
+  transform: rotate(-45deg);
+}
+
+/**
+ * Create the hover event of the tick
+ */
+.ch5 label:hover::after {
+  opacity: 0.5;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+.ch5 input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+// Markdown Styles.
+
+#content{
+  position: relative;
+  z-index: 3;
+  max-width: 700px;
+  margin: 0 auto;
+
+  .svgBlockquote{
+    display: none;
+  }
+
+  p,li,pre{
+    padding:4px 0 16px;
+  }
+
+  p{
+    font-size: 22px;
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    padding: 4px 0 12px;
+  }
+
+  ul,ol{
+    margin-left: 32px;
+  }
+
+  blockquote{
+    box-sizing: border-box;
+    background: $mint;
+    padding: 48px 64px;
+    margin: 36px 0 48px;
+    font-weight: 300;
+    font-size: 36px;
+    width: 170%;
+    position: relative;
+    left: -35%;
+
+    p{
+      font-size: 36px;
+    }
+
+    svg.svgBlockquote{
+      display: block;
+      position: absolute;
+      width: 80px;
+      top: -46px;
+      left: calc(50% - 40px);
+    }
+  }
+}

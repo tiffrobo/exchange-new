@@ -1,0 +1,39 @@
+    
+<div class="graphicBox">
+  <h2><span>Keeping the social sector</span> safe from attack</h2>
+  {% include svg-homeGraphic.html %}
+</div>
+
+<style lang="scss" scoped> {% capture to_scss %} @import 'vars';
+
+.graphicBox{ 
+  position: relative;
+  z-index: 3;
+  
+  h2{        
+    position: absolute;
+    top: 86px;
+    left: calc(50% - 520px);
+    color: $royal;
+    font-size: 265%;
+    z-index: 2;
+
+    span{
+      display: block;
+      color: black;
+      font-weight: 300;
+    }
+  }
+  
+  svg{
+    display: block;
+    margin: 0 auto;
+    max-width: 923px;
+    width: 100%;
+    position: relative;
+    left: 100px;
+  }
+}
+  
+{% endcapture %}{{ to_scss | scssify }}</style>
+  

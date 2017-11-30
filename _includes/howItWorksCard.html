@@ -1,0 +1,121 @@
+{% assign d = include.data %}
+
+<div class="howItWorksCard howCard{{d.number}} a{{d.number}}">
+  {% include svg-how{{d.number}}.html %}
+  {% include svg-how-line{{d.number}}.html %}
+  <div class="innerCard">
+    <p>{{ d.content}}</p>
+    <a href="{{ d.href }}">{{ d.title }}</a>
+  </div>
+</div>
+
+<style lang="scss" scoped>{% capture to_scss %}@import 'vars';
+
+.howItWorksCard{
+  width: 40%;
+  height: 338px;
+  width: 440px;
+  background: $mint;
+  box-sizing: border-box;
+  padding: 16px 32px;
+  margin: 32px;
+  font-size: 22px;
+  font-weight: 400;
+  position: absolute;
+
+  svg{
+    position: relative;
+    z-index: 5;
+    top: -64px;
+  }
+
+  & > div{
+    position: relative;
+    z-index: 2;
+  }
+
+  p{
+    padding-top: 8px;
+    padding-left: 32px;
+    width: 88%;
+    box-sizing: border-box;
+    position: relative;
+    top: -60px;
+  }
+
+  a{
+    font-weight: bold;
+    padding-left: 32px;
+    display: block;
+    width: 200%;
+    position: relative;
+    top: -48px;
+
+    &:after{
+      content: "\203A";
+      font-size: 32px;
+      top: 2px;
+      position: relative;
+      display: inline-block;
+      padding-top: 18px;
+      padding-left: 8px;
+    }
+  }
+
+  &:after{
+    display: none;
+    content: "";
+    width: 50%;
+    height: 338px;
+    background: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  &:first-of-type{
+    top: 144px;
+    left: -50px;
+  }
+
+  &:nth-of-type(2){
+    top: 32px;
+    right: -50px;
+  }
+
+  &:last-of-type{
+    bottom: 0px;
+    left: calc(50% - 180px);
+  }
+
+  &:first-of-type:after{
+    display:block;
+  }
+
+  &:nth-of-type(2):after{
+    display:block;
+    right: auto;
+    left: 0;
+  }
+
+  svg.howLine1{
+    position: absolute;
+    top: 316px;
+    left: 146px;
+  }
+
+  svg.howLine2{
+    position: absolute;
+    top: 306px;
+    left: 50px;
+  }
+
+  svg.howLine3{
+    display: none;
+  }
+}
+
+
+
+{% endcapture %}{{ to_scss | scssify }}</style>

@@ -1,0 +1,85 @@
+{% assign p = include.post %}
+
+<header id="postHeader">
+  {% include svg-postSquare.html class = "block" %}
+  <div>
+    {% if p.authorImage %}
+    <div class="postHeader hasImage">      
+      <div class="authorImageWrap">
+        <img src="assets/img/authors/{{ p.authorImage }}"/>
+        {% include svg-authorOverlay.html %}
+      </div>
+      {% else %}
+    <div class="postHeader">
+      {% endif %}
+      <span class="meta">by: {{ p.author }} {{ p.date| date: '%B %d, %Y' }}</span>  
+      <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
+    </div>
+    {% if p.heroImage %}
+      <img class="heroImage" src="/assets/img/{{ p.heroImage }}"/>
+    {% endif %}
+  </div>
+</header>
+
+<style lang="scss" scoped>{% capture to_scss %}@import 'vars';
+
+#postHeader{
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+
+  .postHeader.hasImage{
+   .meta{
+     position: relative;
+     left: 24px;
+   } 
+  }
+
+  > div{
+    position: relative;
+    z-index: 2;
+    padding-top: 16px;
+  }
+
+  svg.block{
+    position: absolute;
+    z-index: 1;
+    left: -264px;
+  }
+
+  .authorImageWrap{
+    position: absolute;
+    height: 70px;
+    left: -64px;
+
+    img,svg{
+      position: absolute;
+    }
+  }
+
+  span{
+    font-size: 18px;
+    display: inline-block;
+    padding: 24px 0;
+    color: $peach;
+    position: relative;
+    left: 0px;
+  }
+
+  h2{
+    font-weight: bold;
+    font-size: 48px;
+    padding-bottom: 16px;
+
+    a{
+      color: inherit;
+    }
+  }
+
+  .heroImage{
+    max-width: 100%;
+
+  }
+}
+
+{% endcapture %}{{ to_scss | scssify }}</style>

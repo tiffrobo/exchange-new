@@ -1,0 +1,87 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Digital Security Exchange
+email: john@echo.co
+description: >- # this means to ignore newlines until "baseurl:"
+  Digital Security Exchange.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+#theme: minima
+plugins:
+  - jekyll-feed
+
+# Server Config options
+livereload: true     # You no longer need to include --livereload
+reload_port: 5678    # If you don't want to use the default port
+
+topnav:
+- { title: 'About', href: '/about' }
+- { title: 'See All Updates', href: '/updates' }
+
+footernav:
+- { title: 'How it Works', href: '#howItWorks' }
+- { title: 'Become a Provider', href: '/become-a-provider' }
+- { title: 'Request Assistance', href: '/request-assistance' }
+- { title: 'Support the Exchange', href: '/support-the-exchange' }
+- { title: 'About', href: '/about' }
+- { title: 'Updates', href: '/updates' }
+
+mainnav:
+- { title: 'How it Works', href: '#howItWorks' }
+- { title: 'Request Assistance', href: '/request-assistance' }
+- { title: 'Become a Provider', href: '/become-a-provider' }
+- { title: 'Support the Exchange', href: '/support-the-exchange' }
+
+finenav:
+- { title: 'Privacy', href: '/privacy' }
+- { title: 'Terms of Use', href: '/terms' }
+
+getStartedCardData:
+- { number: '1', title: 'Request assistance', content: 'Get assistance for you or your organization', color: '$cyan' }
+- { number: '2', title: 'Become a provider', content: 'Request to become a vetted security provider through DSX.', color: '$peach' }
+
+howItWorksCardData:
+- { number: '1', title: 'Request digital security assistance', href: '/request-assistance', content: 'Social sector organizations come to Digital Security Exchange (DSX) seeking help with digital security assessments and training.', graphic: 'svg-howItWorks1.html' }
+- { number: '2', title: 'Request to become a provider', href: '/become-a-provider', content: 'Digital security experts interested in receiving referrals through Digital Security Exchange request to become DSX providers.', graphic: 'svg-howItWorks2.html' }
+- { number: '3', title: 'Learn more about how we work', href: '/how-it-works', content: 'DSX matches organizations in need with the appropriate digital security experts who can provide needed support.', graphic: 'svg-howItWorks3.html' }
+
+
+sass:
+  sass_dir: css
+  style: compressed
+
+keep_files: ['forms', 'forms/form.php']
+
+exclude:
+- README.md
+- LICENSE.md
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

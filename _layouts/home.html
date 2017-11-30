@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="homePage">
+
+{% include header.html %}
+
+{% include graphicBox.html %}
+
+{% include intro.html %}
+
+{% include howItWorks.html %}
+
+{% comment %}
+// This isn't necessary for the homepage.
+<div id="content">
+  {{ content }}
+</div>
+{% endcomment %}
+
+{% include homePosts.html %}
+
+{% include footer.html %}
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<div id="signup">
+  <label>Sign up for updates</label>
+  <input type="email"/>
+  <button>Sign Up</button>
+</div>
+
+<style lang="scss" scoped>{% capture to_scss %} @import 'vars';
+
+#signup{
+  float: right;
+  padding-left: 40px;
+
+  label{
+    padding-right: 8px;
+  }
+
+  input[type=email]{
+    @extend .textInput;
+    width: 170px;
+    margin-right: 4px;
+    padding: 6px;
+    font-size: 18px;
+  }
+
+  button{
+    @extend .button;
+  }
+}
+
+
+
+
+{% endcapture %}{{ to_scss | scssify }}</style>

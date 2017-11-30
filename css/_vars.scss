@@ -1,0 +1,118 @@
+$font-family:  'Lota',Helvetica,Arial,sans-serif;
+
+$royal: #0D0AE2;
+$dark: #112C5C;
+$cyan: #00E4F5;
+$peach: #FF8B6E;
+$gold: #FFCF00;
+$mist: #EBFAFE;
+$lilac: #ECECFD;
+$black: #000000;
+$white: #FFFFFF;
+$mint: #ECFAFE;
+
+$break-small: 768px;
+$break-large: 1024px;
+
+@mixin mq($media) {
+  @if $media == sm {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (min-width: $break-large + 1) { @content; }
+  }
+}
+
+.example {
+  float: left;
+  width: 250px;
+  @include mq(sm) { width: 100% ;}
+  @include mq(md) { width: 125px; }
+  @include mq(lg) { float: none; }
+}
+
+// extenders: global classes
+.navlink{
+  color: $black;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 14px;
+
+  &:hover{
+    color: $royal;
+    transition: all .4s;
+  } 
+}
+
+.inner{  
+  padding: 75px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button{
+  background: #0D0AE2;
+  border-radius: 100px;
+  color: white;
+  border: none;
+  -webkit-appearance: none;
+  font-family: $font-family;
+  font-weight: bold;
+  padding: 8px 20px;
+  font-size: 14px;
+  display: inline-block;
+  transition: all .4s;
+
+  &:hover{
+    padding: 8px 24px;
+    transition: all .4s;
+  }
+}
+
+.bigButton{
+  @extend .button;
+  font-weight: bold;
+  font-size: 40px;
+  color: $black;
+  width: 125%;
+  position: absolute;
+  width: 375px;
+  font-size: 32px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  top: 48px;
+  left: calc(-50% + 82.5px);
+
+  &:hover{
+    padding: 16px 20px;
+    font-size: 34px;
+    transition: all .4s;
+  }
+}
+
+.textInput{
+  vertical-align: middle;
+  background: $lilac;
+  border: none;
+  -webkit-appearance: none;
+  font-size: 20px;
+  width: 250px;
+  margin-right: 4px;
+  display: inline-block;
+  font-family: $font-family;
+  padding: 8px;
+}
+
+.hr{
+  height: 1px;
+  margin: 0 auto;
+  display: block;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid $royal;;
+  margin-bottom: 56px;
+}
