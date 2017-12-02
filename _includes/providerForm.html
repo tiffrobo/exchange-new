@@ -1,4 +1,4 @@
-<form id="providerForm">
+<form class="bigForm" id="providerForm" name="providerForm">
 <div class="formSection formSectionA">
   <div class="left">
     <h3>How would you prefer to be contacted?</h3>
@@ -146,102 +146,5 @@
 <input type="submit"/>
 </form>
 <style lang="scss" scoped>{% capture to_scss %} @import 'vars';
-    
-#providerForm{
-  max-width: 1040px;
-  margin: 192px auto 16px;
-
-  .formSection{
-    overflow: hidden;
-    padding-bottom: 128px;
-
-    .left{
-      width: 50%;
-      float: left;
-
-      h3{
-        font-size: 48px;
-        position: relative;
-        top: -16px;
-        // Adjustment for font discrepancies.
-      }
-    }
-
-    .right{
-      width: 50%;
-      float: right;
-
-      .checkWrap{
-        padding-top: 6px;
-        padding-bottom: 24px;
-        font-weight: bold;
-
-        &:last-of-type{
-          padding-bottom: 32px;
-        }
-
-        input[type="checkbox"]{
-          margin-right: 8px;
-        }
-      }
-
-      .inputWrap{ 
-        padding-bottom: 24px;
-        
-        &.half{
-          width: 47%;
-          box-sizing: border-box;
-          float: left;
-        }
-
-        &.fr{
-          float: right;
-        }
-        
-        label{
-          display: block;
-          padding-bottom: 8px;
-          font-size: 18px;
-        }
-        
-        .helpText{
-          font-size: 14px;
-          color: #bbb;
-          padding-bottom: 8px;
-          font-weight: normal;
-        }
-
-        span.helpText{
-          padding-left: 8px;
-        }
-
-        textarea{
-          @extend .textInput;
-          width: 100%;
-          height: 130px;
-          margin-bottom: 16px;
-        }
-
-        input[type="tel"],input[type="text"],input[type="email"]{
-          @extend .textInput;
-          margin-bottom: 16px;
-          width: 100%;
-          font-size: 16px;        
-        }        
-      }
-    }
-  }
-  input[type="submit"]{
-    @extend .button;
-    background: $peach;
-    color: $black;
-    margin: 16px 0 0 0;
-    padding: 16px 64px;
-    font-size: 22px;
-    &:hover{
-      padding: 16px 72px;
-    }
-  }
-}
 
 {% endcapture %}{{ to_scss | scssify }}</style>
