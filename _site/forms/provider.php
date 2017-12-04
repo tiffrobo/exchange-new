@@ -1,4 +1,5 @@
-<form id="providerForm">
+<?php include 'form_prepare.php'; ?>
+<form class="bigForm" id="providerForm" name="providerForm" action="/forms/provider_form_process.php" method="post">
   <div class="formSection formSectionA">
     <div class="left">
       <h3>How would you prefer to be contacted?</h3>
@@ -144,4 +145,5 @@
   </div>
   <p>Lorem, ipsum dolor sitquidem voluptatibus ecusandae ratione.</p>
   <input type="submit"/>
+  <input type="hidden" name="token" value="<?php print $token; ?>" />
 </form>
