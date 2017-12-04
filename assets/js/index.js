@@ -19,7 +19,6 @@ jQuery(document).ready(function($){
   }
 
   $("#providerForm").load('/forms/provider.php');
-  console.log('balls');
 
 
   $(".navOpen, .navClose").click(function(){
