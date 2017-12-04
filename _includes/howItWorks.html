@@ -14,10 +14,13 @@
   min-height: 900px;
   max-width: 1040px;
   margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
 
   h3{
     color: $royal;
     font-size: 36px;
+    @include mq(sm) { padding-bottom: 32px; padding-left: 15px; }
   }
 }
 

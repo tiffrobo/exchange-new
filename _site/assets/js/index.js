@@ -8,13 +8,24 @@ jQuery(document).ready(function($){
   $animationFlag = false;
   $offset = $("#howItWorks").offset().top;
   $(window).scroll(function(){
-    if(($offset - 250) < $(document).scrollTop()){
+    if(($offset - 750) < $(document).scrollTop()){
       if(!$animationFlag){
         $animationFlag = true;        
         triggerAnimations();
       }
     }    
   }) 
+
+  $(".navOpen, .navClose").click(function(){
+    $("header.header").fadeToggle(300)
+  })
+
+  // find a way to do this in Jekyll
+  $("style").each(function(){
+    $(this).clone().appendTo("head");
+  }).promise().done(function(){
+    $("body style").remove()
+  })
 
   // Lazy Smooth Scrolling for Anchors.
   // Select all links with hashes
@@ -23,6 +34,7 @@ $('a[href*="#"]')
 .not('[href="#"]')
 .not('[href="#0"]')
 .click(function(event) {
+  $("header.header").fadeOut(300)
   // On-page links
   // if (
   //   location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 

@@ -12,7 +12,7 @@ $white: #FFFFFF;
 $mint: #ECFAFE;
 
 $break-small: 768px;
-$break-large: 1024px;
+$break-large: 1046px;
 
 @mixin mq($media) {
   @if $media == sm {
@@ -20,6 +20,9 @@ $break-large: 1024px;
   }
   @else if $media == md {
     @media only screen and (min-width: $break-small + 1) and (max-width: $break-large) { @content; }
+  }
+  @else if $media == smd {
+    @media only screen and (max-width: $break-large) { @content; }
   }
   @else if $media == lg {
     @media only screen and (min-width: $break-large + 1) { @content; }
@@ -51,6 +54,7 @@ $break-large: 1024px;
   padding: 75px;
   position: relative;
   overflow: hidden;
+  @include mq(smd) { padding: 16px; }
 }
 
 .button{
@@ -115,4 +119,15 @@ $break-large: 1024px;
   border-left: 0;
   border-bottom: 1px solid $royal;;
   margin-bottom: 56px;
+}
+
+///
+
+.mob{
+  display: none;
+  @include mq(smd) { display: block; }
+}
+
+.nomob{
+  @include mq(smd) { display: none; }
 }

@@ -18,6 +18,7 @@
   text-align: center;
   background: rgba(255,255,255,.125);
   min-height: 250px;
+  @include mq(sm) { width: 80%; margin: 48px auto; display: block;}
 
   span{
     font-size: 64px;
@@ -33,6 +34,7 @@
 
   .bigButton{
     @extend .bigButton;
+    @include mq(sm) { width: 300px; left: calc(50% - 168px);}
   
     &.colorClass{{d.number}} {
       background-color: {{d.color}};
@@ -46,6 +48,7 @@
     left: 10%;
     width: 80%;
     font-size: 22px;
+    @include mq(sm) { padding: 0 !important; }
   }
 }
 

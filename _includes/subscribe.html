@@ -29,6 +29,8 @@
     .left{
       float: left;
       width: 50%;
+      @include mq(sm) { float: none; width: 100%; }
+
 
       h3{
         font-size: 28px;
@@ -44,17 +46,20 @@
       padding-left: 40px;
       text-align: right;
       padding-top: 24px;
+      @include mq(sm) { float: none; width: 100%; padding-left: 0; }
 
       input[type=email]{
         @extend .textInput;
         width: 300px;
         font-size: 20px;
+        @include mq(sm) { display: inline-block; width: 220px; }
       }
 
       button{
        @extend .button;
        padding: 12px 32px;
        margin-left: 8px;
+       @include mq(sm) { display: inline-block; padding: 10px 20px; width: 100px; box-sizing: border-box; }
        &:hover{
         padding: 12px 40px;
        }

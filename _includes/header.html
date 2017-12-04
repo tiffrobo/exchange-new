@@ -1,6 +1,15 @@
-<header class="header">
+<h1 class="mlogo logo mob">
+  <div class="inner">        
+    <a href="/">{% include svg-logo.html %}</a>
+  </div>
+  <div class="mob navOpen">=</div>
+</h1>
+
+<header class="header">  
   <div class="inner">
-  <h1 class="logo">
+  <div class="mob navClose">X</div>
+      
+  <h1 class="logo nomob">
     <span>{{ site.title }}</span>
     <a href="/">{% include svg-logo.html %}</a>
   </h1>
@@ -38,35 +47,55 @@
 </header>
 
 <style lang="scss" scoped> {% capture to_scss %} @import 'vars';
+  h1{
+    position: relative;
+    float: left;
+    @include mq(smd) { float: none; }
+
+    span{
+      display: block;
+      visibility: hidden;
+      height: 0;
+      width: 0;
+    }
+
+    svg{
+      @include mq(smd) { width: 140px }
+    }
+  }
+
 
   header.header{
     .inner{
-      @extend .inner; 
+      @extend .inner;
+      @include mq(smd) {position: static;}
 
-      h1{
-        position: relative;
-        float: left;
-
-        span{
-          display: block;
-          visibility: hidden;
-          height: 0;
-          width: 0;
-        }
+      .navClose{
+        cursor: pointer;
+        position: absolute;
+        right: 16px;
+        top: 28px;
+        font-weight: bold;
       }
 
       #topnav{      
         float: right;
         margin-top: 2.5px;
+        @include mq(smd) { float: none; margin-bottom: 8px; position: absolute; bottom: 40px; width: 100%; }
 
         ul{
           clear: both;
+          display: inline-block;
 
           li{
             list-style: none;
             float: left;
             position: relative;
             padding: 0 20px;
+            @include mq(smd) { padding: 0 8px 0 0; font-size: 24px; }
+            &:last-of-type{
+              @include mq(smd) { padding: 0 8px 0; }
+            }
 
             &:not(:last-of-type){
             border-right: .5px solid $royal;
@@ -89,6 +118,7 @@
         float: left;
         padding-top: 65px;
         padding-left: 75px;
+        @include mq(smd) { float: none; padding-left: 0; }
 
         ul{
           clear: both;
@@ -98,42 +128,50 @@
             float: left;
             position: relative;
             padding: 0 20px;
+            @include mq(smd) { float: none; padding: 0px 0px 8px; font-size: 32px; }
 
             a{
               @extend .navlink;
+              @include mq(smd) { font-size: 24px; } 
             }
           }
         }
       }
-    }
-    .graphicBox{ 
-      position: relative;
-      z-index: 3;
-      
-      h2{        
-        position: absolute;
-        top: 86px;
-        left: calc(50% - 520px);
-        color: $royal;
-        font-size: 265%;
-        z-index: 2;
+    }        
 
-        span{
-          display: block;
-          color: black;
-          font-weight: 300;
-        }
-      }
-      
-      svg{
-        display: block;
-        margin: 0 auto;
-        max-width: 923px;
-        width: 100%;
-        position: relative;
-        left: 100px;
-      }
+    @include mq(sm) {
+      display: none;
+      font-size: 170%;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      background: rgba(255,255,255,.98);
+      z-index: 99;
+      top: 0;
+      left: 0;
+      height: 100%;
     }
+    
   }
   
+  .mlogo{
+    position: relative;
+
+    .navOpen{
+      cursor: pointer;
+      position: fixed;
+      z-index: 98;
+      font-size: 40px;
+      right: 16px;
+      top: 20px;
+      &:after{
+        content: "=";
+        position: absolute;
+        bottom: 0;
+        font-size: 40px;
+        bottom: -8px;
+        left: 0;   
+      }
+    }
+  }  
 {% endcapture %}{{ to_scss | scssify }}</style>

@@ -17,6 +17,8 @@
     color: $royal;
     font-size: 265%;
     z-index: 2;
+    @include mq(md) { left: 5%; top: 190px; }
+    @include mq(sm) { left: 5%; top: 60px; font-size: 185%; }
 
     span{
       display: block;
@@ -32,6 +34,7 @@
     width: 100%;
     position: relative;
     left: 100px;
+    @include mq(smd) { position: static; width: 80%; min-width: 410px; }
   }
 }
   
