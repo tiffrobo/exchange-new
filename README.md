@@ -8,7 +8,7 @@ In order for the form processing to work, there needs to be a file called /_site
 which must define the php variable $path_to_submissions, the absolute path to the directory in which
 form csvs should be stored. This directory should be above the webroot.  /_site/forms/config.php is 
 gitignored. If this directory is in the project root, it needs to be added to the "exclude" list in 
-_config.yml so that jekyll doesn't compile the submissions into _site.
+_config.yml so that jekyll doesn't compile the submissions into _site.  It should also be added to .gitignore.
 
 # RESOURCES
 
