@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
   })
   }
 
-  $("#providerForm").load('/forms/provider.php');
+  $("#providerForm-wrapper").load('/forms/provider.php');
 
 
   $(".navOpen, .navClose").click(function(){
