@@ -57,7 +57,7 @@
 
   & > hr{
     @extend .hr;
-    width: 960px;
+    max-width: 960px;
     margin: 48px auto 96px;
     position: relative;
     z-index: 3;
@@ -71,10 +71,12 @@
   .formSection{
     overflow: hidden;
     padding-bottom: 128px;
+    @include mq(sm) { padding: 8px 16px }
 
     .left{
       width: 50%;
       float: left;
+      @include mq(sm) { width: 100%; float: none; }
 
       h3{
         font-size: 48px;
@@ -87,6 +89,7 @@
     .right{
       width: 50%;
       float: right;
+      @include mq(sm) { width: 100%; float: none; }
 
       .checkWrap{
         padding-top: 6px;
@@ -152,14 +155,18 @@
     @extend .button;
     background: $peach;
     color: $black;
-    margin: 16px 0 0 0;
+    margin: 16px 0 0 16px;
     padding: 16px 64px;
     font-size: 22px;
     &:hover{
       padding: 16px 72px;
     }
   }
+  p{
+    margin-left: 16px;
+  }
 }
+
 // End form styles.
 }
 

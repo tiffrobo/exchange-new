@@ -108,6 +108,7 @@ $break-large: 1046px;
   display: inline-block;
   font-family: $font-family;
   padding: 8px;
+  box-sizing: border-box;
 }
 
 .hr{
