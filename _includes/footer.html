@@ -58,8 +58,11 @@
         padding: 75px;
         position: relative;
         overflow: hidden;
-        @include mq(sm) { padding: 15px; }
+        @include mq(sm) { padding: 15px; }        
+    }
 
+    & > .inner{
+        @include mq(md) { padding: 35px; }
     }
 
     #footernav{
@@ -97,6 +100,9 @@
         }
 
         #finenav{
+            @include mq(sm){ padding-bottom: 24px; }
+            @include mq(md){ float: right; }
+            
             ul{
                 overflow: hidden;
                 padding-top: 24px;
@@ -131,11 +137,12 @@
         border-top: 1px solid $royal;
         position: relative;
         padding-bottom: 150px;
-        @include mq(smd) { float: none; width: 100%; border-top: 0; }
+        @include mq(smd) { float: none; width: 100%; border-top: 0; clear: both; padding-top: 48px; }
 
 
         svg{
             width: 28%;
+            @include mq(smd) { width: auto; }
         }
 
         h3{

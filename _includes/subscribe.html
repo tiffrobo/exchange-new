@@ -21,6 +21,7 @@
 
   .inner{
     @extend .inner;
+    @include mq(md) { padding: 0px !important; }
 
     hr{
       @extend .hr;
@@ -53,6 +54,8 @@
         width: 300px;
         font-size: 20px;
         @include mq(sm) { display: inline-block; width: 220px; }
+        @include mq(md) { width: 200px; display: inline-block; }
+
       }
 
       button{
@@ -60,6 +63,7 @@
        padding: 12px 32px;
        margin-left: 8px;
        @include mq(sm) { display: inline-block; padding: 10px 20px; width: 100px; box-sizing: border-box; }
+       @include mq(md) { display: inline-block; padding: 10px 20px; width: 94px; box-sizing: border-box; }
        &:hover{
         padding: 12px 40px;
        }

@@ -12,7 +12,6 @@
 <style lang="scss" scoped>{% capture to_scss %}@import 'vars';
 
 .howItWorksCard{
-  width: 40%;
   height: 338px;
   width: 440px;
   background: $mint;
@@ -23,6 +22,7 @@
   font-weight: 400;
   position: absolute;
   @include mq(sm) { position: static; width: 90%; margin: 40px auto 96px; padding: 8px; font-size: 16px; }
+  @include mq(md) {width: 300px; height: 300px; padding: 12px 16px; font-size: 18px; padding: 16px 24px;}
 
   svg{
     position: relative;
@@ -42,6 +42,7 @@
     box-sizing: border-box;
     position: relative;
     top: -60px;
+    @include mq(md) {font-size: 16px; line-height: 24px; padding-left: 24px;}
   }
 
   a{
@@ -52,6 +53,7 @@
     position: relative;
     top: -48px;
     @include mq(sm) { width: auto; }
+    @include mq(md) { padding-left: 24px; font-size: 16px; }
 
     &:after{
       content: "\203A";
@@ -81,11 +83,13 @@
   &:first-of-type{
     top: 144px;
     left: -50px;
+    @include mq(md) {left: 0px;}
   }
 
   &:nth-of-type(2){
     top: 32px;
     right: -50px;
+    @include mq(md) {right: 0px;}
   }
 
   &:last-of-type{
@@ -110,6 +114,7 @@
     top: 316px;
     left: 146px;
     @include mq(sm) { display: none !important; }
+    @include mq(md) {left: 10px}
   }
 
   svg.howLine2{
@@ -117,6 +122,7 @@
     top: 306px;
     left: 50px;
     @include mq(sm) { display: none !important; }
+    @include mq(md) {left: 0px; top: 340px;}
   }
 
   svg.howLine3{
