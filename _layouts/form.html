@@ -155,15 +155,16 @@
     @extend .button;
     background: $peach;
     color: $black;
-    margin: 16px 0 0 16px;
+    @include mq(sm) { margin: 16px 0 0 16px; }
     padding: 16px 64px;
     font-size: 22px;
     &:hover{
       padding: 16px 72px;
     }
   }
-  p{
-    margin-left: 16px;
+
+  > p{  
+    @include mq(sm) { margin-left: 24px; }
   }
 }
 
