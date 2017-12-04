@@ -125,9 +125,9 @@ $break-large: 1046px;
 
 .mob{
   display: none;
-  @include mq(smd) { display: block; }
+  @include mq(sm) { display: block; }
 }
 
 .nomob{
-  @include mq(smd) { display: none; }
+  @include mq(sm) { display: none; }
 }

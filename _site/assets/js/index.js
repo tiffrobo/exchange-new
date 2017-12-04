@@ -6,6 +6,7 @@ jQuery(document).ready(function($){
 
   $(".a1,.a2,.a3,.a4,.a5").css("opacity","0");
   $animationFlag = false;
+  if($("#howItWorks").length){
   $offset = $("#howItWorks").offset().top;
   $(window).scroll(function(){
     if(($offset - 750) < $(document).scrollTop()){
@@ -14,7 +15,8 @@ jQuery(document).ready(function($){
         triggerAnimations();
       }
     }    
-  }) 
+  })
+  }
 
   $(".navOpen, .navClose").click(function(){
     $("header.header").fadeToggle(300)

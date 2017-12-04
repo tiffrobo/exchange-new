@@ -81,7 +81,7 @@
       #topnav{      
         float: right;
         margin-top: 2.5px;
-        @include mq(smd) { float: none; margin-bottom: 8px; position: absolute; bottom: 40px; width: 100%; }
+        @include mq(sm) { float: none; margin-bottom: 8px; position: absolute; bottom: 40px; width: 100%; }
 
         ul{
           clear: both;
@@ -92,9 +92,9 @@
             float: left;
             position: relative;
             padding: 0 20px;
-            @include mq(smd) { padding: 0 8px 0 0; font-size: 24px; }
+            @include mq(sm) { padding: 0 8px 0 0; font-size: 24px; }
             &:last-of-type{
-              @include mq(smd) { padding: 0 8px 0; }
+              @include mq(sm) { padding: 0 8px 0; }
             }
 
             &:not(:last-of-type){
@@ -118,7 +118,7 @@
         float: left;
         padding-top: 65px;
         padding-left: 75px;
-        @include mq(smd) { float: none; padding-left: 0; }
+        @include mq(sm) { float: none; padding-left: 0; }
 
         ul{
           clear: both;
@@ -128,11 +128,11 @@
             float: left;
             position: relative;
             padding: 0 20px;
-            @include mq(smd) { float: none; padding: 0px 0px 8px; font-size: 32px; }
+            @include mq(sm) { float: none; padding: 0px 0px 8px; font-size: 32px; }
 
             a{
               @extend .navlink;
-              @include mq(smd) { font-size: 24px; } 
+              @include mq(sm) { font-size: 24px; } 
             }
           }
         }
