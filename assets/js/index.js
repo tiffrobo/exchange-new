@@ -20,6 +20,11 @@ jQuery(document).ready(function($){
 
   $("#providerForm-wrapper").load('/forms/provider.php');
 
+  $(window).on('load',function(){
+    if(window.location.hash){
+      triggerAnimations();
+    }
+  })
 
   $(".navOpen, .navClose").click(function(){
     $("header.header").fadeToggle(300)

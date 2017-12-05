@@ -22,12 +22,14 @@
   box-sizing: border-box;
   padding: 24px 72px 24px 0;
   position: relative;
-  @include mq(sm) { float: none; width: 80%; margin: 0 auto; padding: 24px 0; }
+  @include mq(sm) { float: none; width: 100%; margin: 0 auto; padding: 24px 0; }
 
 
   &:nth-child(6n+4){
     float: right;
     padding: 24px 0px 24px 72px;
+    @include mq(md) { float: none; padding: 24px 72px 24px 0; }
+    @include mq(sm) { float: none; padding: 24px 0; }
   }
 
   &.hasImage{

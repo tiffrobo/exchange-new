@@ -1,6 +1,7 @@
 ---
 layout: feed
 title:  Updates
+permalink: /updates
 
 ---
 

@@ -93,7 +93,7 @@
             float: left;
             position: relative;
             padding: 0 20px;
-            @include mq(sm) { padding: 0 8px 0 0; font-size: 24px; }
+            @include mq(sm) { padding: 0 8px 0 0; font-size: 20px; }
             &:last-of-type{
               @include mq(sm) { padding: 0 8px 0; }
             }
@@ -131,12 +131,12 @@
             float: left;
             position: relative;
             padding: 0 20px;
-            @include mq(sm) { float: none; padding: 0px 0px 8px; font-size: 32px; }
+            @include mq(sm) { float: none; padding: 0px 0px 24px; font-size: 32px; }
             @include mq(md) { display: inline-block; float: none; padding: 0 16px; }
 
             a{
               @extend .navlink;
-              @include mq(sm) { font-size: 24px; } 
+              @include mq(sm) { font-size: 28px; text-transform: unset; } 
             }
           }
         }
