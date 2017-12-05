@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
   })
 
   $(".navOpen, .navClose").click(function(){
-    $("header.header").fadeToggle(300)
+    $("header.header").toggleClass("isMob").fadeToggle(300)
   })
 
   // find a way to do this in Jekyll
@@ -44,7 +44,7 @@ $('a[href*="#"]')
 .not('[href="#"]')
 .not('[href="#0"]')
 .click(function(event) {
-  $("header.header").fadeOut(300)
+  $("header.header.isMob").fadeOut(300)
   // On-page links
   // if (
   //   location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 

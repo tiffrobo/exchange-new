@@ -123,6 +123,7 @@ p{
   }
 
   h1{
+    font-size: 60px;
     @include mq(smd) { font-size: 36px; }        
   }
 
