@@ -34,7 +34,7 @@ if (!empty($_POST['token'])) {
 
     $list = [$fields];
     foreach ($fields as $field) {
-      $list[1][] = $_POST[$field];
+      $list[1][] = is_array($_POST[$field]) ? implode(';', $_POST[$field]) : $_POST[$field];
     }
     $filename = $_POST['token'];
     $fp = fopen($path_to_submissions . $filename . '.csv', 'w');

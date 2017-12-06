@@ -14,17 +14,20 @@ $fields = array(
   'first',
   'last',
   'other',
+  'organization',
+  'title',
   'affiliates',
   'pgp',
   'language',
   'otherlanguage',
   'country',
-  'trainerCheck',
-  'securityExpertCheck',
-  'hardwareSoftwareCheck',
-  'otherCheck',
+  'remoteOrganization',
+  'urgentCheck',
+  'ongoingRadio',
   'background',
   'qualifications',
+  'supportAreas',
+  'moreInfo'
   );
 
 session_start();
@@ -34,7 +37,7 @@ if (!empty($_POST['token'])) {
 
     $list = [$fields];
     foreach ($fields as $field) {
-      $list[1][] = $_POST[$field];
+      $list[1][] = is_array($_POST[$field]) ? implode(';', $_POST[$field]) : $_POST[$field];
     }
     $filename = $_POST['token'];
     $fp = fopen($path_to_submissions . $filename . '.csv', 'w');
@@ -53,7 +56,7 @@ if (!empty($_POST['token'])) {
   }
 }
 else {
-  die('notoken');
+  die('no token');
 }
 
 
