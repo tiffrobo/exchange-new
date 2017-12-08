@@ -50,6 +50,7 @@
   h1.logo{
     position: relative;
     float: left;
+    margin-top: 12px;
     @include mq(sm) { float: none; }
 
     span{
@@ -68,6 +69,7 @@
   header.header{
     .inner{
       @extend .inner;
+      padding-bottom: 128px;
       @include mq(smd) {position: static;}
 
       .navClose{
@@ -118,6 +120,7 @@
         float: left;
         padding-top: 65px;
         padding-left: 75px;
+        margin-top: 12px;
         @include mq(lg){
           .activeNavLink{ position: relative; }
           .activeNavLink:after{
@@ -130,7 +133,7 @@
             color: $royal;
             position: absolute;
             left: calc(50% - 10px);
-            bottom: -15px;
+            bottom: -17px;
           }
         }
         @include mq(sm) { float: none; padding-left: 0; }

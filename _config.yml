@@ -33,22 +33,22 @@ livereload: false     # You no longer need to include --livereload
 reload_port: 5678    # If you don't want to use the default port
 
 topnav:
-- { title: 'About', href: '/about' }
-- { title: 'See All Updates', href: '/updates' }
+- { title: 'About', href: '/about/' }
+- { title: 'See All Updates', href: '/updates/' }
 
 footernav:
 - { title: 'How it Works', href: '#howItWorks' }
-- { title: 'Become a Provider', href: '/become-a-provider' }
-- { title: 'Request Assistance', href: '/request-assistance' }
-- { title: 'Support the Exchange', href: '/support-the-exchange' }
+- { title: 'Become a Provider', href: '/become-a-provider/' }
+- { title: 'Request Assistance', href: '/request-assistance/' }
+- { title: 'Support the Exchange', href: '/support-the-exchange/' }
 - { title: 'About', href: '/about' }
 - { title: 'Updates', href: '/updates' }
 
 mainnav:
 - { title: 'How it Works', href: '#howItWorks' }
-- { title: 'Request Assistance', href: '/request-assistance' }
-- { title: 'Become a Provider', href: '/become-a-provider' }
-- { title: 'Support the Exchange', href: '/support-the-exchange' }
+- { title: 'Request Assistance', href: '/request-assistance/' }
+- { title: 'Become a Provider', href: '/become-a-provider/' }
+- { title: 'Support the Exchange', href: '/support-the-exchange/' }
 
 finenav:
 - { title: 'Privacy', href: '/privacy' }

@@ -1,6 +1,6 @@
 <div id="signup">
   <label>Sign up for updates</label>
-  <input type="email"/>
+  <input type="email" placeholder="Email address"/>
   <button>Sign Up</button>
 </div>
 
@@ -9,7 +9,7 @@
 #signup{
   float: right;
   padding-left: 40px;
-  margin-top: -6px;
+  margin-top: -9px;
   @include mq(sm) { float: none; padding-left: 0; }
   @include mq(md) { padding-top: 24px; padding-bottom: 24px; }
 
@@ -20,14 +20,16 @@
 
   input[type=email]{
     @extend .textInput;
-    width: 170px;
+    width: 250px;
     margin-right: 4px;
-    padding: 6px;
-    font-size: 16px;
+    padding: 9px 6px;
+    font-size: 14px;
   }
 
   button{
     @extend .button;
+    font-size: 16px;
+    padding: 9px 32px;
   }
 }
 

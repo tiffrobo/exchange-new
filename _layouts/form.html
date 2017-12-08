@@ -28,12 +28,16 @@
     left: -50px;
   }
 
-  h1{
-    font-size: 60px;
-    padding-bottom: 32px;
-  }
+ 
 
   #content.formPageContent{
+    h1{
+      font-size: 60px;
+      padding-bottom: 32px;
+      color: $royal;
+      line-height: 100%;
+    }
+
     max-width: 1040px;
     margin: 0 auto;
     position: relative;
@@ -76,12 +80,15 @@
     .left{
       width: 38%;
       float: left;
+      box-sizing: border-box;
+      padding-right: 22px;
       @include mq(sm) { width: 100%; float: none; }
 
       h3{
         font-size: 48px;
         position: relative;
-        top: -16px;
+        color: $royal;
+        top: -10px;        
         // Adjustment for font discrepancies.
       }
     }
