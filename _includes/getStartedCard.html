@@ -39,6 +39,9 @@
   
     &.colorClass{{d.number}} {
       background-color: {{d.color}};
+      &:hover{
+        background-color: lighten({{d.color}}, 10%) !important;
+      }
     }
   }
 

@@ -80,7 +80,6 @@
 
       #topnav{      
         float: right;
-        margin-top: 2.5px;
         @include mq(sm) { float: none; margin-bottom: 8px; position: absolute; bottom: 40px; width: 100%; }
         @include mq(md) { clear: right }
 
@@ -119,6 +118,21 @@
         float: left;
         padding-top: 65px;
         padding-left: 75px;
+        @include mq(lg){
+          .activeNavLink{ position: relative; }
+          .activeNavLink:after{
+            display: block;
+            width: 20px;
+            text-align: center;
+            content: '\25e2';
+            transform: rotate(45deg);
+            font-family: "Arial", Helvetica, sans-serif;
+            color: $royal;
+            position: absolute;
+            left: calc(50% - 10px);
+            bottom: -15px;
+          }
+        }
         @include mq(sm) { float: none; padding-left: 0; }
         @include mq(md) { padding-left: 0; float: none; clear: both; padding-top: 32px; }
 

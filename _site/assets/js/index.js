@@ -18,6 +18,19 @@ jQuery(document).ready(function($){
   })
   }
 
+  var locArray = window.location.href.split("/");
+  $("#mainnav a").each(function(){
+    var theHref = $(this).attr("href").replace("/","")
+    $this = $(this);
+    locArray.forEach(function(el){
+      console.log(el)
+      console.log(theHref)
+      if(theHref == el){
+        $this.addClass("activeNavLink")
+      }
+    })    
+  })
+
   $("#providerForm-wrapper").load('/forms/provider.php');
   $("#assistanceForm-wrapper").load('/forms/assistance.php');
 

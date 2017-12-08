@@ -5,10 +5,16 @@ style{
 *{
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a{
   text-decoration: none;
+}
+
+a:visited{
+  color: $royal;
 }
 
 p{
