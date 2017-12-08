@@ -22,9 +22,7 @@ jQuery(document).ready(function($){
   $("#mainnav a").each(function(){
     var theHref = $(this).attr("href").replace("/","")
     $this = $(this);
-    locArray.forEach(function(el){
-      console.log(el)
-      console.log(theHref)
+    locArray.forEach(function(el){     
       if(theHref == el){
         $this.addClass("activeNavLink")
       }
