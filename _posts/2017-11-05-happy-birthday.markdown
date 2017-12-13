@@ -6,7 +6,7 @@ categories: jekyll update
 author: Josh Levy
 authorImage: josh-levy.png
 heroImage: panda.jpg
-permalink: /happy-anniversary
+permalink: /happy-anniversary/
 ---
 
 Download

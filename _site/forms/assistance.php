@@ -8,15 +8,16 @@
     <div class="right">
       <div class="inputWrap">
         <label for="phone">Phone number</label>
-        <input type="tel" name="phone" data-parsley-required />
+        <input type="tel" name="phone" id="phone" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$"
+               data-parsley-multiple-fields="" data-parsley-validate-if-empty />
       </div>
       <div class="inputWrap">
         <label for="email">Email address</label>
-        <input type="email" name="email"/>
+        <input type="email" name="email" id="email" />
       </div>
       <div class="inputWrap">
         <label for="signal">Signal number</label>
-        <input type="tel" name="signal"/>
+        <input type="tel" name="signal" id="signal" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" />
       </div>
       <div class="inputWrap half">
         <label for="service1">Service</label>
@@ -163,7 +164,7 @@
       <div class="inputWrap">
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="secureComCheck" value="secureComCheck" name="supportAreas[]" />
+            <input type="checkbox" id="secureComCheck" value="secureComCheck" name="supportAreas[]" required/>
             <label for="secureComCheck"> </label>
           </div>
           Securing my communications

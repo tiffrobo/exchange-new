@@ -48,15 +48,17 @@ if (!empty($_POST['token'])) {
 
     fclose($fp);
 
-    die('thanks');
+    header('Location: /thank-you');
 
   }
   else {
-    die('unmatched token');
+    // unmatched token
+    header('Location: /form-error');
   }
 }
 else {
-  die('no token');
+  // no token
+  header('Location: /form-error');
 }
 
 
