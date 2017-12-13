@@ -8,7 +8,7 @@
     <div class="right">
       <div class="inputWrap">
         <label for="phone">Phone number</label>
-        <input type="tel" name="phone"/>
+        <input type="tel" name="phone" data-parsley-required />
       </div>
       <div class="inputWrap">
         <label for="email">Email address</label>
