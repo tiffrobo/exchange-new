@@ -29,8 +29,6 @@ jQuery(document).ready(function($){
     })    
   })
 
-  $("#providerForm-wrapper").load('/forms/provider.php');
-  $("#assistanceForm-wrapper").load('/forms/assistance.php');
 
   $(window).on('load',function(){
     if(window.location.hash){
