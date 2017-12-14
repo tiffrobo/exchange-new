@@ -1,0 +1,28 @@
+<div id="howItWorks">
+  <h3>How It Works</h3>
+  <div id="howItWorksCards">
+    {% for data in site.howItWorksCardData %}
+      {% include howItWorksCard.html data=data %}
+    {% endfor %}
+  </div>
+</div>
+
+<style lang="scss" scoped>{% capture to_scss %}@import 'vars';
+
+#howItWorks{
+  position: relative;
+  min-height: 900px;
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+
+  h3{
+    color: $royal;
+    font-size: 36px;
+    @include mq(sm) { padding-bottom: 32px; padding-left: 15px; }
+    @include mq(md) { padding-bottom: 32px; padding-left: 24px; }
+  }
+}
+
+{% endcapture %}{{ to_scss | scssify }}</style>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="feedPage">
+
+{% include header.html %}
+<div id="content" class="feedPageContent">
+  {% include svg-how1.html %}
+  <div class="feedPageWrap"> 
+    {{ content }}
+  </div>
+</div>
+<hr/>
+
+
+{% include homePosts.html %}
+{% include footer.html %}
+
+</body>
+</html>
+
+<style lang="scss" scoped>{% capture to_scss %}@import 'vars';
+    
+.feedPage{
+  svg.how1{
+    position: relative;
+    left: -50px;
+  }  
+
+  #content.feedPageContent{
+    max-width: 1040px;
+    margin: 0 auto;
+    position: relative;
+
+    &:after{
+      content: "";
+      width: 50%;
+      background: $mint;
+      position: absolute;
+      right: 0;
+      top: 32px;
+      z-index: 1;
+      height: 500px;
+    }
+
+    .feedPageWrap{
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  #homePosts{
+     
+    hr{
+      display: none;
+    }
+
+    > h4{
+      display: none;
+    }
+  }
+
+  & > hr{
+    @extend .hr;
+    display: block;
+    width: 960px;
+    margin: 48px auto 96px;
+    position: relative;
+    z-index: 3;
+  }
+}
+
+  {% endcapture %}{{ to_scss | scssify }}</style>

@@ -1,0 +1,87 @@
+{% assign p = include.post %}
+
+{% if p.authorImage %}
+<div class="postCard hasImage">      
+  <div class="authorImageWrap">
+    <img src="assets/img/authors/{{ p.authorImage }}"/>
+    {% include svg-authorOverlay.html %}
+  </div>
+{% else %}
+<div class="postCard">
+{% endif %}
+  <span class="meta">by: {{ p.author }} {{ p.date| date: '%B %d, %Y' }}</span>  
+  <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
+  <div class="theExcerpt">{{ p.content| truncate: 280 }}</div>
+</div>
+
+<style lang="scss" scoped>{% capture to_scss %}@import 'vars';
+
+.postCard{
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 24px 72px 24px 0;
+  position: relative;
+  @include mq(sm) { float: none; width: 100%; margin: 0 auto; padding: 24px 0; }
+
+
+  &:nth-child(6n+4){
+    float: right;
+    padding: 24px 0px 24px 72px;
+    @include mq(md) { float: none; padding: 24px 72px 24px 0; }
+    @include mq(sm) { float: none; padding: 24px 0; }
+  }
+
+  &.hasImage{
+   .meta{
+     position: relative;
+     left: 72px;
+   } 
+  }
+
+  .authorImageWrap{
+    position: absolute;
+    height: 70px;
+    left: -6px;
+
+    img,svg{
+      position: absolute;
+    }
+  }
+
+  span{
+    font-size: 18px;
+    display: inline-block;
+    padding: 24px 0;
+    color: $peach;
+    @include mq(smd) {font-size: 16px;}
+
+  }
+
+  h2{
+    font-weight: bold;
+    font-size: 40px;
+    @include mq(smd) {font-size: 32px;}
+
+    a{
+      color: inherit;
+    }
+  }
+
+  div.theExcerpt{
+    font-size: 20px;
+    font-weight: 400;
+    @include mq(smd) {font-size: 16px;}
+
+    *{
+      font-size: 20px;
+      font-weight: 400;
+      color: inherit;
+      @include mq(smd) {font-size: 16px;}
+    }
+  }
+}
+
+
+
+{% endcapture %}{{ to_scss | scssify }}</style>

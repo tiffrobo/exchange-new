@@ -1,0 +1,39 @@
+<div id="homePosts">
+    <hr/>
+    <h4>Latest Updates</h4>
+    <div class="spacer"></div>          
+    {% for post in site.posts %}
+      {% include postCard.html post=post %}
+      <div class="spacer"></div>      
+    {% endfor %}
+</div>
+
+<style lang="scss" scoped>{% capture to_scss %}@import 'vars';
+
+#homePosts{
+  @extend .inner;
+  max-width: 1040px;
+  margin: 0 auto;
+  @include mq(smd) {padding: 12px 32px}
+
+  hr{
+    @extend .hr;
+  }
+
+  h4{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 16px;
+    padding-bottom: 40px;
+  }
+
+  .spacer{
+    clear: both;
+    
+    &:nth-child(3n+2){
+      display: none;
+    }
+  }
+}
+
+{% endcapture %}{{ to_scss | scssify }}</style>

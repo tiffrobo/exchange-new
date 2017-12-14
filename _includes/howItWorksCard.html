@@ -1,0 +1,135 @@
+{% assign d = include.data %}
+
+<div class="howItWorksCard howCard{{d.number}} a{{d.number}}">
+  {% include svg-how{{d.number}}.html %}
+  {% include svg-how-line{{d.number}}.html %}
+  <div class="innerCard">
+    <p>{{ d.content}}</p>
+    <a href="{{ d.href }}">{{ d.title }}</a>
+  </div>
+</div>
+
+<style lang="scss" scoped>{% capture to_scss %}@import 'vars';
+
+.howItWorksCard{
+  height: 338px;
+  width: 440px;
+  background: $mint;
+  box-sizing: border-box;
+  padding: 16px 32px;
+  margin: 32px;
+  font-size: 22px;
+  font-weight: 400;
+  position: absolute;
+  @include mq(sm) { position: static; width: 90%; margin: 40px auto 96px; padding: 8px; font-size: 16px; }
+  @include mq(md) {width: 300px; height: 300px; padding: 12px 16px; font-size: 18px; padding: 16px 24px;}
+
+  svg{
+    position: relative;
+    z-index: 5;
+    top: -64px;
+  }
+
+  & > div{
+    position: relative;
+    z-index: 2;
+  }
+
+  p{
+    padding-top: 8px;
+    padding-left: 32px;
+    width: 88%;
+    box-sizing: border-box;
+    position: relative;
+    top: -60px;
+    @include mq(md) {font-size: 16px; line-height: 24px; padding-left: 24px;}
+  }
+
+  a{
+    font-weight: bold;
+    padding-left: 32px;
+    display: block;
+    width: 200%;
+    position: relative;
+    top: -48px;
+    @include mq(sm) { width: auto; }
+    @include mq(md) { padding-left: 24px; font-size: 16px; }
+
+    &:after{
+      content: "\203A";
+      font-size: 32px;
+      top: 2px;
+      position: relative;
+      display: inline-block;
+      padding-top: 18px;
+      padding-left: 8px;
+      @include mq(sm) { padding-top: 0; }
+    }
+  }
+
+  &:after{
+    display: none;
+    content: "";
+    width: 50%;
+    height: 338px;
+    background: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    @include mq(sm) { display: none; }
+  }
+
+  &:first-of-type{
+    top: 144px;
+    left: -50px;
+    @include mq(md) {left: 0px;}
+  }
+
+  &:nth-of-type(2){
+    top: 32px;
+    right: -50px;    
+    @include mq(md) {right: 0px;}
+  }
+
+  &:last-of-type{
+    bottom: 0px;
+    left: calc(50% - 180px);
+  }
+
+  &:first-of-type:after{
+    display:block;
+    @include mq(sm) { display: none; }
+  }
+
+  &:nth-of-type(2):after{
+    display:block;
+    right: auto;
+    left: 0;
+    @include mq(sm) { display: none; }
+  }
+
+  svg.howLine1{
+    position: absolute;
+    top: 316px;
+    left: 146px;
+    @include mq(sm) { display: none !important; }
+    @include mq(md) {left: 10px}
+  }
+
+  svg.howLine2{
+    position: absolute;
+    top: 306px;
+    left: 50px;
+    @include mq(sm) { display: none !important; }
+    @include mq(md) {left: 0px; top: 340px;}
+  }
+
+  svg.howLine3{
+    display: none;
+  }
+}
+
+
+
+{% endcapture %}{{ to_scss | scssify }}</style>

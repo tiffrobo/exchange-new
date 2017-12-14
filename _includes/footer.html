@@ -1,0 +1,164 @@
+<div id="footer">
+    {% include subscribe.html %}
+    <div class="inner">
+        <nav id="footernav">
+            <ul>
+            {% for item in site.footernav %}
+                <li>
+                    {% if item.href contains 'http' %}
+                        <a href="{{ item.href }}">{{ item.title }}</a>
+                    {% else %}
+                        <a href="{{ item.href | relative_url }}">{{ item.title }}</a>
+                    {% endif %}
+                </li>
+            {% endfor %}  
+            </ul>
+        </nav>
+        <div id="centerFoot">
+            <p>If you are an organization seeking digital security assistance, or a provider looking to help, you can contact us via email or Signal:</p>
+                    
+            <p>info@digitalsecurityexchange.org</p>
+                    
+            <p>Signal: 413-629-8478</p>
+                    
+            <p>PGP Fingerprint: 0AD2 AC09 8483 DF98 BA8D 55E6 0B08 14A1 BC02 5239.</p>
+            <nav id="finenav">
+                <ul>
+                {% for item in site.finenav %}
+                    <li>
+                    {% if item.href contains 'http' %}
+                        <a href="{{ item.href }}">{{ item.title }}</a>
+                    {% else %}
+                        <a href="{{ item.href | relative_url }}">{{ item.title }}</a>
+                    {% endif %}
+                    </li>
+                {% endfor %}  
+                </ul>
+            </nav>
+        </div>
+        <div id="rightFoot">
+            {% include svg-logo.html %}
+            <h3>Keeping the social sector safe from digital attack</h3>
+            <p>&copy;2017 Digital Security Exchange</p>
+        </div>
+    </div>
+</div>
+
+<style lang="scss" scoped>{% capture to_scss %} @import 'vars';
+        
+#footer{
+    background: $mist;
+    overflow: hidden;
+
+    a{
+        transition: all .4s;                       
+    }
+
+    .inner{
+        padding: 75px;
+        position: relative;
+        overflow: hidden;
+        @include mq(sm) { padding: 15px; }        
+    }
+
+    & > .inner{
+        @include mq(md) { padding: 35px; }
+    }
+
+    #footernav{
+        float: left;
+        width: 30%;
+        @include mq(sm) { display: none; }
+
+        ul{
+            li{
+                list-style: none;
+                padding-bottom: 24px;
+
+                a{
+                    @extend .navlink;
+                    &:hover{
+                        color: $royal;
+                        transition: all .4s;
+                    }                    
+                }
+            }
+        }
+    }
+
+    #centerFoot{
+        float: left;
+        width: 33%;
+        padding-right: 4%;
+        @include mq(smd) { float: none; width: 100%; padding-right: 0; padding-top: 24px; }
+
+
+        p{
+            font-size: 18px;
+            padding-bottom: 16px;
+            line-height: 150%;
+        }
+
+        #finenav{
+            @include mq(sm){ padding-bottom: 24px; }
+            @include mq(md){ float: right; }
+            
+            ul{
+                overflow: hidden;
+                padding-top: 24px;
+
+                li{
+                    float: left;
+                    list-style: none;
+                    padding-right: 16px;
+
+
+                    &:not(:first-of-type){
+                        padding-left: 16px;
+                    }
+
+                    &:not(:last-of-type){
+                        border-right: .5px solid $black;
+                    }                
+
+                    a{
+                        @extend .navlink;
+                        text-transform: unset;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }        
+    }
+
+    #rightFoot{
+        width: 33%;
+        float: left;
+        border-top: 1px solid $royal;
+        position: relative;
+        top: -25px;
+        padding-top: 8px;
+        padding-bottom: 150px;
+        @include mq(smd) { float: none; width: 100%; border-top: 0; clear: both; padding-top: 48px; }
+
+
+        svg{
+            width: 28%;
+            @include mq(smd) { width: auto; }
+        }
+
+        h3{
+            font-weight: bold;
+            color: $royal;
+            font-size: 22px;
+        }
+
+        p{
+            bottom: 16px;
+            position: absolute;
+        }
+    }
+}
+        
+{% endcapture %}{{ to_scss | scssify }}</style>
+

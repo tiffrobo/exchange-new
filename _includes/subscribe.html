@@ -1,0 +1,75 @@
+<div id="subscribe">
+  <div class="inner">
+    <hr/>
+    <div class="left">
+      <h3>Get the latest from<br/> Digital Security Exchange</h3>
+      <p>Sign up for email updates and we’ll keep you posted on our progress through periodic updates on our work</p>
+    </div>
+    <div class="right">
+      <input type="email" placholder="Email address"/>
+      <button>Sign Up</button>
+    </div>
+  </div>
+</div>
+
+<style lang="scss" scoped>{% capture to_scss %} @import 'vars';
+
+#subscribe{
+  overflow: hidden;
+  background: white;
+  padding: 36px;
+
+  .inner{
+    @extend .inner;
+    @include mq(md) { padding: 0px !important; }
+
+    hr{
+      @extend .hr;
+    }
+
+    .left{
+      float: left;
+      width: 50%;
+      @include mq(sm) { float: none; width: 100%; }
+
+
+      h3{
+        font-size: 28px;
+        color: $royal;
+        font-weight: bold;
+        padding-bottom: 24px;
+      }
+    }
+
+    .right{
+      float: right;
+      width: calc(50% - 40px);
+      padding-left: 40px;
+      text-align: right;
+      padding-top: 24px;
+      @include mq(sm) { float: none; width: 100%; padding-left: 0; }
+
+      input[type=email]{
+        @extend .textInput;
+        width: 300px;
+        font-size: 20px;
+        @include mq(sm) { display: inline-block; width: 220px; }
+        @include mq(md) { width: 200px; display: inline-block; }
+
+      }
+
+      button{
+       @extend .button;
+       padding: 12px 32px;
+       margin-left: 8px;
+       @include mq(sm) { display: inline-block; padding: 10px 20px; width: 100px; box-sizing: border-box; }
+       @include mq(md) { display: inline-block; padding: 10px 20px; width: 94px; box-sizing: border-box; }
+       &:hover{
+        padding: 12px 40px;
+       }
+      }
+    }
+  }
+}
+
+{% endcapture %}{{ to_scss | scssify }}</style>
