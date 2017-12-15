@@ -8,15 +8,16 @@
     <div class="right">
       <div class="inputWrap">
         <label for="phone">Phone number</label>
-        <input type="tel" name="phone"/>
+        <input type="tel" name="phone" id="phone" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$"
+               data-parsley-multiple-fields="" data-parsley-validate-if-empty/>
       </div>
       <div class="inputWrap">
         <label for="email">Email address</label>
-        <input type="email" name="email"/>
+        <input type="email" name="email" id="email" />
       </div>
       <div class="inputWrap">
         <label for="signal">Signal number</label>
-        <input type="tel" name="signal"/>
+        <input type="tel" name="signal" id="signal" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" />
       </div>
       <div class="inputWrap half">
         <label for="service1">Service</label>
@@ -88,7 +89,7 @@
       <div class="inputWrap">
         <label for="country">Country</label>
         <p class="helpText">Required information</p>
-        <input type="text" name="country"/>
+        <input type="text" name="country" required />
       </div>
     </div>
   </div>
