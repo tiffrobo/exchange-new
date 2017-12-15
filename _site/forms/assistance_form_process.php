@@ -1,5 +1,6 @@
 <?php
 include "config.php";
+include "functions.php";
 
 $fields = array(
   'phone',
@@ -47,6 +48,8 @@ if (!empty($_POST['token'])) {
     }
 
     fclose($fp);
+
+    dsx_send_mail('assistance');
 
     header('Location: /thank-you');
 
