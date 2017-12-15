@@ -2,7 +2,6 @@
 layout: post
 title:  "Wheeeee ekj hekjh ekj hekj hekj hekj ehk"
 date:   2017-11-09 11:49:03 -0500
-categories: jekyll update
 author: Josh Levy
 authorImage: josh-levy.png
 heroImage: panda.jpg

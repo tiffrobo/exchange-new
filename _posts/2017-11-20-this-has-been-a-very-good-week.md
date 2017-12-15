@@ -2,9 +2,9 @@
 layout: post
 title:  "This has been a very good week!"
 date:   2017-11-09 11:49:03 -0500
-categories: jekyll update
-author: John Selig
-image: 'josh-levy.png'
+author: Josh Levy
+authorImage: josh-levy.png
+heroImage: panda.jpg
 ---
 ermagerd content 
 ermagerd content 
