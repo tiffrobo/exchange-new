@@ -21,23 +21,23 @@
       </div>
       <div class="inputWrap half">
         <label for="service1">Service</label>
-        <input type="text" name="service1" placeholder="ex: Skype, WhatsApp, etc."/>
+        <input type="text" name="service1" placeholder="Example: WhatsApp, Skype"/>
       </div>
       <div class="inputWrap half fr">
-        <label for="service1handle">Contact</label>
-        <input type="text" name="service1handle" placeholder="Username, handle, number, etc."/>
+        <label for="service1handle">Other contact method(s), if any</label>
+        <input type="text" name="service1handle" placeholder="Username, handle, number"/>
       </div>
       <div class="inputWrap half">
-        <input type="text" name="service2"  placeholder="ex: Skype, WhatsApp, etc."/>
+        <input type="text" name="service2"  placeholder="Example: WhatsApp, Skype"/>
       </div>
       <div class="inputWrap half fr">
-        <input type="text" name="service2handle" placeholder="Username, handle, number, etc."/>
+        <input type="text" name="service2handle" placeholder="Example: WhatsApp, Skype"/>
       </div>
       <div class="inputWrap half">
         <input type="text" name="service3"  placeholder="ex: Skype, WhatsApp, etc."/>
       </div>
       <div class="inputWrap half fr">
-        <input type="text" name="service3handle" placeholder="Username, handle, number, etc."/>
+        <input type="text" name="service3handle" placeholder="Username, handle, number"/>
       </div>
     </div>
   </div>
@@ -49,15 +49,15 @@
     </div>
     <div class="right">
       <div class="inputWrap half">
-        <label for="first">First name</label>
+        <label for="first">Enter your first name</label>
         <input type="text" name="first" placeholder=""/>
       </div>
       <div class="inputWrap half fr">
-        <label for="last">Last name</label>
+        <label for="last">Enter your last name</label>
         <input type="text" name="last" placeholder=""/>
       </div>
       <div class="inputWrap">
-        <label for="other">Other name or alias</label>
+        <label for="other">Enter an alternative name or alias </label>
         <input type="text" name="other"/>
       </div>
       <div class="inputWrap">
@@ -69,20 +69,20 @@
         <input type="text" name="title"/>
       </div>
       <div class="inputWrap">
-        <label for="affiliates">Affiliated groups or organizations</label>
-        <p class="helpText">Separate multiple names with commas</p>
+        <label for="affiliates">Add any groups or organizations you would like to share.</label>
+        <p class="helpText">Separate multiple organizations using a comma.</p>
         <textarea name="affiliates"></textarea>
       </div>
       <div class="inputWrap">
-        <label for="pgp">Public PGP Key</label>
+        <label for="pgp">PGP fingerprint</label>
         <input type="text" name="pgp"/>
       </div>
       <div class="inputWrap">
-        <label for="language">Primary or preferred language</label>
+        <label for="language">Primary or preferred contact language</label>
         <input type="text" name="language"/>
       </div>
       <div class="inputWrap">
-        <label for="otherlanguage">Other languages</label>
+        <label for="otherlanguage">Enter other languages with which you have proficiency</label>
         <input type="text" name="otherlanguage"/>
       </div>
     </div>
@@ -91,12 +91,11 @@
   <div class="formSection formSectionC">
     <div class="left">
       <h3>What country are you located in?</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis sunt minus deleniti, repellat hic fugit tenetur soluta modi, perferendis repellendus officia quod ducimus ea adipisci, in pariatur! Illum, saepe culpa!</p>
+      <p>Please tell us in what country you are located so we can connect you to the appropriate providers. If you prefer to provide this information at a later stage, you may leave this information blank.</p>
     </div>
     <div class="right">
       <div class="inputWrap">
-        <label for="country">Country</label>
-        <p class="helpText">Required information</p>
+        <label for="country">Enter your country</label>
         <input type="text" name="country"/>
       </div>
       <div class="inputWrap">
@@ -118,15 +117,20 @@
     </div>
     <div class="right">
       <div class="inputWrap">
-        <label for="skills">Is your need urgent?</label>
-        <p class="helpText">Please check if you require a response within 24 hours</p>
+        <label for="urgentCheck">Is your need urgent?</label>
+        <p class="helpText">Select yes if you require a response within 24 hours</p>
         <div class="checkWrap">
-          <div class="ch5">
-            <input type="checkbox" value="1" id="urgentCheck" name="urgentCheck" />
-            <label for="urgentCheck"> </label>
+          <div class="rad">
+            <input type="radio" value="yes" id="urgentCheck" name="urgentCheck" required />
+            <label for="urgentCheck1">Yes</label>
           </div>
-          My need is urgent
+          <div class="rad">
+            <input type="radio" value="no" id="urgentCheck" name="urgentCheck" required />
+            <label for="urgentCheck2">No</label>
+          </div>
         </div>
+        <label for="ongoingRadio">Are you seeking one-time support or ongoing support? </label>
+        <p class="helpText">Please tell us what type of support you are seeking </p>
         <div class="checkWrap">
           <div class="rad">
             <input type="radio" id="ongoingRadio1" name="ongoingRadio" value="one-time" />
@@ -142,16 +146,6 @@
           </div>
         </div>
       </div>
-      <div class="inputWrap">
-        <label for="background">Additional background</label>
-        <p class="helpText">Please describe your digital security background, any other roles you may be able to fill, and how else you may be able to assist organizations seeking support.</p>
-        <textarea name="background"></textarea>
-      </div>
-      <div class="inputWrap">
-        <label for="qualifications">Qualifications &amp; certifications</label>
-        <p class="helpText">List any qualifications or certifications you think may be relevant</p>
-        <textarea name="qualifications"></textarea>
-      </div>
     </div>
   </div>
 
@@ -164,94 +158,94 @@
       <div class="inputWrap">
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="secureComCheck" value="secureComCheck" name="supportAreas[]" required/>
+            <input type="checkbox" id="secureComCheck" value="communications" name="supportAreas[]" required/>
             <label for="secureComCheck"> </label>
           </div>
           Securing my communications
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="secureDataCheck" value="secureDataCheck" name="supportAreas[]" />
+            <input type="checkbox" id="secureDataCheck" value="data" name="supportAreas[]" />
             <label for="secureDataCheck"> </label>
           </div>
           Securing my data
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="secureHardwareCheck" value="secureHardwareCheck" name="supportAreas[]" />
+            <input type="checkbox" id="secureHardwareCheck" value="hardware" name="supportAreas[]" />
             <label for="secureHardwareCheck"> </label>
           </div>
           Securing my hardware
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="securingInfraCheck" value="securingInfraCheck" name="supportAreas[]" />
+            <input type="checkbox" id="securingInfraCheck" value="infrastructure" name="supportAreas[]" />
             <label for="securingInfraCheck"> </label>
           </div>
           Securing my infrastructure
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="secureCollabCheck" value="secureCollabCheck" name="supportAreas[]" />
+            <input type="checkbox" id="secureCollabCheck" value="collaboration tools" name="supportAreas[]" />
             <label for="secureCollabCheck"> </label>
           </div>
           Securing my collaboration tools
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="penetrationCheck" value="penetrationCheck" name="supportAreas[]" />
-            <label for="penetrationCheck"> </label>
+            <input type="checkbox" id="secureCollabCheck" value="network" name="supportAreas[]" />
+            <label for="secureCollabCheck"> </label>
           </div>
-          Penetration testing
+          Securing my network
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="threatModelingCheck" value="threatModelingCheck" name="supportAreas[]" />
+            <input type="checkbox" id="threatModelingCheck" value="threatmodeling" name="supportAreas[]" />
             <label for="threatModelingCheck"> </label>
           </div>
           Threat modeling
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="securityAssessmentCheck" value="securityAssessmentCheck" name="supportAreas[]" />
+            <input type="checkbox" id="securityAssessmentCheck" value="assessment" name="supportAreas[]" />
             <label for="securityAssessmentCheck"> </label>
           </div>
           Security assessment
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="secureTravelCheck" value="secureTravelCheck" name="supportAreas[]" />
+            <input type="checkbox" id="secureTravelCheck" value="travel" name="supportAreas[]" />
             <label for="secureTravelCheck"> </label>
           </div>
           Security for travel
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="securityProtestsCheck" value="securityProtestsCheck" name="supportAreas[]" />
+            <input type="checkbox" id="securityProtestsCheck" value="protests" name="supportAreas[]" />
             <label for="securityProtestsCheck"> </label>
           </div>
           Security for protests
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="respondHackCheck" value="respondHackCheck" name="supportAreas[]" />
+            <input type="checkbox" id="respondHackCheck" value="hacked" name="supportAreas[]" />
             <label for="respondHackCheck"> </label>
           </div>
           Responding to being hacked
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="remoteOrganization" value="remoteOrganization" name="supportAreas[]" />
+            <input type="checkbox" id="remoteOrganization" value="doxx-troll" name="supportAreas[]" />
             <label for="remoteOrganization"> </label>
           </div>
-          Responding to being doxxed
+          Responding to being doxxed or trolled
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="respondDoxCheck" value="respondDoxCheck" name="supportAreas[]" />
+            <input type="checkbox" id="respondDoxCheck" value="other" name="supportAreas[]" />
             <label for="respondDoxCheck"> </label>
           </div>
-          Other (please describe below
+          Other (please describe below)
         </div>
       </div>
     </div>

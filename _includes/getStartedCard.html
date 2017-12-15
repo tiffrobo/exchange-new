@@ -2,7 +2,7 @@
 
 <div class="getStartedCard">
   <span>{{ d.number }}</span>
-  <a href="#" class="bigButton colorClass{{d.number}}">{{ d.title }}</a>
+  <a href="{{ d.link }}" class="bigButton colorClass{{d.number}}">{{ d.title }}</a>
   <p>{{ d.content| truncate: 280 }}</p>
 </div>
 

@@ -25,8 +25,6 @@ $fields = array(
   'remoteOrganization',
   'urgentCheck',
   'ongoingRadio',
-  'background',
-  'qualifications',
   'supportAreas',
   'moreInfo'
   );

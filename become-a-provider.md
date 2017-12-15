@@ -5,8 +5,6 @@ permalink: /become-a-provider/
 formName: providerForm
 ---
 
-# Become a provider through Digital Security Exchange
+# Become a provider with the Digital Security Exchange
 
-If you are an individual digital security trainer or expert and are interested in working with DSX, please let us know by answering the below questions. Something here about the privacy and security of the form and how data will be handled.  
-<br/>
-If you are an organization, learn more about becoming an organizational partner through DSX.
+If you are a digital security trainer or expert interested in working with the DSX, please let us know by answering the below questions. All data submitted on this page is private and secure, and is stored in encrypted form on our server. 

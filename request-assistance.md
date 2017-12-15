@@ -1,12 +1,10 @@
 ---
 layout: form
-title: Become a Provider
+title: Request Assistance
 permalink: /request-assistance/
 formName: assistanceForm
 ---
 
-# Request Assistance through the Digital Security Exchange
+# Request assistance through the Digital Security Exchange
 
-Test content woohoo hi. Something here about the privacy and security of the form and how data will be handled.  
-<br/>
-If you are an organization, learn more about becoming an organizational partner through DSX.
+We do need some copy here for the design to hold up

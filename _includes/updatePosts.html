@@ -2,7 +2,7 @@
     <hr/>
     <h4>Latest Updates</h4>
     <div class="spacer"></div>
-    {% for post in site.posts limit:4 %}
+    {% for post in site.posts %}
       {% include postCard.html post=post %}
       <div class="spacer"></div>      
     {% endfor %}
