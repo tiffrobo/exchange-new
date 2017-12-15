@@ -13,6 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+#
+# IMPORTANT: You must stop your jekyll build --watch command, and re-run after any changes are made here,
+# in order for changes to this file to go into effect
+#
 title: Digital Security Exchange
 email: john@echo.co
 description: >- # this means to ignore newlines until "baseurl:"
@@ -68,7 +72,7 @@ sass:
   sass_dir: css
   style: compressed
 
-keep_files: ['forms', 'forms/form.php']
+keep_files: ['forms']
 
 exclude:
 - README.md
