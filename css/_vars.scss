@@ -10,6 +10,7 @@ $lilac: #ECECFD;
 $black: #000000;
 $white: #FFFFFF;
 $mint: #ECFAFE;
+$darkBlue: #06255F;
 
 $break-small: 768px;
 $break-large: 1046px;
@@ -111,6 +112,8 @@ $break-large: 1046px;
   padding: 8px;
   box-sizing: border-box;
   border-radius: 2px;
+  font-weight: bold;
+  color: $darkBlue;
 }
 
 .hr{
