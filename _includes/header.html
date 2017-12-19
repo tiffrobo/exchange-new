@@ -2,7 +2,7 @@
   <div class="inner">        
     <a href="/">{% include svg-logo.html %}</a>
   </div>
-  <div class="mob navOpen">=</div>
+  <div class="mob navOpen">= <span>MENU</span></div>
 </h1>
 
 <header class="header">  
@@ -82,7 +82,7 @@
 
       #topnav{      
         float: right;
-        @include mq(sm) { float: none; margin-bottom: 8px; position: absolute; bottom: 40px; width: 100%; }
+        //@include mq(sm) { float: none; margin-bottom: 8px; position: absolute; bottom: 40px; width: 100%; }
         @include mq(md) { clear: right }
 
         ul{
@@ -185,6 +185,19 @@
       font-size: 40px;
       right: 16px;
       top: 20px;
+      width: 80px;
+
+      span{
+        font-size: 12px;
+        height: auto;
+        width: auto;
+        display: inline-block;
+        position: relative;
+        bottom: 6px;
+        visibility: visible;
+        letter-spacing: 1px;
+      }
+
       &:after{
         content: "=";
         position: absolute;
@@ -194,5 +207,50 @@
         left: 0;   
       }
     }
-  }  
+  }
+  @media screen and (min-width: 1046px) and (max-width: 1216px){
+  
+    #mainnav{
+      padding-left: 8px !important;
+      position: relative;
+      top: -2px;
+    }
+
+    .inner{
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .logo{
+      svg{
+      }
+    }
+  }
+
+  @include mq(md){
+    header.header .inner{padding-bottom: 0px;}
+
+    #topnav{
+      padding-top: 18px;
+    }
+
+    #mainnav{
+      li{
+        padding:0 8px !important;
+      }
+    }
+  }
+
+  @include mq(sm) {
+    header{
+      .inner{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+      #mc_embed_signup{ order: 4; float: none; }
+      #topnav{ order: 2; float: none; padding-bottom: 120px;}
+      #mainnav{ order: 1; float: none; padding-bottom: 24px; padding-top: 40px;}
+    }
+  }
 {% endcapture %}{{ to_scss | scssify }}</style>

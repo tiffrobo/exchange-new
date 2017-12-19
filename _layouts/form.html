@@ -48,10 +48,10 @@
       width: 60%;
       background: $mint;
       position: absolute;
-      right: -150px;
-      top: 16px;
+      right: -140px;
+      top: 12px;
       z-index: 1;
-      height: 490px;
+      height: 465px;
     }
 
     .formPageWrap{
@@ -71,19 +71,19 @@
   // Form styles.
   .bigForm{
   max-width: 1040px;
-  margin: 192px auto 16px;
+  margin: 220px auto 16px;
 
   .formSection{
     overflow: hidden;
     padding-bottom: 128px;
-    @include mq(sm) { padding: 8px 16px }
+    @include mq(smd) { padding: 8px 16px }
 
     .left{
       width: 37%;
       float: left;
       box-sizing: border-box;
       padding-right: 22px;
-      @include mq(sm) { width: 100%; float: none; }
+      @include mq(smd) { width: 100%; float: none; }
 
       h3{
         font-size: 48px;
@@ -96,13 +96,14 @@
 
       p{
         line-height: 150%;
+        padding-right: 24px;
       }
     }
 
     .right{
       width: 61%;
       float: right;
-      @include mq(sm) { width: 100%; float: none; }
+      @include mq(smd) { width: 100%; float: none; }
 
       .rad{
         overflow: hidden;
@@ -155,7 +156,11 @@
         }
 
         &.fr{
-          float: right;
+          float: right;          
+        }
+
+        &.cb{
+          clear: both;
         }
         
         label{

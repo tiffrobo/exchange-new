@@ -22,24 +22,32 @@
   box-sizing: border-box;
   padding: 24px 72px 24px 0;
   position: relative;
-  @include mq(sm) { float: none; width: 100%; margin: 0 auto; padding: 24px 0; }
+  @include mq(smd) { float: none; width: 100%; margin: 0 auto; padding: 24px 0; }
 
-  &:nth-child(4n+6){
-    float: right;
-    padding: 24px 0px 24px 72px;
-    @include mq(md) { float: none; padding: 24px 72px 24px 0; }
-    @include mq(sm) { float: none; padding: 24px 0; }  
-    
-    .authorImageWrap{
-      left: 51px;
+  &.hasImage{
+    .meta{
+      @include mq(md){ position: relative; left: 64px !important; }
     }
   }
 
-  &.hasImage{
-   .meta{
-     position: relative;
-     left: 65px;
-   } 
+  @include mq(lg){
+    &:nth-child(4n+6){
+      float: right;
+      padding: 24px 0px 24px 72px;
+      @include mq(md) { float: none; padding: 24px 72px 24px 0; }
+      @include mq(sm) { float: none; padding: 24px 0; }  
+      
+      .authorImageWrap{
+        left: 51px;
+      }
+    }
+
+    &.hasImage{
+    .meta{
+      position: relative;
+      left: 65px;
+    } 
+    }
   }
 
   .authorImageWrap{
@@ -51,6 +59,8 @@
       position: absolute;
     }
   }
+
+  
 
   span{
     font-size: 18px;

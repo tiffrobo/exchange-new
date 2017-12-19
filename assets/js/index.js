@@ -40,6 +40,12 @@ jQuery(document).ready(function($){
     $("header.header").toggleClass("isMob").fadeToggle(300)
   })
 
+  $(window).resize(function(){
+    if($(window).width()>768){
+      $("header.header").show()
+    }
+  })
+
   // find a way to do this in Jekyll
   $("style").each(function(){
     $(this).clone().appendTo("head");
