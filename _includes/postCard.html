@@ -38,7 +38,7 @@
   &.hasImage{
    .meta{
      position: relative;
-     left: 72px;
+     left: 65px;
    } 
   }
 
@@ -64,6 +64,9 @@
   h2{
     font-weight: bold;
     font-size: 40px;
+    line-height: 100%;
+    padding-top: 8px;
+    letter-spacing: -0.75px;
     @include mq(smd) {font-size: 32px;}
 
     a{
@@ -72,12 +75,14 @@
   }
 
   div.theExcerpt{
+    padding-top: 18px;
     font-size: 20px;
     font-weight: 400;
     @include mq(smd) {font-size: 16px;}
 
     *{
       font-size: 20px;
+      line-height: 140%;
       font-weight: 400;
       color: inherit;
       @include mq(smd) {font-size: 16px;}
