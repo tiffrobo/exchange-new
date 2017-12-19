@@ -73,7 +73,7 @@ $break-large: 1046px;
 
   &:hover{
     background-color: lighten($royal, 20%);
-    padding: 8px 20px;
+    //padding: 8px 20px;
     transition: all .4s;
   }
 }
@@ -93,7 +93,7 @@ $break-large: 1046px;
   left: calc(-50% + 82.5px);
 
   &:hover{
-    padding: 12px 20px 12px;
+    //padding: 12px 20px 12px;
     transition: all .4s;
   }
 }
