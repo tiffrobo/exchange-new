@@ -265,10 +265,20 @@
     </div>
   </div>
 
+  <div class="formSection formSectionG">
+    <div class="left">
+      <h3>How did you hear about us? </h3>
+    </div>
+    <div class="right">
+      <div class="inputWrap">
+        <textarea name="hearAbout"></textarea>
+      </div>
+    </div>
+  </div>
+
   </div>
   </div>
 
-  <p>Lorem, ipsum dolor sitquidem voluptatibus ecusandae ratione.</p>
   <input type="submit"/>
   <input type="hidden" name="token" value="<?php print $token; ?>" />
 </form>

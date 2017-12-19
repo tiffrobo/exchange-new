@@ -26,7 +26,8 @@ $fields = array(
   'urgentCheck',
   'ongoingRadio',
   'supportAreas',
-  'moreInfo'
+  'moreInfo',
+  'hearAbout'
   );
 
 session_start();
