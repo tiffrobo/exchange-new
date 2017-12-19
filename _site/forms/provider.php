@@ -7,9 +7,10 @@
     </div>
     <div class="right">
       <div class="inputWrap">
+        <div id="contactError"></div>
         <label for="phone">Phone number</label>
         <input type="tel" name="phone" id="phone" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$"
-               data-parsley-multiple-fields="" data-parsley-validate-if-empty/>
+               data-parsley-multiple-fields="" data-parsley-validate-if-empty data-parsley-errors-container="#contactError" />
       </div>
       <div class="inputWrap">
         <label for="email">Email address</label>
@@ -24,7 +25,7 @@
         <input type="text" name="service1" placeholder="Example: WhatsApp, Skype"/>
       </div>
       <div class="inputWrap half fr">
-        <label for="service1handle">Other contact methods. Example: WhatsApp, Skype</label>
+        <label for="service1handle">Other contact method(s), if any</label>
         <input type="text" name="service1handle" placeholder="Username, handle, number"/>
       </div>
       <div class="inputWrap half">

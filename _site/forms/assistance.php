@@ -7,9 +7,10 @@
     </div>
     <div class="right">
       <div class="inputWrap">
+        <div id="contactError"></div>
         <label for="phone">Phone number</label>
         <input type="tel" name="phone" id="phone" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$"
-               data-parsley-multiple-fields="" data-parsley-validate-if-empty />
+               data-parsley-multiple-fields="" data-parsley-validate-if-empty data-parsley-errors-container="#contactError" />
       </div>
       <div class="inputWrap">
         <label for="email">Email address</label>
@@ -119,9 +120,10 @@
       <div class="inputWrap">
         <label for="urgentCheck">Is your need urgent?</label>
         <p class="helpText">Select yes if you require a response within 24 hours</p>
+        <div id="urgentErrors"></div>
         <div class="checkWrap">
           <div class="rad">
-            <input type="radio" value="yes" id="urgentCheck" name="urgentCheck" required />
+            <input type="radio" value="yes" id="urgentCheck" name="urgentCheck" required data-parsley-errors-container="#urgentErrors" data-parsley-error-message="Please indicate whether your need is urgent" />
             <label for="urgentCheck1">Yes</label>
           </div>
           <div class="rad">
@@ -156,9 +158,10 @@
     </div>
     <div class="right">
       <div class="inputWrap">
+        <div id="supportAreasError"></div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="secureComCheck" value="communications" name="supportAreas[]" required/>
+            <input type="checkbox" id="secureComCheck" value="communications" name="supportAreas[]" required data-parsley-errors-container="#supportAreasError" data-parsley-error-message="Please select at least one support area, or select Other"/>
             <label for="secureComCheck"> </label>
           </div>
           Securing my communications
