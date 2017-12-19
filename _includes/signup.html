@@ -1,12 +1,18 @@
-<div id="signup">
+<div id="mc_embed_signup">
+  <form action="https://digitalsecurityexchange.us15.list-manage.com/subscribe/post?u=5b839c64bb5e0beefde87a0ce&amp;id=6a74dbee5c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
   <label>Sign up for updates</label>
-  <input type="email" placeholder="Email address"/>
-  <button>Sign Up</button>
+    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+    <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
+    <div id="mce-responses" class="clear">
+      <div class="response" id="mce-error-response" style="display:none"></div>
+      <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5b839c64bb5e0beefde87a0ce_6a74dbee5c" tabindex="-1" value=""></div>
+  </form>
 </div>
-
 <style lang="scss" scoped>{% capture to_scss %} @import 'vars';
 
-#signup{
+#mc_embed_signup{
   float: right;
   padding-left: 40px;
   margin-top: -9px;
@@ -26,7 +32,7 @@
     font-size: 14px;
   }
 
-  button{
+  .button{
     @extend .button;
     font-size: 16px;
     padding: 9px 32px;
