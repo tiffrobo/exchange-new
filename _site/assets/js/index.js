@@ -91,10 +91,10 @@ $('a[href*="#"]')
 
 function triggerAnimations(){
   $(".a1").addClass("anim").fadeTo("300", 1, function(){
-    $(".a4").addClass("anim").fadeTo("1200", 1, function(){
-      $(".a2").addClass("anim").fadeTo("2500", 1, function(){
-        $(".a5").addClass("anim").fadeTo("750", 1, function(){
-          $(".a3").addClass("anim").fadeTo("500", 1, function(){
+    $(".a2").addClass("anim").fadeTo("1200", 1, function(){
+      $(".a3").addClass("anim").fadeTo("2500", 1, function(){
+        $(".a4").addClass("anim").fadeTo("750", 1, function(){
+          $(".a5").addClass("anim").fadeTo("500", 1, function(){
             // :)
           })
         })
