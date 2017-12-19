@@ -3,7 +3,7 @@
 {% if p.authorImage %}
 <div class="postCard hasImage">      
   <div class="authorImageWrap">
-    <img src="assets/img/authors/{{ p.authorImage }}"/>
+    <img src="/assets/img/authors/{{ p.authorImage }}"/>
     {% include svg-authorOverlay.html %}
   </div>
 {% else %}
@@ -24,12 +24,15 @@
   position: relative;
   @include mq(sm) { float: none; width: 100%; margin: 0 auto; padding: 24px 0; }
 
-
-  &:nth-child(6n+4){
+  &:nth-child(4n+6){
     float: right;
     padding: 24px 0px 24px 72px;
     @include mq(md) { float: none; padding: 24px 72px 24px 0; }
-    @include mq(sm) { float: none; padding: 24px 0; }
+    @include mq(sm) { float: none; padding: 24px 0; }  
+    
+    .authorImageWrap{
+      left: 57px;
+    }
   }
 
   &.hasImage{
@@ -42,7 +45,7 @@
   .authorImageWrap{
     position: absolute;
     height: 70px;
-    left: -6px;
+    left: -18px;
 
     img,svg{
       position: absolute;
