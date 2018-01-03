@@ -1,5 +1,6 @@
 <?php
 include "config.php";
+include "functions.php";
 
 $fields = array(
   'phone',
@@ -24,10 +25,9 @@ $fields = array(
   'remoteOrganization',
   'urgentCheck',
   'ongoingRadio',
-  'background',
-  'qualifications',
   'supportAreas',
-  'moreInfo'
+  'moreInfo',
+  'hearAbout'
   );
 
 session_start();
@@ -47,6 +47,8 @@ if (!empty($_POST['token'])) {
     }
 
     fclose($fp);
+
+    dsx_send_mail('assistance');
 
     header('Location: /thank-you');
 

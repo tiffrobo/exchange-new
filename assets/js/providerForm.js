@@ -15,7 +15,7 @@ jQuery(document).ready(function($){
 
         },
         messages: {
-          en: 'You must fill in one contact field -- either Phone, Email, or Signal'
+          en: 'Please fill in at least one contact field -- either Phone, Email, or Signal'
         }
       });
   });

@@ -13,6 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+#
+# IMPORTANT: You must stop your jekyll build --watch command, and re-run after any changes are made here,
+# in order for changes to this file to go into effect
+#
 title: Digital Security Exchange
 email: john@echo.co
 description: >- # this means to ignore newlines until "baseurl:"
@@ -34,41 +38,41 @@ reload_port: 5678    # If you don't want to use the default port
 
 topnav:
 - { title: 'About', href: '/about/' }
-- { title: 'See All Updates', href: '/updates/' }
+- { title: 'See All Updates', href: '/latest-updates/' }
 
 footernav:
 - { title: 'How it Works', href: '#howItWorks' }
 - { title: 'Become a Provider', href: '/become-a-provider/' }
 - { title: 'Request Assistance', href: '/request-assistance/' }
-- { title: 'Support the Exchange', href: '/support-the-exchange/' }
+- { title: 'Support the Exchange', href: '/support/' }
 - { title: 'About', href: '/about' }
-- { title: 'Updates', href: '/updates' }
+- { title: 'Updates', href: '/latest-updates/' }
 
 mainnav:
 - { title: 'How it Works', href: '#howItWorks' }
 - { title: 'Request Assistance', href: '/request-assistance/' }
 - { title: 'Become a Provider', href: '/become-a-provider/' }
-- { title: 'Support the Exchange', href: '/support-the-exchange/' }
+- { title: 'Support the Exchange', href: '/support/' }
 
 finenav:
 - { title: 'Privacy', href: '/privacy' }
 - { title: 'Terms of Use', href: '/terms' }
 
 getStartedCardData:
-- { number: '1', title: 'Request assistance', content: 'Get assistance for you or your organization', color: '$cyan' }
-- { number: '2', title: 'Become a provider', content: 'Request to become a vetted security provider through DSX.', color: '$peach' }
+- { number: '1', title: 'Request assistance', content: 'Get assistance for you or your organization', color: '$cyan', link: '/request-assistance' }
+- { number: '2', title: 'Become a provider', content: 'Request to become a digital security provider with the DSX', color: '$peach', link: '/become-a-provider' }
 
 howItWorksCardData:
-- { number: '1', title: 'Request digital security assistance', href: '/request-assistance', content: 'Social sector organizations come to Digital Security Exchange (DSX) seeking help with digital security assessments and training.', graphic: 'svg-howItWorks1.html' }
-- { number: '2', title: 'Request to become a provider', href: '/become-a-provider', content: 'Digital security experts interested in receiving referrals through Digital Security Exchange request to become DSX providers.', graphic: 'svg-howItWorks2.html' }
-- { number: '3', title: 'Learn more about how we work', href: '/how-it-works', content: 'DSX matches organizations in need with the appropriate digital security experts who can provide needed support.', graphic: 'svg-howItWorks3.html' }
+- { number: '1', title: 'Request digital security assistance', href: '/request-assistance', content: 'Civil society organizations come to the Digital Security Exchange seeking help with digital security assessments and training.', graphic: 'svg-howItWorks1.html' }
+- { number: '2', title: 'Request to become a provider', href: '/become-a-provider', content: 'Digital security experts interested in assisting organizations request to become providers with the DSX.', graphic: 'svg-howItWorks2.html' }
+- { number: '3', title: 'Learn more about how the Digital Security Exchange works', href: '/how-it-works', content: 'Organizations in need connect with digital security experts who can provide support.', graphic: 'svg-howItWorks3.html' }
 
 
 sass:
   sass_dir: css
   style: compressed
 
-keep_files: ['forms', 'forms/form.php']
+keep_files: ['forms']
 
 exclude:
 - README.md
