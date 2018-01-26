@@ -65,7 +65,11 @@ getStartedCardData:
 howItWorksCardData:
 - { number: '1', title: 'Request digital security assistance', href: '/request-assistance', content: 'Civil society organizations come to the Digital Security Exchange seeking help with digital security assessments and training.', graphic: 'svg-howItWorks1.html' }
 - { number: '2', title: 'Request to become a provider', href: '/become-a-provider', content: 'Digital security experts interested in assisting organizations request to become providers with the DSX.', graphic: 'svg-howItWorks2.html' }
-- { number: '3', title: 'Learn more about how the Digital Security Exchange works', href: '/how-it-works', content: 'Organizations in need connect with digital security experts who can provide support.', graphic: 'svg-howItWorks3.html' }
+- { number: '3', title: 'Learn more about how the DSX Partnership Program', href: '/partners', content: 'Organizations in need connect with digital security experts who can provide support.', graphic: 'svg-howItWorks3.html' }
+
+tagLine:
+  line1: 'Keeping U.S. civil society'
+  line2: 'safe from digital attack'
 
 
 sass:

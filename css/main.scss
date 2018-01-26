@@ -10,8 +10,8 @@ body {
   font-family: $font-family;
 }
 
-@include mq(sm){  
+@include mq(smd){  
   body{
-    // opacity: .25;
+    overflow-x: hidden;
   }
 }
