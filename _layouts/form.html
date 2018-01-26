@@ -74,8 +74,13 @@
 
   .formSection{
     overflow: hidden;
-    padding-bottom: 128px;
+    padding-top: 64px;
+    padding-bottom: 64px;
     @include mq(smd) { padding: 8px 16px }
+
+    &.formSectionSubmit{
+      padding-top: 0 !important;
+    }
 
     .left{
       width: 37%;
@@ -97,6 +102,7 @@
         line-height: 150%;
         padding-right: 24px;
         padding-bottom: 18px;
+        font-size: 18px;
       }
     }
 
@@ -134,15 +140,17 @@
 
       .checkWrap{
         padding-top: 6px;
-        padding-bottom: 24px;
+        padding-bottom: 32px;
         font-weight: bold;
+        color: $darkBlue;
+        font-size: 20px;
 
         &:last-of-type{
           padding-bottom: 32px;
         }
 
-        input[type="checkbox"]{
-          margin-right: 8px;
+        .ch5{
+          margin-right: 12px;
         }
       }
 

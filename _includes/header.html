@@ -70,6 +70,7 @@
     .inner{
       @extend .inner;
       padding-bottom: 128px;
+      padding-top: 27px;
       @include mq(smd) {position: static;}
 
       .navClose{
@@ -82,6 +83,7 @@
 
       #topnav{      
         float: right;
+        padding-top: 5px;
         //@include mq(sm) { float: none; margin-bottom: 8px; position: absolute; bottom: 40px; width: 100%; }
         @include mq(md) { clear: right }
 
@@ -118,8 +120,8 @@
 
       #mainnav{
         float: left;
-        padding-top: 65px;
-        padding-left: 75px;
+        padding-top: 60px;
+        padding-left: 87px;
         margin-top: 12px;
         @include mq(lg){
           .activeNavLink{ position: relative; }

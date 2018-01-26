@@ -31,11 +31,14 @@
   overflow: hidden;
   background: white;
   padding: 36px;
+  padding-top:0;
 
   .inner{
     @extend .inner;
-    padding-left: 7% !important;
-    padding-right: 7% !important;
+    max-width: 1040px;
+    padding-left: 75px !important;
+    padding-right: 75px !important;
+    margin: 0 auto;
     @include mq(md) { padding: 0px !important; }
 
     hr{

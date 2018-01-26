@@ -1,5 +1,6 @@
 <div id="footer">
     {% include subscribe.html %}
+    {% include svg-footer.html %}
     <div class="inner">
         <nav id="footernav">
             <ul>
@@ -49,6 +50,16 @@
 #footer{
     background: $mist;
     overflow: hidden;
+    position: relative;
+
+    #footerSVG{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: auto;
+        @include mq(sm) { display: none; }        
+    }
 
     a{
         transition: all .4s;                       
@@ -58,6 +69,7 @@
         padding: 75px;
         position: relative;
         overflow: hidden;
+        padding-bottom: 164px;
         @include mq(sm) { padding: 15px; }        
     }
 
