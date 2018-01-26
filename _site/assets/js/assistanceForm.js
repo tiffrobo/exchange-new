@@ -2,6 +2,10 @@ jQuery(document).ready(function($){
   $("#assistanceForm-wrapper").load('/forms/assistance.php', function() {
     $('#assistanceForm').parsley();
 
+    $("input[name='service1'],input[name='service2'],input[name='service3']").each(function(){
+      $(this).after("<span class='connector'></span>")
+    })
+
     window.Parsley
       .addValidator('multipleFields', {
         requirementType: 'string',

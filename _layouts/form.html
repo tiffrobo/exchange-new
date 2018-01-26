@@ -29,6 +29,23 @@
     left: -50px;
   }
 
+  input[name^='service']{
+    z-index: 2;
+    position: relative;
+  }
+
+  .connector{
+    height: 2px;
+    width: 200px;
+    background: $lilac;
+    position: absolute;
+    display: block;
+    bottom: 64px;
+    z-index: 1;
+    right: -100px;
+    @include mq(smd) { display:none; }
+  }
+
   #content.formPageContent{
     h1{
       font-size: 60px;
@@ -156,6 +173,7 @@
 
       .inputWrap{ 
         padding-bottom: 24px;
+        position: relative;
         
         &.half{
           width: 47%;
@@ -201,7 +219,7 @@
           @extend .textInput;
           margin-bottom: 16px;
           width: 100%;
-          font-size: 16px;        
+          font-size: 18px;        
         }        
       }
     }

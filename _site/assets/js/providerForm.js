@@ -1,6 +1,10 @@
 jQuery(document).ready(function($){
   $("#providerForm-wrapper").load('/forms/provider.php', function() {
     $('#providerForm').parsley();
+    
+    $("input[name='service1'],input[name='service2'],input[name='service3']").each(function(){
+      $(this).after("<span class='connector'></span>")
+    })
 
     window.Parsley
       .addValidator('multipleFields', {
