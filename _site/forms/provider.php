@@ -20,6 +20,10 @@
         <label for="signal">Signal number</label>
         <input type="tel" name="signal" id="signal" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" />
       </div>
+      <div class="inputWrap">
+        <label for="pgp">PGP fingerprint</label>
+        <input type="text" name="pgp"/>
+      </div>
       <div class="inputWrap half">
         <label for="service1">Service</label>
         <input type="text" name="service1" placeholder="Example: WhatsApp, Skype"/>
@@ -65,10 +69,6 @@
         <label for="affiliates">Add any groups or organizations you are affiliated with that you'd like to share.</label>
         <p class="helpText">Separate multiple organizations using a comma.</p>
         <textarea name="affiliates"></textarea>
-      </div>
-      <div class="inputWrap">
-        <label for="pgp">PGP fingerprint</label>
-        <input type="text" name="pgp"/>
       </div>
       <div class="inputWrap">
         <label for="language">Primary or preferred language</label>
