@@ -8,6 +8,7 @@
 {% include header.html %}
 
 <div id="content">
+  {% include svg-blockquote.html %}
   {{ content }}
 </div>
 
@@ -15,3 +16,55 @@
 
 </body>
 </html>
+<style lang="scss" scoped>{% capture to_scss %}@import 'vars';
+
+.page{
+  #content{
+    .svgBlockquote{
+      display: none;
+    }
+
+    p,li,pre{
+      padding:4px 0 16px;
+    }
+
+    p{
+      font-size: 22px;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+      padding: 4px 0 12px;
+    }
+
+    ul,ol{
+      margin-left: 32px;
+    }
+
+    blockquote{
+      box-sizing: border-box;
+      background: $mint;
+      padding: 48px 64px;
+      margin: 36px 0 48px;
+      font-weight: 300;
+      font-size: 36px;
+      width: 170%;
+      position: relative;
+      left: -35%;
+
+      p{
+        font-size: 36px;
+      }
+
+      svg.svgBlockquote{
+        display: block;
+        position: absolute;
+        width: 80px;
+        top: -46px;
+        left: calc(50% - 40px);
+      }
+    }
+  }
+}
+
+{% endcapture %}{{ to_scss | scssify }}</style>
+

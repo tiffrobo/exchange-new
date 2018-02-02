@@ -1,4 +1,4 @@
-0. never touch the _site directory; that's the outbut of the build process and is what gets deployed
+0. never touch the _site directory (except form material below); that's the output of the build process and is what gets deployed
 1. run the server with "bundle exec jekyll serve -R" for live reload
 2. sass files need the front matter bars
 

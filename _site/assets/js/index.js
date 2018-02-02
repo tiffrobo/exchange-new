@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-  $(".postPage #content blockquote").each(function(){
+  $(".postPage #content blockquote, .page #content blockquote").each(function(){
     $this = $(this);
     $(".svgBlockquote").clone().appendTo($this)
   })

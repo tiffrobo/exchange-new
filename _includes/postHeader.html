@@ -12,7 +12,9 @@
       {% else %}
     <div class="postHeader">
       {% endif %}
-      <span class="meta">by: {{ p.author }} {{ p.date| date: '%B %d, %Y' }}</span>  
+      {% if p.author or p.date %}
+        <span class="meta">by: {{ p.author }} {{ p.date| date: '%B %d, %Y' }}</span>
+      {% endif %}
       <h2><a href="{{ p.url }}">{{ p.title }}</a></h2>
     </div>
     {% if p.heroImage %}
