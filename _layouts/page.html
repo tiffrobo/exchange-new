@@ -20,6 +20,11 @@
 
 .page{
   #content{
+    position: relative;
+    z-index: 3;
+    max-width: 700px;
+    margin: 0 auto;
+
     .svgBlockquote{
       display: none;
     }
@@ -50,7 +55,10 @@
       width: 170%;
       position: relative;
       left: -35%;
-
+      @include mq(smd) {
+        width: 100%;
+        left: 0px;
+      }
       p{
         font-size: 36px;
       }
