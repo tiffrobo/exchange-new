@@ -44,14 +44,22 @@ Project](https://raw.githubusercontent.com/guardianproject/haven/master/art/logo
 2. sass files need the front matter bars (_ prefix)
 
 
-In order for the form processing to work, there needs to be a file called
-/_site/forms/config.php, which must define the php variable
-`$path_to_submissions`, the absolute path to the directory in which form csvs
-should be stored. This directory should be above the webroot.
-`/_site/forms/config.php` is gitignored. If this directory is in the project
-root, it needs to be added to the "exclude" list in _config.yml so that jekyll
-doesn't compile the submissions into `_site`.  It should also be added to
-`.gitignore`.
+In order for the form processing to work, the php scripts must have access to
+an environment variable `DSX_SUBMISSIONS_DIR` which defines the absolute path
+to the directory in which form csvs should be stored. This directory should be
+above the webroot. It must have a trailing slash.
+
+If this directory is in the project root, it needs to be added to the "exclude"
+list in _config.yml so that jekyll doesn't compile the submissions into
+`_site`.  It should also be added to `.gitignore`.
+
+If you are using php-fpm to execute the PHP scripts, then you should ensure
+the conf (`/etc/php/7.0/fpm/pool.d/www.conf`) has lines like:
+
+```
+clear_env = no
+env[DSX_SUBMISSIONS_DIR] = /var/lib/dsx/submissions/
+```
 
 ### Resources
 

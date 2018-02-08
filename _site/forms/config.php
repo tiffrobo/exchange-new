@@ -1,2 +1,3 @@
 <?php
-$path_to_submissions = '/Users/peter/Sites/dsx-bb/submissions/';
+
+$path_to_submissions = getenv('DSX_SUBMISSIONS_DIR');
