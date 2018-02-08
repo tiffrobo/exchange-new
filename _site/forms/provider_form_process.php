@@ -48,17 +48,17 @@ if (!empty($_POST['token'])) {
 
     dsx_send_mail('provider');
 
-    header('Location: /thank-you');
+    redirect('/thank-you');
 
   }
   else {
     // unmatched token
-    header('Location: /form-error');
+    redirect('/form-error');
   }
 }
 else {
   // no token
-  header('Location: /form-error');
+  redirect('/form-error');
 }
 
 
