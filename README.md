@@ -14,7 +14,7 @@ making them freely available to like-minded projects around the world. If you
 are interested in setting up your own DSX-like project, please contact us at
 info@digitalsecurityexchange.org.
 
-![DSX](https://github.com/digital-security-exchange/exchange-new/raw/develop/android-chrome-512x512.png)
+![DSX](https://github.com/digital-security-exchange/exchange-new/raw/develop/android-chrome-192x192.png)
 ![Guardian
 Project](https://raw.githubusercontent.com/guardianproject/haven/master/art/logos/gplogo.png)
 
@@ -41,7 +41,7 @@ Project](https://raw.githubusercontent.com/guardianproject/haven/master/art/logo
 
 1. never touch the `_site/` directory; that's the outbut of the build process and is what gets deployed
 2. unless you're editing the PHP scripts. all PHP form processing is in `_site/forms/`
-2. sass files need the front matter bars (_ prefix)
+2. sass files need the front matter bars ( the `_` prefix)
 
 
 ### Configuration
@@ -63,7 +63,7 @@ Inside `DSX_HOME` there must be two sub folders:
   public DSX key.
 
 If this directory is in the project root, it needs to be added to the "exclude"
-list in _config.yml so that jekyll doesn't compile the submissions into
+list in `_config.yml` so that jekyll doesn't compile the submissions into
 `_site`.  It should also be added to `.gitignore`.
 
 #### Example Configuration
@@ -79,6 +79,6 @@ env[DSX_KEY_FINGERPRINT] = 556EE3FF01581B9FB16FB8540CD6D25C98935397
 
 ### Resources
 
-- [declare arrays in templates][https://heliumdev.com/blog/create-an-array-in-shopifys-liquid]
-- [jekyll reload][https://github.com/RobertDeRose/jekyll-livereload]
+- [declare arrays in templates](https://heliumdev.com/blog/create-an-array-in-shopifys-liquid)
+- [jekyll reload](https://github.com/RobertDeRose/jekyll-livereload)
 
