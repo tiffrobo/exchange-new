@@ -44,21 +44,37 @@ Project](https://raw.githubusercontent.com/guardianproject/haven/master/art/logo
 2. sass files need the front matter bars (_ prefix)
 
 
-In order for the form processing to work, the php scripts must have access to
-an environment variable `DSX_SUBMISSIONS_DIR` which defines the absolute path
-to the directory in which form csvs should be stored. This directory should be
-above the webroot. It must have a trailing slash.
+### Configuration
+
+The application is configured via environment variables.
+
+* `DSX_HOME` - the absolute path to the directory where the system can store
+  its data. This directory should be above the webroot.  It must have a
+  trailing slash.
+* `DSX_KEY_FINGERPRINT` - the PGP key fingerprint that all form submissions
+  should be encrypted for.
+
+
+Inside `DSX_HOME` there must be two sub folders:
+
+* `submissions/` - the directory in which form csvs should be stored.
+* `gnupg/` - the gnupg home directory that stores the public key. This
+  directory should also be configured with a gnupg keyring containing the
+  public DSX key.
 
 If this directory is in the project root, it needs to be added to the "exclude"
 list in _config.yml so that jekyll doesn't compile the submissions into
 `_site`.  It should also be added to `.gitignore`.
+
+#### Example Configuration
 
 If you are using php-fpm to execute the PHP scripts, then you should ensure
 the conf (`/etc/php/7.0/fpm/pool.d/www.conf`) has lines like:
 
 ```
 clear_env = no
-env[DSX_SUBMISSIONS_DIR] = /var/lib/dsx/submissions/
+env[DSX_HOME] = /var/lib/dsx/
+env[DSX_KEY_FINGERPRINT] = 556EE3FF01581B9FB16FB8540CD6D25C98935397
 ```
 
 ### Resources
