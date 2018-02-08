@@ -49,33 +49,74 @@ function str_putcsv($input, $delimiter = ',', $enclosure = '"') {
   return $data;
 }
 
+function random_token() {
+  if (function_exists('mcrypt_create_iv')) {
+    return bin2hex(mcrypt_create_iv(32, MCRYPT_DEV_URANDOM));
+  } else {
+    return bin2hex(openssl_random_pseudo_bytes(32));
+  }
+}
+
+function make_filename($prefix, $suffix = 0) {
+  $date_str = date('Y-m-d_His');
+  if($suffix != 0) {
+    $suffix = '-' . $suffix;
+  }
+  return $prefix . $date_str . $suffix . '.csv.gpg';
+}
+
+function post_to_csv($fields) {
+
+  $list = [$fields];
+
+  foreach ($fields as $field) {
+    $list[1][] = is_array($_POST[$field]) ? implode(';', $_POST[$field]) : $_POST[$field];
+  }
+
+  $sid = $_POST['token'];
+
+  $lines = '';
+  foreach ($list as $fields) {
+    $line = str_putcsv($fields);
+    $lines .= $line . '\n';
+  }
+
+  return $lines;
+}
+
+function atomic_write($dir, $data, $try = 0) {
+  if($try > 10) {
+    // TODO logging
+    return FALSE;
+  }
+  $fname = make_filename($dir, $try);
+  $fp = fopen($fname, "x");
+  if($fp !== FALSE) {
+    if (flock($fp, LOCK_EX | LOCK_NB)) {
+      fwrite($fp, $data);
+      fflush($fp);
+      flock($fp, LOCK_UN);
+      return $fname;
+    }
+  }
+  return atomic_write($dir, $data, $try+1);
+}
+
 function process_form($form_name, $fields, $save_path, $key_fp) {
   if (!empty($_POST['token'])) {
     if (hash_equals($_SESSION['token'], $_POST['token'])) {
 
-      $list = [$fields];
-
-      foreach ($fields as $field) {
-        $list[1][] = is_array($_POST[$field]) ? implode(';', $_POST[$field]) : $_POST[$field];
-      }
-
-      $sid = $_POST['token'];
-
-      $plaintext = '';
-      foreach ($list as $fields) {
-        $line = str_putcsv($fields);
-        $plaintext .= $line . '\n';
-      }
+      $plaintext = post_to_csv($fields);
 
       $ciphertext = encrypt_data($plaintext, $key_fp);
+
       if ($ciphertext === FALSE) {
 
         redirect('/form-error');
 
       } else {
 
-        $filename = $save_path . $sid . '.csv.gpg';
-        $ret = file_put_contents($filename, $ciphertext, FILE_APPEND | LOCK_EX);
+        $ret = atomic_write($save_path, $ciphertext);
 
         if ($ret === FALSE) {
           redirect('/form-error');
