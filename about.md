@@ -19,7 +19,6 @@ permalink: /about/
 
 # Our mission and approach <a name="mission"></a>
 
-<<<<<<< HEAD
 The DSX works to strengthen the digital resilience of U.S. civil society groups by improving their understanding and mitigation of online threats.
 
 We do this by pairing civil society and social sector organizations with credible and trustworthy digital security experts and trainers who can help them keep their data and networks safe from exposure, exploitation, and attack.
@@ -35,13 +34,8 @@ We believe we are responsible to ourselves, the people and the organizations we 
 <p></p>
 # How we work <a name="mission"></a>
 
-**We are advocates for organizations in need of digital security assistance**. As such, we will work with those organizations to identify resources to enable them to conduct this work with participating providers. We provide support for building awareness, capacity, and skills to those who wish to jumpstart or accelerate their digital security work. Our intake and evaluation process ensures organizations are matched with participating digital security experts who best serve their contexts, needs, and goals.
-=======
-> Pullquote test ipsum pork beef tofu
-
-## How we work
 **We are advocates for organizations in need of digital security assistance.** As such, we will work with those organizations to identify resources to enable them to conduct this work with participating providers. We provide support for building awareness, capacity, and skills to those who wish to jumpstart or accelerate their digital security work. Our intake and evaluation process ensures organizations are matched with participating digital security experts who best serve their contexts, needs, and goals.
->>>>>>> aa26f40cacfc85e7a2705280710eb74bfbf5a43b
+
 
 Our staff works closely with the organizations and digital security providers we connect to ensure the highest quality service delivery.
 
