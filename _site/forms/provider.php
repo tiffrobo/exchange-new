@@ -3,7 +3,7 @@
   <div class="formSection formSectionA">
     <div class="left">
       <h3>How would you prefer to be contacted?</h3>
-      <p>Please provide at least one preferred method of contact, so that we are able to respond to your inquiry.</p>
+      <p>Please provide <strong>at least one preferred method of contact</strong>, so that we are able to respond to your inquiry.</p>
     </div>
     <div class="right">
       <div class="inputWrap">
@@ -19,6 +19,10 @@
       <div class="inputWrap">
         <label for="signal">Signal number</label>
         <input type="tel" name="signal" id="signal" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" />
+      </div>
+      <div class="inputWrap">
+        <label for="pgp">PGP fingerprint</label>
+        <input type="text" name="pgp"/>
       </div>
       <div class="inputWrap half">
         <label for="service1">Service</label>
@@ -46,15 +50,15 @@
   <div class="formSection formSectionB">
     <div class="left">
       <h3>What would you like us to know about you?</h3>
-      <p>Please share what information you think is appropriate for us to learn more about you. All fields are optional.</p>
+      <p>Please share what information you think is appropriate for us to learn more about you. <strong>All fields are optional.</strong></p>
     </div>
     <div class="right">
       <div class="inputWrap half">
-        <label for="first">Enter your first name</label>
+        <label for="first">First name</label>
         <input type="text" name="first" placeholder=""/>
       </div>
       <div class="inputWrap half fr">
-        <label for="last">Enter your last name</label>
+        <label for="last">Last name</label>
         <input type="text" name="last" placeholder=""/>
       </div>
       <div class="inputWrap">
@@ -65,10 +69,6 @@
         <label for="affiliates">Add any groups or organizations you are affiliated with that you'd like to share.</label>
         <p class="helpText">Separate multiple organizations using a comma.</p>
         <textarea name="affiliates"></textarea>
-      </div>
-      <div class="inputWrap">
-        <label for="pgp">Enter your PGP fingerprint</label>
-        <input type="text" name="pgp"/>
       </div>
       <div class="inputWrap">
         <label for="language">Primary or preferred language</label>
@@ -84,11 +84,11 @@
   <div class="formSection formSectionC">
     <div class="left">
       <h3>What country are you located in?</h3>
-      <p>Please tell us what country you are located in. This information is required in order for us to best match you to organizations seeking support.</p>
+      <p>Please tell us what country you are located in. <strong>This information is required</strong> in order for us to best match you to organizations seeking support.</p>
     </div>
     <div class="right">
       <div class="inputWrap">
-        <label for="country">Enter your country</label>
+        <label for="country">Country</label>
         <p class="helpText">Required information</p>
         <input type="text" name="country" required />
       </div>
@@ -145,6 +145,15 @@
       </div>
     </div>
   </div>
-  <input type="submit"/>
-  <input type="hidden" name="token" value="<?php print $token; ?>" />
+  <div class="formSection formSectionH formSectionSubmit">
+    <div class="left">
+    </div>
+    <div class="right">
+      <div class="inputWrap">
+        <input type="submit"/>
+        <input type="hidden" name="token" value="<?php print $token; ?>" />
+      </div>
+    </div>
+  </div>
+ 
 </form>

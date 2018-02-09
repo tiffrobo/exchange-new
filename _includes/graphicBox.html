@@ -1,6 +1,6 @@
     
 <div class="graphicBox">
-  <h2><span>Keeping U.S. civil society</span> safe from digital attack</h2>
+  <h2><span>{{ site.tagLine.line1 }}</span> {{ site.tagLine.line2 }}</h2>
   {% include svg-homeGraphic.html %}
 </div>
 
@@ -15,15 +15,16 @@
     top: 86px;
     left: calc(50% - 520px);
     color: $royal;
-    font-size: 265%;
+    font-size: 72px;
     z-index: 2;
-    @include mq(md) { left: 5%; top: 190px; }
-    @include mq(sm) { left: 5%; top: 60px; font-size: 185%; }
+    @include mq(md) { top: 0px; left: 5%; margin-top: 60px; position:relative }
+    @include mq(sm) { top: 0px; left: 5%; margin-top: 0px; font-size: 185%; position:relative }
 
     span{
       display: block;
       color: black;
       font-weight: 300;
+      font-size: 60px;
     }
   }
   
@@ -34,7 +35,8 @@
     width: 100%;
     position: relative;
     left: 100px;
-    @include mq(smd) { position: static; width: 80%; min-width: 410px; }
+    @include mq(md) { position: relative; width: 80%; min-width: 410px; margin-top: 0px }
+    @include mq(sm) { position: static; width: 80%; min-width: 410px; margin-top: -120px }
   }
 }
   

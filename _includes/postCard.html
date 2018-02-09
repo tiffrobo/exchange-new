@@ -3,7 +3,7 @@
 {% if p.authorImage %}
 <div class="postCard hasImage">      
   <div class="authorImageWrap">
-    <img src="assets/img/authors/{{ p.authorImage }}"/>
+    <img src="/assets/img/authors/{{ p.authorImage }}"/>
     {% include svg-authorOverlay.html %}
   </div>
 {% else %}
@@ -20,34 +20,47 @@
   width: 50%;
   float: left;
   box-sizing: border-box;
-  padding: 24px 72px 24px 0;
+  padding: 24px 72px 96px 0;
   position: relative;
-  @include mq(sm) { float: none; width: 100%; margin: 0 auto; padding: 24px 0; }
-
-
-  &:nth-child(6n+4){
-    float: right;
-    padding: 24px 0px 24px 72px;
-    @include mq(md) { float: none; padding: 24px 72px 24px 0; }
-    @include mq(sm) { float: none; padding: 24px 0; }
-  }
+  @include mq(smd) { float: none; width: 100%; margin: 0 auto; padding: 24px 0; }
 
   &.hasImage{
-   .meta{
-     position: relative;
-     left: 72px;
-   } 
+    .meta{
+      @include mq(smd){ position: relative; left: 64px !important; }
+    }
+  }
+
+  @include mq(lg){
+    &:nth-child(4n+6){
+      float: right;
+      padding: 24px 0px 24px 72px;
+      @include mq(md) { float: none; padding: 24px 72px 24px 0; }
+      @include mq(sm) { float: none; padding: 24px 0; }  
+      
+      .authorImageWrap{
+        left: 51px;
+      }
+    }
+
+    &.hasImage{
+    .meta{
+      position: relative;
+      left: 65px;
+    } 
+    }
   }
 
   .authorImageWrap{
     position: absolute;
     height: 70px;
-    left: -6px;
+    left: -18px;
 
     img,svg{
       position: absolute;
     }
   }
+
+  
 
   span{
     font-size: 18px;
@@ -61,6 +74,9 @@
   h2{
     font-weight: bold;
     font-size: 40px;
+    line-height: 100%;
+    padding-top: 8px;
+    letter-spacing: -0.75px;
     @include mq(smd) {font-size: 32px;}
 
     a{
@@ -69,12 +85,14 @@
   }
 
   div.theExcerpt{
+    padding-top: 18px;
     font-size: 20px;
     font-weight: 400;
     @include mq(smd) {font-size: 16px;}
 
     *{
       font-size: 20px;
+      line-height: 140%;
       font-weight: 400;
       color: inherit;
       @include mq(smd) {font-size: 16px;}

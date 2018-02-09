@@ -1,5 +1,6 @@
 <div id="footer">
     {% include subscribe.html %}
+    {% include svg-footer.html %}
     <div class="inner">
         <nav id="footernav">
             <ul>
@@ -38,9 +39,14 @@
         </div>
         <div id="rightFoot">
             {% include svg-logo.html %}
+<<<<<<< HEAD
             <h3>Keeping U.S. civil society
 safe from digital attack</h3>
             <p>&copy;2018 Digital Security Exchange</p>
+=======
+            <h3>{{ site.tagLine.line1 }} {{site.tagLine.line2 }}</h3>
+            <p>&copy;2017 Digital Security Exchange</p>
+>>>>>>> aa26f40cacfc85e7a2705280710eb74bfbf5a43b
         </div>
     </div>
 </div>
@@ -50,6 +56,16 @@ safe from digital attack</h3>
 #footer{
     background: $mist;
     overflow: hidden;
+    position: relative;
+
+    #footerSVG{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        height: auto;
+        @include mq(sm) { display: none; }        
+    }
 
     a{
         transition: all .4s;
@@ -59,7 +75,12 @@ safe from digital attack</h3>
         padding: 75px;
         position: relative;
         overflow: hidden;
+<<<<<<< HEAD
         @include mq(sm) { padding: 15px; }
+=======
+        padding-bottom: 164px;
+        @include mq(sm) { padding: 15px; }        
+>>>>>>> aa26f40cacfc85e7a2705280710eb74bfbf5a43b
     }
 
     & > .inner{

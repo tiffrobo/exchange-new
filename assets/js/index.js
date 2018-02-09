@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-  $(".postPage #content blockquote").each(function(){
+  $(".postPage #content blockquote, .page #content blockquote").each(function(){
     $this = $(this);
     $(".svgBlockquote").clone().appendTo($this)
   })
@@ -20,9 +20,9 @@ jQuery(document).ready(function($){
 
   var locArray = window.location.href.split("/");
   $("#mainnav a").each(function(){
-    var theHref = $(this).attr("href").replace("/","")
+    var theHref = $(this).attr("href").replace(/\//g, "")
     $this = $(this);
-    locArray.forEach(function(el){     
+    locArray.forEach(function(el){   
       if(theHref == el){
         $this.addClass("activeNavLink")
       }
@@ -38,6 +38,12 @@ jQuery(document).ready(function($){
 
   $(".navOpen, .navClose").click(function(){
     $("header.header").toggleClass("isMob").fadeToggle(300)
+  })
+
+  $(window).resize(function(){
+    if($(window).width()>768){
+      $("header.header").show()
+    }
   })
 
   // find a way to do this in Jekyll
@@ -91,10 +97,10 @@ $('a[href*="#"]')
 
 function triggerAnimations(){
   $(".a1").addClass("anim").fadeTo("300", 1, function(){
-    $(".a4").addClass("anim").fadeTo("1200", 1, function(){
-      $(".a2").addClass("anim").fadeTo("2500", 1, function(){
-        $(".a5").addClass("anim").fadeTo("750", 1, function(){
-          $(".a3").addClass("anim").fadeTo("500", 1, function(){
+    $(".a2").addClass("anim").fadeTo("1200", 1, function(){
+      $(".a3").addClass("anim").fadeTo("2500", 1, function(){
+        $(".a4").addClass("anim").fadeTo("750", 1, function(){
+          $(".a5").addClass("anim").fadeTo("500", 1, function(){
             // :)
           })
         })
