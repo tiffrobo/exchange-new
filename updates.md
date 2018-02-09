@@ -1,7 +1,7 @@
 ---
 layout: feed
 title:  Updates
-permalink: /latest-updates/
+permalink: /updates/
 
 ---
 

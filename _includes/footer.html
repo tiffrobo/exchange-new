@@ -11,16 +11,16 @@
                         <a href="{{ item.href | relative_url }}">{{ item.title }}</a>
                     {% endif %}
                 </li>
-            {% endfor %}  
+            {% endfor %}
             </ul>
         </nav>
         <div id="centerFoot">
             <p>If you are an organization seeking digital security assistance, or a provider looking to help, you can contact us via email or Signal:</p>
-                    
+
             <p>info@digitalsecurityexchange.org</p>
-                    
+
             <p>Signal: 413-629-8478</p>
-                    
+
             <p>PGP Fingerprint: 0AD2 AC09 8483 DF98 BA8D 55E6 0B08 14A1 BC02 5239.</p>
             <nav id="finenav">
                 <ul>
@@ -32,33 +32,34 @@
                         <a href="{{ item.href | relative_url }}">{{ item.title }}</a>
                     {% endif %}
                     </li>
-                {% endfor %}  
+                {% endfor %}
                 </ul>
             </nav>
         </div>
         <div id="rightFoot">
             {% include svg-logo.html %}
-            <h3>Keeping the social sector safe from digital attack</h3>
-            <p>&copy;2017 Digital Security Exchange</p>
+            <h3>Keeping U.S. civil society
+safe from digital attack</h3>
+            <p>&copy;2018 Digital Security Exchange</p>
         </div>
     </div>
 </div>
 
 <style lang="scss" scoped>{% capture to_scss %} @import 'vars';
-        
+
 #footer{
     background: $mist;
     overflow: hidden;
 
     a{
-        transition: all .4s;                       
+        transition: all .4s;
     }
 
     .inner{
         padding: 75px;
         position: relative;
         overflow: hidden;
-        @include mq(sm) { padding: 15px; }        
+        @include mq(sm) { padding: 15px; }
     }
 
     & > .inner{
@@ -80,7 +81,7 @@
                     &:hover{
                         color: $royal;
                         transition: all .4s;
-                    }                    
+                    }
                 }
             }
         }
@@ -102,7 +103,7 @@
         #finenav{
             @include mq(sm){ padding-bottom: 24px; }
             @include mq(md){ float: right; }
-            
+
             ul{
                 overflow: hidden;
                 padding-top: 24px;
@@ -119,7 +120,7 @@
 
                     &:not(:last-of-type){
                         border-right: .5px solid $black;
-                    }                
+                    }
 
                     a{
                         @extend .navlink;
@@ -128,7 +129,7 @@
                     }
                 }
             }
-        }        
+        }
     }
 
     #rightFoot{
@@ -159,6 +160,5 @@
         }
     }
 }
-        
-{% endcapture %}{{ to_scss | scssify }}</style>
 
+{% endcapture %}{{ to_scss | scssify }}</style>
