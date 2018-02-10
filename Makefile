@@ -1,14 +1,38 @@
+
+# where should the release command output the tarball
+TARBALL_DIR ?= ../
+
 DEFAULT_GOAL: serve
 SHELL := /bin/bash
 PWD := $(shell pwd)
 TAG ?= $(shell git rev-parse HEAD)
+latest_tag_cmd := git describe --tags $$(git rev-list --tags --max-count=1 2> /dev/null ) 2> /dev/null
+LATEST_TAG := $(shell $(latest_tag_cmd))
+NEXT_TAG := $(shell echo $(LATEST_TAG) | python version.py)
 
 
+.PHONY: deps
 deps: ## install project dependencies
 	bundle install
 
+.PHONY: serve
 serve: ## run the site locally
 	bundle exec jekyll serve -R
+
+.PHONY: build
+build: deps ## build the production version of the site
+	bundle exec jekyll build
+	cp -r _forms _site/forms
+
+.PHONY: clean
+clean: ## cleanup the generated files
+	rm -rf _site
+
+.PHONY: release
+release: clean build ## build and package a new version
+	@tar --transform 's|^|/dsx-$(NEXT_TAG)/|' -czvf $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz _site
+	@echo
+	@echo "Done. New version at: $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz"
 
 # Explanation of the below shell command should it ever break.
 # 1. Set the field separator to ": ##" and any make targets that might appear between : and ##
