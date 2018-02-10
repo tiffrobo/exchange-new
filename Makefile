@@ -28,11 +28,16 @@ build: deps ## build the production version of the site
 clean: ## cleanup the generated files
 	rm -rf _site
 
-.PHONY: release
-release: clean build ## build and package a new version
+.PHONY: package-and-sign
+package-and-sign:  ## tar up _site and sign it
 	@tar --transform 's|^|/dsx-$(NEXT_TAG)/|' -czvf $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz _site
 	@echo
+	@echo "Signing.."
+	@gpg --armor --output $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz.asc --detach-sig $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz
 	@echo "Done. New version at: $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz"
+
+.PHONY: release
+release: clean build package-and-sign ## build and package a new version
 
 # Explanation of the below shell command should it ever break.
 # 1. Set the field separator to ": ##" and any make targets that might appear between : and ##
