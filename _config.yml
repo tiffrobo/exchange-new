@@ -92,3 +92,4 @@ exclude:
 - Gemfile.lock
 - THEME_README.md
 - Vagrantfile
+- bootstrap.sh
