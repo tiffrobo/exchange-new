@@ -127,7 +127,7 @@ We prioritise marginalised people’s safety over privileged people’s comfort.
 
 ### Reporting
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please notify report@digitalsecurityexchange.org. Reports are confidential. You will not be asked to take actions that make you feel unsafe.
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please notify [report@digitalsecurityexchange.org](mailto:report@digitalsecurityexchange.org). Reports are confidential. You will not be asked to take actions that make you feel unsafe.
 
 This code of conduct applies to DSX spaces, but if you are being harassed by a person involved in DSX outside our spaces, we still want to know about it. We will take all good-faith reports of harassment seriously. This includes harassment outside our spaces and harassment that took place at any point in time. The abuse team reserves the right to exclude people from DSX based on their past behavior, including behavior outside DSX spaces. We will respect confidentiality requests for the purpose of protecting victims of abuse. At our discretion, we may publicly name a person about whom we’ve received harassment complaints, or privately warn third parties about them, if we believe that doing so will increase the safety of partners or people involved with DSX. We will not name harassment victims without their affirmative consent.
 
