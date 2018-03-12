@@ -5,7 +5,7 @@ permalink: /privacy/
 ---
 # Privacy and Data Retention
 
-Digital Security Exchange (DSX) is committed to protecting the privacy of visitors to our website, to organizations and providers who submit data through our forms, and to users of the CiviCDR ticketing platform. This privacy policy explains what data we collect through our website, how it is used, and how it is protected.
+Digital Security Exchange (DSX) is committed to protecting the privacy of visitors to our website, to organizations and providers who submit data through our forms, and to users of the CiviCDR issue tracking platform. This privacy policy explains what data we collect through our website, how it is used, and how it is protected.
 
 ##  Data about Visitors
 
@@ -56,4 +56,4 @@ DSX and the providers we work with will handle all information responsibly and p
 
 ### Vulnerability Disclosure Policy
 
-DSX adheres to a do no harm approach. Vulnerabilities reported to DSX through CiviCDR which may seriously affect the security of our partners will be disclosed to stakeholders three weeks after the initial report. Extenuating circumstances, such as active exploitation, threats of an especially serious (or trivial) nature, or situations that require changes to an established standard may result in earlier or later disclosure. It is the goal of this policy to balance the need of the public to be informed of security vulnerabilities with organizations’ need for time to respond effectively.
+DSX adheres to a do no harm approach. Vulnerabilities reported to DSX through CiviCDR which may seriously affect the security of our partners will be disclosed to stakeholders within three weeks after the initial report. Extenuating circumstances, such as active exploitation, threats of an especially serious (or trivial) nature, or situations that require changes to an established standard may result in earlier or later disclosure. It is the goal of this policy to balance the need of the public to be informed of security vulnerabilities with organizations’ need for time to respond effectively.
