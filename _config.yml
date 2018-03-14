@@ -39,18 +39,21 @@ reload_port: 5678    # If you don't want to use the default port
 topnav:
 - { title: 'About', href: '/about/' }
 - { title: 'Support the DSX', href: '/support/' }
-- { title: 'Partner Log In', href: 'https://staging.civicdr.org' }
+# - { title: 'Partner Log In', href: 'https://staging.civicdr.org' }
 
 footernav:
-- { title: 'DSX at a Glance', href: '/at-a-glance' }
+- { title: 'How It Works', href: '#howItWorks' }
 - { title: 'Become a Provider', href: '/become-a-provider/' }
 - { title: 'Request Assistance', href: '/request-assistance/' }
 
 - { title: 'About', href: '/about' }
-- { title: 'News', href: '/updates' }
+# - { title: 'Updates', href: '/updates' }
+- { title: 'Partnerships', href: '/partnership' }
+# - { title: 'Code of Practice and Conduct', href: '/code' }
+# - { title: 'Trust', href: '/trust' }
 
 mainnav:
-- { title: 'DSX at a Glance', href: '/at-a-glance' }
+- { title: 'How It Works', href: '#howItWorks' }
 - { title: 'Request Assistance', href: '/request-assistance/' }
 - { title: 'Become a Provider', href: '/become-a-provider/' }
 - { title: 'News', href: '/updates' }
@@ -58,7 +61,9 @@ mainnav:
 finenav:
 - { title: 'Privacy', href: '/privacy' }
 - { title: 'Security', href: '/security' }
-- { title: 'Terms of Use', href: '/terms' }
+- { title: 'Terms', href: '/terms' }
+- { title: 'Conduct', href: '/code' }
+- { title: 'Trust', href: '/trust' }
 
 getStartedCardData:
 - { number: '1', title: 'Request assistance', content: 'Get assistance for you or your organization', color: '$cyan', link: '/request-assistance' }
@@ -67,7 +72,7 @@ getStartedCardData:
 howItWorksCardData:
 - { number: '1', title: 'Request digital security assistance', href: '/request-assistance', content: 'Civil society organizations come to the Digital Security Exchange seeking help with digital security assessments and training.', graphic: 'svg-howItWorks1.html' }
 - { number: '2', title: 'Request to become a provider', href: '/become-a-provider', content: 'Digital security experts interested in assisting organizations request to become providers with the DSX.', graphic: 'svg-howItWorks2.html' }
-- { number: '3', title: 'Learn more about how the DSX Partnership Program', href: '/partners', content: 'Organizations in need connect with digital security experts who can provide support.', graphic: 'svg-howItWorks3.html' }
+- { number: '3', title: 'Learn more about partnerships', href: '/partnership', content: 'Organizations in need connect with digital security experts who can provide support.', graphic: 'svg-howItWorks3.html' }
 
 tagLine:
   line1: 'Keeping U.S. civil society'

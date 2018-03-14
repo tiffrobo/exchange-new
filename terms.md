@@ -39,15 +39,13 @@ BY WORKING WITH THE DIGITAL SECURITY EXCHANGE AND THE DIGITAL SERVICE PROVIDERS 
 Certain jurisdictions do not permit the exclusion of certain warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply to you. IN THESE JURISDICTIONS, THE FOREGOING EXCLUSIONS AND LIMITATIONS WILL BE ENFORCED TO THE GREATEST EXTENT PERMITTED BY APPLICABLE LAW.
 
 ## Indemnification
-To the extent authorized by law, you agree to indemnify and hold harmless Digital Security ExchangeCreative Commons, its employees, officers, directors, affiliates, and agents from and against any and all claims, losses, expenses, damages, and costs, including reasonable attorneys’ fees, resulting directly or indirectly from or arising out of (a) your violation of the Terms, (b) your use of any of the Services, and/or (c) the Content you make available on any of the Services.
-Privacy Policy
-DSX is committed to responsibly handling the information and data we collect through our Services in compliance with our Privacy Policy, which is incorporated by reference into these Master Terms. Please review the Privacy Policy so you are aware of how we collect and use your personal information.
+To the extent authorized by law, you agree to indemnify and hold harmless Digital Security Exchange, its employees, officers, directors, affiliates, and agents from and against any and all claims, losses, expenses, damages, and costs, including reasonable attorneys’ fees, resulting directly or indirectly from or arising out of (a) your violation of the Terms, (b) your use of any of the Services, and/or (c) the Content you make available on any of the Services.
 
 ## Termination
-By DSXCreative Commons: Digital Security ExchangeCreative Commons may modify, suspend, or terminate the operation of, or access to, all or any portion of the Services at any time for any reason. Additionally, your individual access to, and use of, the Services may be terminated by DSXCreative Commons at any time and for any reason.
+DSX may modify, suspend, or terminate the operation of, or access to, all or any portion of the Services at any time for any reason. Additionally, your individual access to, and use of, the Services may be terminated by DSX at any time and for any reason.
 
 By you: If you wish to terminate this agreement, you may immediately stop accessing or using the Services at any time.
 
-Automatic upon breach: Your right to access and use the Services (including use of your CC Login System account) automatically upon your breach of any of the Terms. For the avoidance of doubt, termination of the Terms does not require you to remove or delete any reference to previously-applied CC legal tools from your own Content.
+Automatic upon breach: Your right to access and use the Services automatically upon your breach of any of the Terms. For the avoidance of doubt, termination of the Terms does not require you to remove or delete any reference to previously-applied CC legal tools from your own Content.
 
 Survival: The disclaimer of warranties, the limitation of liability, and the jurisdiction and applicable law provisions will survive any termination. The license grants applicable to Your Content are not impacted by the termination of the Terms and shall continue in effect subject to the terms of the applicable license. Your warranties and indemnification obligations will survive for one year after termination.

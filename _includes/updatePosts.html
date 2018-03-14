@@ -1,10 +1,10 @@
 <div id="updatePosts">
     <hr/>
-    <h4>Latest Updates</h4>
+    <h4></h4>
     <div class="spacer"></div>
     {% for post in site.posts %}
       {% include postCard.html post=post %}
-      <div class="spacer"></div>      
+      <div class="spacer"></div>
     {% endfor %}
 </div>
 
@@ -33,7 +33,7 @@
   }
   .spacer{
     clear: both;
-    
+
     &:nth-child(4n+5){
       display: none;
     }

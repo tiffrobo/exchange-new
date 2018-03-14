@@ -66,14 +66,21 @@ permalink: /support/
 
     }, '#paypal-button-container');
 
-</script>
+</script
 
 </th>
 <th>
-<a class="coinbase-button" data-code="2b30a03995ec62f15bdc54e8428caa87" href="https://www.coinbase.com/checkouts/2b30a03995ec62f15bdc54e8428caa87">Pay With Bitcoins</a>
-<script src="https://www.coinbase.com/assets/button.js" type="text/javascript"></script>
+<div>
+  <a class="donate-with-crypto"
+     href="https://commerce.coinbase.com/checkout/f9922a57-8165-49db-a4b2-a8c0a5ab63a1">
+    <span>Donate with Crypto</span>
+  </a>
+  <script src="https://commerce.coinbase.com/v1/checkout.js">
+  </script>
 </th>
 </tr>
 </table>
 
 <strong>Note</strong>: Your donation is tax-deductible and will be processed by Internet Systems Consortium, our fiscal sponsor and a 501(c)(3) nonprofit.
+
+You can also contact us at [info@digitalsecurityexchange.org](mailto:info@digitalsecurityexchange.org) for more information. 

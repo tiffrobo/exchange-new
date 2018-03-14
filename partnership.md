@@ -7,6 +7,10 @@ permalink: /partnership/
 
 *Click [here](/DSX-partnerships.pdf) to download a PDF of this document.*
 
+
+
+<img src="/assets/img/ataglance.png" alt="DSX at a glance" style="width: 600px;"/>
+
 The goal of Digital Security Exchange’s (DSX) Organizational Partnership Program is to pair civil society organizations with credible and trustworthy digital security providers and trainers who can help organizations keep their data and networks safe from exposure, exploitation, and attack.
 
 The program is composed of two approaches for incoming organizations: Either (1) active participation in an organizational partnership program that pairs organizations with digital security providers and strategic thinking from DSX staff; or (2) a simple pairing and introduction (a “handoff”) between an organization and a digital service provider.
