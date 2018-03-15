@@ -57,7 +57,7 @@ The application is configured via environment variables.
 
 Inside `DSX_HOME` there must be two sub folders:
 
-* `submissions/` - the directory in which form csvs should be stored.
+* `submissions/` - the directory in which form txts should be stored.
 * `gnupg/` - the gnupg home directory that stores the public key. This
   directory should also be configured with a gnupg keyring containing the
   public DSX key.

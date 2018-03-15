@@ -40,15 +40,6 @@ function redirect($relative_path) {
   header("Location: $uri");
 }
 
-function str_putcsv($input, $delimiter = ',', $enclosure = '"') {
-  $fp = fopen('php://memory', 'r+b');
-  fputcsv($fp, $input, $delimiter, $enclosure);
-  rewind($fp);
-  $data = rtrim(stream_get_contents($fp), "\n");
-  fclose($fp);
-  return $data;
-}
-
 function random_token() {
   if (function_exists('mcrypt_create_iv')) {
     return bin2hex(mcrypt_create_iv(32, MCRYPT_DEV_URANDOM));
@@ -62,25 +53,18 @@ function make_filename($prefix, $suffix = 0) {
   if($suffix != 0) {
     $suffix = '-' . $suffix;
   }
-  return $prefix . $date_str . $suffix . '.csv.gpg';
+  return $prefix . $date_str . $suffix . '.txt.gpg';
 }
 
-function post_to_csv($fields) {
+function post_to_txt($fields) {
 
   $list = [$fields];
 
-  foreach ($fields as $field) {
-    $list[1][] = is_array($_POST[$field]) ? implode(';', $_POST[$field]) : $_POST[$field];
-  }
-
-  $sid = $_POST['token'];
-
   $lines = '';
-  foreach ($list as $fields) {
-    $line = str_putcsv($fields);
-    $lines .= $line . '\n';
+  foreach ($fields as $field) {
+    $value = is_array($_POST[$field]) ? implode('; ', $_POST[$field]) : $_POST[$field];
+    $lines .= $field . ": " . $value . "\n";
   }
-
   return $lines;
 }
 
@@ -106,7 +90,7 @@ function process_form($form_name, $fields, $save_path, $key_fp) {
   if (!empty($_POST['token'])) {
     if (hash_equals($_SESSION['token'], $_POST['token'])) {
 
-      $plaintext = post_to_csv($fields);
+      $plaintext = post_to_txt($fields);
 
       $ciphertext = encrypt_data($plaintext, $key_fp);
 
