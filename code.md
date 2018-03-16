@@ -3,10 +3,9 @@ layout: page
 title: Code of Practice
 permalink: /code/
 ---
-
 # Digital Security Exchange Code of Practice
 
-This Code of Practice defines the Digital Security Exchange (DSX) Information Handling Policy, Vulnerability Disclosure Policy, and Code of Conduct, as well as outlining the stakeholder expectations and responsibilities established in the Partner Agreement. This document is a statement of intent for the design, development and implementation of DSX’s full scope of services. A limited scope of services is currently in operation, for which all principles here remain true.
+This Code of Practice defines the Digital Security Exchange (DSX) Information Handling Policy, Vulnerability Disclosure Policy, and Code of Conduct. It also outlines the stakeholder expectations and responsibilities established in the Partner Agreement. This document is a statement of intent for the design, development and implementation of DSX’s full scope of services. A limited scope of services is currently in operation, for which all principles here remain true.
 
 ## Information Handling Policy
 

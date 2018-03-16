@@ -3,21 +3,18 @@ layout: page
 title: About the DSX
 permalink: /about/
 ---
+<a name="top"></a>
 # About the DSX
 
-- [Our mission and approach](#mission)
-- [Mutual respect](#respect)
-- [How we work](#work)
+- [Our approach](#approach)
 - [Privacy, security, transparency, and accuracy](#privacy)
 - [How we vet providers](#vetting)
-- [The technology we use](#technology)
-- [How we started and how we are funded](#funding)
+- [Technology](#technology)
+- [Our origins](#funding)
 - [Who we are](#who)
-- [FAQ](#who)
+- [FAQ](#faq)
 
 <p></p>
-
-# Our mission and approach <a name="mission"></a>
 
 The DSX works to strengthen the digital resilience of U.S. civil society groups by improving their understanding and mitigation of online threats.
 
@@ -26,13 +23,11 @@ We are committed to working with community-based organizations, legal and journa
 
 > **We will not work with, and reserve the right to refuse service to, anyone who espouses an agenda of hatred or division or who is not otherwise committed to the values set forth above.**
 
-<p></p>
-# Mutual respect <a name="respect"></a>
-
 We believe we are responsible to ourselves, the people and the organizations we interact with, and the communities in which we live and work. As such, we hold ourselves not only to the credo of “Do no harm” but to respect the background, experiences, and truths of the individuals with whom we connect. Our mutual respect and code of conduct extends to the organizations and providers with whom we work. We have a no tolerance policy for any forms of harassment, racism, sexism, or any other form of discrimination, and reserve the right to end or refuse partnerships.
 
 <p></p>
-# How we work <a name="mission"></a>
+<a name="approach"></a>
+# Our approach <a href="#top"><img src ="/assets/img/arrow.svg" alt="scroll to top" style="width: 35px;"/></a>
 
 **We are advocates for organizations in need of digital security assistance.** As such, we will work with those organizations to identify resources to enable them to conduct this work with participating providers. We provide support for building awareness, capacity, and skills to those who wish to jumpstart or accelerate their digital security work. Our intake and evaluation process ensures organizations are matched with participating digital security experts who best serve their contexts, needs, and goals.
 
@@ -46,22 +41,26 @@ When engagements are complete, we request voluntary feedback and incorporate fin
 **We seek out, listen to, and partner with digital security providers from across many different contexts in order to inform and shape our work**. We prioritize working with those who have worked with or within civil society and the social sector, and who understand the needs, environment, and culture of these groups. Providers must opt-in to the DSX in order to be connected to organizations in need of assistance; we will not make connections to anyone who has not explicitly given their permission to take part in the Exchange.
 
 **We equally balance the human and technology aspects of digital security management and provide frameworks to support change**. Each organization we work with has different needs. We place high attention to clearly defining what is most important to accomplish and making connections that directly address those goals, be they culture, process, or technology-based.
+
 Our methodology and materials build upon expertise developed by providers in the field. They are free and open for use by anyone.
 
 <p></p>
-# Privacy, security, transparency, and accuracy <a name="privacy"></a>
+<a name="privacy"></a>
+# Privacy, security, transparency, and accuracy <a href="#top"><img src ="/assets/img/arrow.svg" alt="scroll to top" style="width: 35px;"/></a>
 
 We retain as little data as possible about our interactions with organizations and providers, and we prioritize keeping the information we do have safe, secure, anonymous, and free from attack. In some cases we will develop simple and secure records of organizations and providers in order to ensure the highest quality of service. In other cases, we will will retain no data at all. Organizations and providers can request that we retain zero data about our interactions, and we are developing secure and anonymous forms of intake and communications. More information about DSX’s privacy policy and approach to user security can be found [here](/security).
 
 > We will be transparent about how we develop, fund, and maintain DSX’s processes, systems, services.
 
 <p></p>
-# How we vet providers <a name="vetting"></a>
+<a name="vetting"></a>
+# How we vet providers <a href="#top"><img src ="/assets/img/arrow.svg" alt="scroll to top" style="width: 35px;"/></a>
 
-We work only with providers who have shown a commitment to and experience working with vulnerable communities; have worked previously with our staff, Advisory Committee members, and/or other DSX providers; and who have demonstrated expertise in customized approaches to digital security. In addition, we require that providers have harmonious data retention policies to that of DSX [link to Privacy and Data Retention Policy] and agree to provide a minimum level of committed action and to participate in learning and feedback sessions with DSX.
+We will only match organizations with providers we trust and who have been vetted to work collaboratively within relevant communities; whose values align with our own; have worked previously with our staff, Advisory Committee members, and/or other DSX providers; and who have demonstrated expertise in customized approaches to digital security. In addition, we require that providers have harmonious data retention policies to [those of DSX](/privacy) and agree to provide a minimum level of committed action and to participate in learning and feedback sessions with DSX.
 
 <p></p>
-# The technology we use <a name="technology"></a>
+ <a name="technology"></a>
+# Technology <a href="#top"><img src ="/assets/img/arrow.svg" alt="scroll to top" style="width: 35px;"/></a>
 
 We believe in using technology that is free software/open source, because we can never fully verify the integrity of proprietary code -- if malware exists in open source software, we can find it. In addition, we believe in the participatory philosophy of free software projects, including our own, which we encourage others to contribute to, to audit, and to use.
 
@@ -72,7 +71,8 @@ Our matchmaking platform is CiviCDR, an open-source database and incident respon
 You can read more about methods we employ to secure user data here.
 
 <p></p>
-# How we started and how we are funded <a name="funding"></a>
+<a name="funding"></a>
+# Our origins <a href="#top"><img src ="/assets/img/arrow.svg" alt="scroll to top" style="width: 35px;"/></a>
 
 The Digital Security Exchange concept was first developed by Josh Levy after the U.S. presidential election in November 2016. It was a response to the increased demand for digital security capacity from U.S. activist groups, journalists, and social service organizations -- all of whom knew they needed to increase their security levels but didn’t know who to turn to for help.
 
@@ -81,21 +81,24 @@ In March 2017, after pulling together an initial working group and socializing a
 The project has since received support from the Mozilla Foundation, Omidyar Network Fund, and Small Media Foundation. We are also grateful to Stanford’s Digital Civil Society Lab, which provided crucial early support.
 
 <p></p>
-# Who we are <a name="who"></a>
+<a name="who"></a>
+# Who we are <a href="#top"><img src ="/assets/img/arrow.svg" alt="scroll to top" style="width: 35px;"/></a>
 
 <p></p>
-## Staff
+## *Staff*:
+
+<img src="/assets/img/authors/josh.png" style="width: 80px;"/>
 
 **Josh Levy**, Founder and Director
 
-Josh is a longtime campaign strategist and digital rights advocate. For more than a decade — including as advocacy director at Access Now and campaign director at Free Press — he's helped lead global efforts to protect free expression online, fight for privacy and the right to encryption, secure strong open internet rules, reign in overreaching government surveillance, and otherwise protect the rights of at-risk internet users. He's currently a non-resident fellow at Stanford's Digital Civil Society Lab.
+Josh is a digital strategist, technologist, and rights advocate. For more than a decade - including as advocacy director at Access Now and campaign director at Free Press - he's helped lead global efforts to protect free expression online, fight for privacy and the right to encryption, secure strong open internet rules, reign in overreaching government surveillance, and otherwise protect the rights of at-risk internet users. He's also co-founder of the Center for Digital Resilience and a non-resident fellow at Stanford's Digital Civil Society Lab.
 
 **Debbie Mac**, Partnerships Director
 
 Debbie brings more than ten years of experience building high-performance technology industry standards organizations from the ground up. She has developed and managed a wide range of programs that effectively engage diverse international stakeholders and create a culture of collaboration. She is engaged in a number of organizations working towards diversity & inclusion, social justice, and empowering new mothers.
 
 <p></p>
-## Advisory committee
+## *Advisory committee*:
 
 **Nathan Freitas** leads the Guardian Project, an open-source mobile security software project, and directs technology strategy and training at the Tibet Action Institute.
 
@@ -105,6 +108,8 @@ Debbie brings more than ten years of experience building high-performance techno
 
 **Harlo Holmes**, Director of Newsroom Digital Security at Freedom of the Press Foundation. Harlo is a media scholar, software programmer, and activist and contributes regularly to the open source mobile security collective The Guardian Project.
 
+**Holly Kilroy** is Communities Director of Center for Digital Resilience and is co-founder of Security First. She has spent the past ten years building projects that leverage technology and civil society coordination to address issues of human rights and conflict.
+
 **Danny O'Brien**, International Director at EFF. Previously, Danny headed the Internet Program at the Committee to Protect Journalists.
 
 **Jamie Tomasello**, Manager, Trust and Compliance at Duo Security. Previously, Jamie has been the Technology Director for Access Now and Head of Policy and Investigation at Cloudflare, and is a Certified Information Privacy Professional (CIPP) and Certified Information Privacy Technologist (CIPT).
@@ -112,7 +117,8 @@ Debbie brings more than ten years of experience building high-performance techno
 **Ethan Zuckerman**, director of the Center for Civic Media at MIT, and an Associate Professor of the Practice at the MIT Media Lab.
 
 <p></p>
-# FAQ
+<a name="faq"></a>
+# FAQ <a href="#top"><img src ="/assets/img/arrow.svg" alt="scroll to top" /></a>
 
 **Why should I be worried about digital security if I’m not working with the government, providing any online services, etc.?**
 
@@ -148,4 +154,4 @@ PGP stands for "Pretty Good Privacy" and is an encryption protocol that provides
 
 Signal is an encrypted communications application for iOS, Android, Mac, Windows, and Linux. It uses mobile phone numbers as identifiers, and uses its trusted protocol to enable end-to-end encryption for communications with other Signal users.
 
-We encourage you to contact via encrypted email or Signal, but we don’t require it. No matter how you contact us, your identity will remain private and we won’t store any data we don’t need to help us assist you. For me information on our data security and retention policies, go here.
+We encourage you to contact us via encrypted email or Signal, but we don’t require it. No matter how you contact us, your identity will remain private and we won’t store any data we don’t need to help us assist you. For me information on our data security and retention policies, go here.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to the DSX"
 date:   2018-03-11 12:00:00
-author: Josh Levy
+author: Josh | 
 permalink: /welcome-dsx/
 ---
 

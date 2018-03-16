@@ -48,7 +48,7 @@ footernav:
 
 - { title: 'About', href: '/about' }
 # - { title: 'Updates', href: '/updates' }
-- { title: 'Partnerships', href: '/partnership' }
+- { title: 'Partnerships', href: '/partnershipss' }
 # - { title: 'Code of Practice and Conduct', href: '/code' }
 # - { title: 'Trust', href: '/trust' }
 
@@ -63,7 +63,7 @@ finenav:
 - { title: 'Security', href: '/security' }
 - { title: 'Terms', href: '/terms' }
 - { title: 'Conduct', href: '/code' }
-- { title: 'Trust', href: '/trust' }
+# - { title: 'Trust', href: '/trust' }
 
 getStartedCardData:
 - { number: '1', title: 'Request assistance', content: 'Get assistance for you or your organization', color: '$cyan', link: '/request-assistance' }
@@ -72,7 +72,7 @@ getStartedCardData:
 howItWorksCardData:
 - { number: '1', title: 'Request digital security assistance', href: '/request-assistance', content: 'Civil society organizations come to the Digital Security Exchange seeking help with digital security assessments and training.', graphic: 'svg-howItWorks1.html' }
 - { number: '2', title: 'Request to become a provider', href: '/become-a-provider', content: 'Digital security experts interested in assisting organizations request to become providers with the DSX.', graphic: 'svg-howItWorks2.html' }
-- { number: '3', title: 'Learn more about partnerships', href: '/partnership', content: 'Organizations in need connect with digital security experts who can provide support.', graphic: 'svg-howItWorks3.html' }
+- { number: '3', title: 'Learn more about partnerships', href: '/partnerships', content: 'Organizations in need connect with digital security experts who can provide support.', graphic: 'svg-howItWorks3.html' }
 
 tagLine:
   line1: 'Keeping U.S. civil society'

@@ -13,7 +13,7 @@ We’re glad you are interested in learning a bit more about how the Digital Sec
 Below is an index of background documents that give more context to the work of the Digital Security Exchange.
 
 - [About the Digital Security Exchange](/about)
-- [Digital Security Exchange Program Scope](/partnership)
+- [Digital Security Exchange Program Scope](/partnerships)
 - [Our approach to security](/security)
 - Onboarding Modules (Intake, Initial Assessment)
 - Participation addendum
