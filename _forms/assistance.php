@@ -238,8 +238,8 @@
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="respondDoxxOrTrolledCheck" value="doxx-troll" name="supportAreas[]" />
-            <label for="respondDoxOrTrolledCheck"> </label>
+            <input type="checkbox" id="respondDoxOrTrolledCheck" value="doxx-troll" name="supportAreas[]" />
+             <label for="respondDoxOrTrolledCheck"> </label>
           </div>
           Responding to being doxxed or trolled
         </div>
