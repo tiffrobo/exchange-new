@@ -61,7 +61,7 @@
         <label for="last">Last name</label>
         <input type="text" name="last" placeholder=""/>
       </div>
-      <div class="inputWrap">
+      <div class="inputWrap cb">
         <label for="other">Enter an alternative name or alias </label>
         <input type="text" name="other"/>
       </div>
@@ -155,5 +155,5 @@
       </div>
     </div>
   </div>
- 
+
 </form>

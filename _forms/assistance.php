@@ -238,15 +238,15 @@
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="remoteOrganization" value="doxx-troll" name="supportAreas[]" />
-            <label for="remoteOrganization"> </label>
+            <input type="checkbox" id="respondDoxxOrTrolledCheck" value="doxx-troll" name="supportAreas[]" />
+            <label for="respondDoxOrTrolledCheck"> </label>
           </div>
           Responding to being doxxed or trolled
         </div>
         <div class="checkWrap">
           <div class="ch5">
-            <input type="checkbox" id="respondDoxCheck" value="other" name="supportAreas[]" />
-            <label for="respondDoxCheck"> </label>
+            <input type="checkbox" id="respondOtherCheck" value="other" name="supportAreas[]" />
+            <label for="respondOtherCheck"> </label>
           </div>
           Other (please describe below)
         </div>
@@ -289,5 +289,5 @@
 
   </div>
   </div>
-  
+
 </form>
