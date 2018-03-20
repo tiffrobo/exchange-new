@@ -25,7 +25,7 @@ In addition, we have a strict vetting policy in place for organizations and prov
 
 For organizations new to our network, we initiate a series of intake conversations and request references from at least two other organizations. Similarly, providers requesting to join the DSX network must be vouched for by at least one existing member of the network, or must provide two references from other organizations with whom they have worked in the past.
 
-If and when we do move forward with new and aspiring digital service providers, it will be initially within a discreet “pod” program, in order for all sides to continuously assess fit and expertise.
+If and when we do move forward with new and aspiring digital service providers, it will be initially within a discrete “pod” program, in order for all sides to continuously assess fit and expertise.
 
 
 ## Where we do and do not operate
