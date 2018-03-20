@@ -66,7 +66,7 @@ We believe in using technology that is free software/open source, because we can
 
 The DSX website is built using [Jekyll](https://jekyllrb.com/), the static website engine. This increases security and helps us maintain a simple site. All of our assets (except the DSX theme) are licensed under free software licenses and are freely available for use by similar projects. You can find our codebase on [GitHub](https://github.com/digital-security-exchange).
 
-Our matchmaking platform is CiviCDR, an open-source database and incident response system originally developed by our partners at [CiviCDR](https://civicdr.org/). The Digital Security Exchange, in partnership with [Guardian Project](https://guardianproject.info/), is a maintainer of the CDR platform and is actively developing new features and making them freely available to like-minded projects around the world. If you are interested in setting up your own DSX-like project, please contact us at [info@digitalsecurityexchange.org](mailto:info@digitalsecurityexchange.org).
+Our matchmaking platform is CiviCDR, an open-source database and incident response system originally developed by our partners at [CiviCDR](https://civicdr.org/) (this system will be implemented in April 2018). The Digital Security Exchange, in partnership with [Guardian Project](https://guardianproject.info/), is a maintainer of the CDR platform and is actively developing new features and making them freely available to like-minded projects around the world. If you are interested in setting up your own DSX-like project, please contact us at [info@digitalsecurityexchange.org](mailto:info@digitalsecurityexchange.org).
 
 You can read more about methods we employ to secure user data here.
 

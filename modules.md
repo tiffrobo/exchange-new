@@ -5,7 +5,7 @@ permalink: /modules/
 ---
 # DSX Onboarding Organizations and Providers: DSX "Modules"
 
-DSX has several "modules" defining our process for working with organizations requesting digital security assistance, and providers working to help them. A summary of these modules is below. 
+DSX has several "modules" defining our process for working with organizations requesting digital security assistance, and providers working to help them. A summary of these modules is below.
 
 ## Module 1: Intake
 
@@ -23,7 +23,7 @@ The specific goals of module 1 are to:
 
 ## Module 2: Assessment & Connection
 
-This module is intended to review the information from “Module 1: Intake”, to assess the current organizational status, needs, and community and to make the appropriate match(es) to the provider(s) most similar in expertise and experience. The connection and introduction between organization and provider is made on our CiviCDR platform. DSX gives the provider the results of the intake and makes recommendations as appropriate.
+This module is intended to review the information from “Module 1: Intake”, to assess the current organizational status, needs, and community and to make the appropriate match(es) to the provider(s) most similar in expertise and experience. The connection and introduction between organization and provider is made on our CiviCDR platform (this will be implemented in April 2018). DSX gives the provider the results of the intake and makes recommendations as appropriate.
 
 ## Module 3: Onboarding
 

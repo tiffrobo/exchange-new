@@ -9,66 +9,16 @@ permalink: /support/
 
 <table cellspacing="40">
 <tr>
+
 <th>
-<script src="https://www.paypalobjects.com/api/checkout.js"></script>
-
-<div id="paypal-button-container"></div>
-
-<script>
-
-    // Render the PayPal button
-
-    paypal.Button.render({
-
-        // Set your environment
-
-        env: 'production', // sandbox | production
-
-        // Specify the style of the button
-
-        style: {
-            label: 'paypal',
-            size:  'large', // small | medium | large | responsive
-            shape: 'pill',   // pill | rect
-            color: 'blue',   // gold | blue | silver | black
-            tagline: false
-        },
-
-        // PayPal Client IDs - replace with your own
-        // Create a PayPal app: https://developer.paypal.com/developer/applications/create
-
-        client: {
-            sandbox:    'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
-            production: 'AfuwkyMCK-AO__Lnc_fQqAoO08CMcmiFi1VtEM8wRrJsCc0qYYCxkfXbrusoTRYNy7Y6t0MGGDHmbhsR'
-        },
-
-        // Wait for the PayPal button to be clicked
-
-        payment: function(data, actions) {
-            return actions.payment.create({
-                payment: {
-                    transactions: [
-                        {
-                            amount: { total: '0', currency: 'USD' }
-                        }
-                    ]
-                }
-            });
-        },
-
-        // Wait for the payment to be authorized by the customer
-
-        onAuthorize: function(data, actions) {
-            return actions.payment.execute().then(function() {
-                window.alert('Payment Complete!');
-            });
-        }
-
-    }, '#paypal-button-container');
-
-</script
-
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9FDE2WD3228XE">
+<input type="image" src="https://staging.digitalsecurityexchange.org/assets/img/paypal.png" border="0" name="submit" alt="PayPal">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 </th>
+
 <th>
 <div>
   <a class="donate-with-crypto"
