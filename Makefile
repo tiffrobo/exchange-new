@@ -35,7 +35,7 @@ package: ## tar up the _site dir into a tagged tarball
 .PHONY: sign
 sign: ## sign the package with gnupg
 	@echo
-	@echo "Signing.."
+	@echo "Signing.. $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz"
 	@gpg --armor --output $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz.asc --detach-sig $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz
 	@echo "Done. New version at: $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz"
 
