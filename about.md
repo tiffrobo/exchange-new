@@ -118,7 +118,7 @@ Debbie brings more than ten years of experience building high-performance techno
 
 <p></p>
 <a name="faq"></a>
-# FAQ <a href="#top"><img src ="/assets/img/arrow.svg" alt="scroll to top" /></a>
+# FAQ <a href="#top"><img src ="/assets/img/arrow.svg" alt="scroll to top" style="width: 35px;"/></a>
 
 **Why should I be worried about digital security if I’m not working with the government, providing any online services, etc.?**
 
