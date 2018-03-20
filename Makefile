@@ -39,6 +39,11 @@ sign: ## sign the package with gnupg
 	@gpg --armor --output $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz.asc --detach-sig $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz
 	@echo "Done. New version at: $(TARBALL_DIR)dsx-$(NEXT_TAG).tar.gz"
 
+fetch: ## fetch the package from the build machine
+	vagrant scp :/vagrant/dsx-${NEXT_TAG}.tar.gz ${TARBALL_DIR}
+
+fetch-sign: fetch sign ## fetch the package from the build machine and sign it
+
 .PHONY: release
 release: clean build package sign ## build and package a new version
 
