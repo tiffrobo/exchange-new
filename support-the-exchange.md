@@ -7,14 +7,14 @@ permalink: /support/
 
 <strong>Please consider donating to the Digital Security Exchange</strong>. Your support helps the DSX continue to provide a unique service to advocacy organizations, media projects, civil rights advocates, and public figures who are working to advance social, racial, political, and economic justice in our communities and our world.
 
-<table cellspacing="40">
+<table cellspacing="60">
 <tr>
 
 <th>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="9FDE2WD3228XE">
-<input type="image" src="https://staging.digitalsecurityexchange.org/assets/img/paypal.png" border="0" name="submit" alt="PayPal">
+<input type="image" src="https://digitalsecurityexchange.org/assets/img/paypal.png" border="0" name="submit" alt="PayPal">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 </th>
@@ -27,6 +27,7 @@ permalink: /support/
   </a>
   <script src="https://commerce.coinbase.com/v1/checkout.js">
   </script>
+  </div>
 </th>
 </tr>
 </table>
