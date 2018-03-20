@@ -10,7 +10,7 @@ permalink: /about/
 - [Privacy, security, transparency, and accuracy](#privacy)
 - [How we vet providers](#vetting)
 - [Technology](#technology)
-- [Our origins](#funding)
+- [Our origins](#origins)
 - [Who we are](#who)
 - [FAQ](#faq)
 
@@ -71,7 +71,7 @@ Our matchmaking platform is CiviCDR, an open-source database and incident respon
 You can read more about methods we employ to secure user data here.
 
 <p></p>
-<a name="funding"></a>
+<a name="origins"></a>
 # Our origins <a href="#top"><img src ="/assets/img/arrow.svg" alt="scroll to top" style="width: 35px;"/></a>
 
 The Digital Security Exchange concept was first developed by Josh Levy after the U.S. presidential election in November 2016. It was a response to the increased demand for digital security capacity from U.S. activist groups, journalists, and social service organizations -- all of whom knew they needed to increase their security levels but didn’t know who to turn to for help.
@@ -86,8 +86,6 @@ The project has since received support from the Mozilla Foundation, Omidyar Netw
 
 <p></p>
 ## *Staff*:
-
-<img src="/assets/img/authors/josh.png" style="width: 80px;"/>
 
 **Josh Levy**, Founder and Director
 

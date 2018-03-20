@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "TL;DR: Our Approach to Security and Vetting"
-date:   2018-03-12 12:00:00
+date:   2018-03-20 9:30:00
 author: Josh |
 permalink: /security-vetting/
 ---

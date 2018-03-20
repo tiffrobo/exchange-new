@@ -46,14 +46,14 @@ We utilize the CiviCDR ticketing and issue tracking platform to manage organizat
 
 While technologies vary across platforms, usage of CiviCDR is subject to the same privacy policy as the DSX website and intake forms. That said, DSX usage of CiviCDR expands beyond the usage of the website and intake forms and requires an additional set of policies.
 
-### Information Handling Policy
+## Information Handling Policy
 
-DSX will request only the information required to assess a partner’s problem and how to assist them. This may include description of problem, measures taken, or relevant files. Unless assistance is requested, we will not be privy to incident details organizations and providers. As a general rule, information requested by DSX and any disclosure of information to providers is done on a need-to-know basis. Incident information (other than number and type of incidents) will be deleted once a ticket is closed.
+DSX will request only the information required to assess a partner’s problem and how to assist them. This may include description of problem, measures taken, or relevant files. We will not be privy to incident details between the organization and digital security provider unless we are specifically given access to such details. As a general rule, information requested by DSX and any disclosure of information to providers is done on a need-to-know basis. Incident information (other than number and type of incidents) will be deleted once a ticket is closed.
 
 Private incident information will never be shared with donors or other stakeholders. Donors will only be privy to threat notifications and quantitative project monitoring data such as number of incidents dealt with. Non-sensitive information related to community threats will be extracted from incidents and shared as a community alert, in order to help prevent other partners avoid similar incidents. Sensitive incident information may be shared privately with specific partners if they are at risk from the incident. All sharing of information will be conducted in coordination and with the approval of the partners concerned. However, where a vulnerability may seriously affect the security of DSX partners, and the relevant partner is non responsive, we reserve the right to notify the affected stakeholders. (See Vulnerability Disclosure Policy below)
 
 DSX and the providers we work with will handle all information responsibly and protect it against inadvertent disclosure to unauthorised parties. Sensitive information will be kept and sent only in encrypted formats or over secure channels – this explicitly includes back-ups of sensitive information.
 
-### Vulnerability Disclosure Policy
+## Vulnerability Disclosure Policy
 
 DSX adheres to a do no harm approach. Vulnerabilities reported to DSX through CiviCDR which may seriously affect the security of our partners will be disclosed to stakeholders within three weeks after the initial report. Extenuating circumstances, such as active exploitation, threats of an especially serious (or trivial) nature, or situations that require changes to an established standard may result in earlier or later disclosure. It is the goal of this policy to balance the need of the public to be informed of security vulnerabilities with organizations’ need for time to respond effectively.
