@@ -49,7 +49,7 @@ permalink: /support/
                 payment: {
                     transactions: [
                         {
-                            amount: { total: '0.01', currency: 'USD' }
+                            amount: { total: '0', currency: 'USD' }
                         }
                     ]
                 }
@@ -83,4 +83,4 @@ permalink: /support/
 
 <strong>Note</strong>: Your donation is tax-deductible and will be processed by Internet Systems Consortium, our fiscal sponsor and a 501(c)(3) nonprofit.
 
-You can also contact us at [info@digitalsecurityexchange.org](mailto:info@digitalsecurityexchange.org) for more information. 
+You can also contact us at [info@digitalsecurityexchange.org](mailto:info@digitalsecurityexchange.org) for more information.
