@@ -2,12 +2,6 @@
 <form class="bigForm" id="assistanceForm" name="assistanceForm" action="/forms/assistance_form_process.php" method="post">
   <div class="formSection formSectionA">
 
-// attempt at a lock icon 
-
-  <div class="inputWrap">
-      <img src="/assets/img/lock.png"><label>We keep your info secure from the moment you enter it</label>
-    </div>
-
     <div class="left">
       <h3>How would you prefer to be contacted?</h3>
       <p>Please provide <strong>at least one preferred method of contact</strong>, so that we are able to respond to your inquiry</p>
