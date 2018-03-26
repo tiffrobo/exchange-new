@@ -43,6 +43,40 @@ Project](https://raw.githubusercontent.com/guardianproject/haven/master/art/logo
 2. unless you're editing the PHP scripts. all PHP form processing is in `_site/forms/`
 2. sass files need the front matter bars ( the `_` prefix)
 
+## How to release
+
+**a word on version numbers**
+Release versions follow the following scheme: YY.MM.XX
+
+* YY: two digit year: `18`
+* MM: two digit month: `01`
+* XX: point release number, incremented for every release in that month, starts
+  at 0: `1`
+
+So `18.03.0` is the first release in March 2018. `18.03.1` is the 2nd release
+in March 2018.
+
+The git tag (created as part of the process below) should be this version
+number with no prefix.
+
+**cut a release**
+
+1. get up to date in develop branch: `git checkout develop && git fetch --tags && git pull`
+2. merge to master: `git checkout master && git merge develop`
+   change the merge commit text to something like "Release version 18.xx.xx"
+3. push to master `git push origin master`
+1. build the project: `make clean build`
+2. tarball it: `make package`
+   this puts a tarball by default in `../`
+3. sign it: `make sign`
+   this puts signs the tarball in `../` and creates a detached sig
+4. go to the [github releases page](https://github.com/digital-security-exchange/exchange-new/releases)
+5. create a new release named with the version string (e.g., 18.03.09)
+   upload the tarball and sig. target the master branch. this will create the
+   tag automatically.
+6. Refer to dsx-ops documentation for instructions on deployment
+
+(hopefully we will automate this process soon)
 
 ### Configuration
 
