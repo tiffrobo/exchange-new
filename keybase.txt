@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/dsxmachine
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://digitalsecurityexchange.org
+  * I am dsxmachine (https://keybase.io/dsxmachine) on keybase.
+  * I have a public key ASDjBK5awrtkCvpHdsyS3MrswxIbXwOE1W9sMBLek-kvngo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e304ae5ac2bb640afa4776cc92dccaecc3121b5f0384d56f6c3012de93e92f9e0a",
+      "host": "keybase.io",
+      "kid": "0120e304ae5ac2bb640afa4776cc92dccaecc3121b5f0384d56f6c3012de93e92f9e0a",
+      "uid": "bcce62cfd670bf894d05277f2b8bba19",
+      "username": "dsxmachine"
+    },
+    "merkle_root": {
+      "ctime": 1522249458,
+      "hash": "3a8b0a92bfbfaccaaa890cb08983b5bf886fd9afcbbe895c856ab0edbf1a12bc2c6cc24ccbe6c498adc2aaa17ca70437044996ef645eeed7f901b0b3b66304d6",
+      "hash_meta": "99e7f5dbb12873bd86e7ac4a08aa4035f0051ea65bb73e70120dbc1e8dfab635",
+      "seqno": 2300771
+    },
+    "service": {
+      "hostname": "digitalsecurityexchange.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.45"
+  },
+  "ctime": 1522249487,
+  "expire_in": 504576000,
+  "prev": "edec46d9e068885234b4870cc75669041626ace08c63775d60172b279ce5dc6b",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg4wSuWsK7ZAr6R3bMktzK7MMSG18DhNVvbDAS3pPpL54Kp3BheWxvYWTFA1V7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZTMwNGFlNWFjMmJiNjQwYWZhNDc3NmNjOTJkY2NhZWNjMzEyMWI1ZjAzODRkNTZmNmMzMDEyZGU5M2U5MmY5ZTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZTMwNGFlNWFjMmJiNjQwYWZhNDc3NmNjOTJkY2NhZWNjMzEyMWI1ZjAzODRkNTZmNmMzMDEyZGU5M2U5MmY5ZTBhIiwidWlkIjoiYmNjZTYyY2ZkNjcwYmY4OTRkMDUyNzdmMmI4YmJhMTkiLCJ1c2VybmFtZSI6ImRzeG1hY2hpbmUifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MjIyNDk0NTgsImhhc2giOiIzYThiMGE5MmJmYmZhY2NhYWE4OTBjYjA4OTgzYjViZjg4NmZkOWFmY2JiZTg5NWM4NTZhYjBlZGJmMWExMmJjMmM2Y2MyNGNjYmU2YzQ5OGFkYzJhYWExN2NhNzA0MzcwNDQ5OTZlZjY0NWVlZWQ3ZjkwMWIwYjNiNjYzMDRkNiIsImhhc2hfbWV0YSI6Ijk5ZTdmNWRiYjEyODczYmQ4NmU3YWM0YTA4YWE0MDM1ZjAwNTFlYTY1YmI3M2U3MDEyMGRiYzFlOGRmYWI2MzUiLCJzZXFubyI6MjMwMDc3MX0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJkaWdpdGFsc2VjdXJpdHlleGNoYW5nZS5vcmciLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC40NSJ9LCJjdGltZSI6MTUyMjI0OTQ4NywiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiJlZGVjNDZkOWUwNjg4ODUyMzRiNDg3MGNjNzU2NjkwNDE2MjZhY2UwOGM2Mzc3NWQ2MDE3MmIyNzljZTVkYzZiIiwic2Vxbm8iOjcsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAyd7DShkhrux9xF3zyNcNllgTs12YjfS3LE+1aaYKiq+rL7V1LoCVLMS3EqYM27YFmJ5aRGlry9ddOw9psZ0LDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDXSqJqnjDO9UmhkCGKzte/6etR9eUZ1qBhw70erBpsIo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dsxmachine
+
+==================================================================
