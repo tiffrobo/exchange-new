@@ -26,7 +26,7 @@ In addition, the DSX website does not utilize third-party analytics software (li
 
 ## Information Gathered Through Intake Forms
 
-Our website is built in Jekyll, the static site generator. There is no database; all pages exist as static HTML pages. The intake forms at Request Assistance and Become a Provider are built on the fly using PHP. When user data is submitted through the forms, it is place in a remote directory and encrypted. Only DSX staff have the private key necessary to decrypt these forms.
+Our website is built in Jekyll, the static site generator. There is no database; all pages exist as static HTML pages. The intake forms at Request Assistance and Become a Provider are built on the fly using PHP. When user data is submitted through the forms, it is placed in a remote directory and encrypted. Only DSX staff have the private key necessary to decrypt these forms.
 
 The DSX endeavors to provide the highest level of protection for user data. We will only disclose personally identifiable information about you to third parties in limited circumstances, including: (1) with your consent; or (2) when subject to a subpoena or other judicial or administrative order.
 
@@ -52,7 +52,7 @@ DSX will request only the information required to assess a partner’s problem a
 
 Private incident information will never be shared with donors or other stakeholders. Donors will only be privy to threat notifications and quantitative project monitoring data such as number of incidents dealt with. Non-sensitive information related to community threats will be extracted from incidents and shared as a community alert, in order to help prevent other partners avoid similar incidents. Sensitive incident information may be shared privately with specific partners if they are at risk from the incident. All sharing of information will be conducted in coordination and with the approval of the partners concerned. However, where a vulnerability may seriously affect the security of DSX partners, and the relevant partner is non responsive, we reserve the right to notify the affected stakeholders. (See Vulnerability Disclosure Policy below)
 
-DSX and the providers we work with will handle all information responsibly and protect it against inadvertent disclosure to unauthorised parties. Sensitive information will be kept and sent only in encrypted formats or over secure channels – this explicitly includes back-ups of sensitive information.
+DSX and the providers we work with will handle all information responsibly and protect it against inadvertent disclosure to unauthorized parties. Sensitive information will be kept and sent only in encrypted formats or over secure channels – this explicitly includes back-ups of sensitive information.
 
 ## Vulnerability Disclosure Policy
 

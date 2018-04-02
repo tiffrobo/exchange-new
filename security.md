@@ -56,7 +56,7 @@ DSX has a very lean management structure. The Director works closely with the Gu
 
 ## Operations <a id="operations"></a>
 
-The Infrastructure Team (IT) works to design, implement, and manage staging and production infrastructure for the DSX site and the DSX instance of the CiviCDR platform. Admin duties are handled by the primary sysadmin/dev-ops implementor, working in concert with the entire IT, the PTA, and the DSX Director. Only these three people ("DSX-OPS") have access to the server infrastructure, through authenticated access via SSH keys, and second factor authentication, whenever it is supported.
+The Infrastructure Team (IT) works to design, implement, and manage staging and production infrastructure for the DSX site and the DSX instance of the CiviCDR platform. Admin duties are handled by the primary sysadmin/dev-ops implementor, working in concert with the entire IT, the PTA, and the DSX Director. Only these three entities ("DSX-OPS") have access to the server infrastructure, through authenticated access via SSH keys, and second factor authentication, whenever it is supported.
 
 Currently, communications within DSX-OPS is handled through a Signal group chat, and issues/tasks are logged and discussed through a private Github project (https://github.com/digital-security-exchange/dsx-ops).
 
