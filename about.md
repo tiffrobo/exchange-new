@@ -113,6 +113,8 @@ Debbie brings more than ten years of experience building high-performance techno
 
 **Danny O'Brien**, International Director at EFF. Previously, Danny headed the Internet Program at the Committee to Protect Journalists.
 
+**Bruce Schneier**, internationally renowned security technologist, fellow at the Berkman Klein Center for Internet & Society at Harvard University; a Lecturer in Public Policy at the Harvard Kennedy School; a board member of the Electronic Frontier Foundation, AccessNow, and the Tor Project; an Advisory Board Member of the Electronic Privacy Information Center and VerifiedVoting.org; and a special advisor to IBM Security and the Chief Technology Officer at IBM Resilient.
+
 **Jamie Tomasello**, Manager, Trust and Compliance at Duo Security. Previously, Jamie has been the Technology Director for Access Now and Head of Policy and Investigation at Cloudflare, and is a Certified Information Privacy Professional (CIPP) and Certified Information Privacy Technologist (CIPT).
 
 **Ethan Zuckerman**, director of the Center for Civic Media at MIT, and an Associate Professor of the Practice at the MIT Media Lab.
@@ -145,7 +147,7 @@ There may also be the situation that the recommended approach as provided and ex
 We strive to make the best match between your organization and the provider. If there is a conflict that arises that you are unable to resolve, please reach out to us and we will work with you to make it better.
 
 **How do we know we need better security?**
-Good question and we’re glad you’re asking it. We have this survey you can take to look at how your organization works and what you already have in place to minimize risk.
+Good question and we’re glad you’re asking it. We have this [survey](https://docs.google.com/a/digitalsecurityexchange.org/forms/d/1s77jvXCwI6R1EmkV82i49dYD9EONtiFd4pCxJDikL20/edit?usp=drive_web) you can take to look at how your organization works and what you already have in place to minimize risk.
 
 **How much money and commitment will this take?**
 We can’t quote a price or timeframe as every organization has a different security and risk profile. However, there are various factors that will determine cost and time, such as your imminent risk, how much importance you place on securing your networks, involvement by your board, etc.
@@ -155,4 +157,4 @@ PGP stands for "Pretty Good Privacy" and is an encryption protocol that provides
 
 Signal is an encrypted communications application for iOS, Android, Mac, Windows, and Linux. It uses mobile phone numbers as identifiers, and uses its trusted protocol to enable end-to-end encryption for communications with other Signal users.
 
-We encourage you to contact us via encrypted email or Signal, but we don’t require it. No matter how you contact us, your identity will remain private and we won’t store any data we don’t need to help us assist you. For me information on our data security and retention policies, go here.
+We encourage you to contact us via encrypted email or Signal, but we don’t require it. No matter how you contact us, your identity will remain private and we won’t store any data we don’t need to help us assist you. For me information on our data security and retention policies, go [here](/security).
