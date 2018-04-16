@@ -91,11 +91,17 @@ The project has since received support from the Mozilla Foundation, Omidyar Netw
 
 Josh is a digital strategist, technologist, and rights advocate. For more than a decade - including as advocacy director at Access Now and campaign director at Free Press - he's helped lead global efforts to protect free expression online, fight for privacy and the right to encryption, secure strong open internet rules, reign in overreaching government surveillance, and otherwise protect the rights of at-risk internet users. He's also co-founder of the Center for Digital Resilience and a non-resident fellow at Stanford's Digital Civil Society Lab.
 
+[josh@digitalsecurityexchange.org](mailto:josh@digitalsecurityexchange.org)
+
+[PGP key](/levy_key.txt)
+
 <p></p>
 
 **Debbie Mac**, Partnerships Director
 
 Debbie brings more than ten years of experience building high-performance technology industry standards organizations from the ground up. She has developed and managed a wide range of programs that effectively engage diverse international stakeholders and create a culture of collaboration. She is engaged in a number of organizations working towards diversity & inclusion, social justice, and empowering new mothers.
+
+[debbie@digitalsecurityexchange.org](mailto:debbie@digitalsecurityexchange.org)
 
 <p></p>
 
