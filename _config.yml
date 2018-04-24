@@ -98,3 +98,4 @@ exclude:
 - THEME_README.md
 - Vagrantfile
 - bootstrap.sh
+- release-to-github.sh
