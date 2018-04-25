@@ -34,6 +34,10 @@ cur_ver = sys.stdin.read().strip()
 if cur_ver.startswith('v'):
     cur_ver = cur_ver[1:]
 
+patch_ver = None
+if '-' in cur_ver:
+    cur_ver, patch_ver = cur_ver.split('-')
+
 if len(cur_ver) == 0:
     split_ver = [ 0, 0, 0 ]
 else:
