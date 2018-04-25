@@ -8,7 +8,7 @@ PWD := $(shell pwd)
 TAG ?= $(shell git rev-parse HEAD)
 latest_tag_cmd := git describe --tags $$(git rev-list --tags --max-count=1 2> /dev/null ) 2> /dev/null
 LATEST_TAG := $(shell $(latest_tag_cmd))
-NEXT_TAG := $(shell echo $(LATEST_TAG) | python version.py)
+NEXT_TAG ?= $(shell echo $(LATEST_TAG) | python version.py)
 
 
 .PHONY: deps
