@@ -1,3 +1,21 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Explore
+ @levjoy
+Sign out
+5
+0 0 digital-security-exchange/exchange-new
+ Code  Issues 3  Pull requests 0  Projects 0  Wiki  Insights  Settings
+exchange-new/_forms/assistance.php
+f7bf816  on Mar 22
+@levjoy levjoy fixed request assistance page
+@abeluck @levjoy
+
+295 lines (285 sloc)  11.6 KB
 <?php include 'form_prepare.php'; ?>
 <form class="bigForm" id="assistanceForm" name="assistanceForm" action="/forms/assistance_form_process.php" method="post">
   <div class="formSection formSectionA">
@@ -292,3 +310,16 @@
   </div>
 
 </form>
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
+Press h to open a hovercard with more details.
