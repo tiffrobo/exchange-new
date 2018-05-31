@@ -97,14 +97,6 @@ Josh is a digital strategist, technologist, and rights advocate. For more than a
 
 <p></p>
 
-**Debbie Mac**, Partnerships Director
-
-Debbie brings more than ten years of experience building high-performance technology industry standards organizations from the ground up. She has developed and managed a wide range of programs that effectively engage diverse international stakeholders and create a culture of collaboration. She is engaged in a number of organizations working towards diversity & inclusion, social justice, and empowering new mothers.
-
-[debbie@digitalsecurityexchange.org](mailto:debbie@digitalsecurityexchange.org)
-
-<p></p>
-
 ## *Advisory committee*:
 
 **Nathan Freitas** leads the Guardian Project, an open-source mobile security software project, and directs technology strategy and training at the Tibet Action Institute.
