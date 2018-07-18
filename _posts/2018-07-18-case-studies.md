@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Case Studies: Who has the DSX has been working with?"
+title:  "Case studies: Who has the DSX has been working with?"
 date:   2018-07-18 9:00:00
 author: Josh |
 permalink: /case-studies/
