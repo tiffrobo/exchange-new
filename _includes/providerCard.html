@@ -1,7 +1,7 @@
 {% assign d = include.data %}
 
 <div class="providerCard">
-  <img src="/assets/img/{{ d.image }}" alt={{ d.name }}/>
+  <a href={{d.url}}><img src="/assets/img/{{ d.image }}" alt={{ d.name }}/></a>
 </div>
 
 <style lang="scss" scoped>{% capture to_scss %}@import 'vars';
