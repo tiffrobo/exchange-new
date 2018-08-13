@@ -61,14 +61,14 @@ howWeHelpCardData:
 - { number: '3', title: 'Protect private information', content: 'Keep private matters within your team. Learn best practices for protecting accounts and identities.', image: 'protect-private-info.svg' }
 
 providerCardData:
-- { number: '1', name: 'Guardian Project', image: 'guardian-logo.png' }
-- { number: '2', name: 'Access Now', image: 'access-logo.png' }
-- { number: '3', name: 'Freedom of the Press', image: 'freedom-logo.png' }
-- { number: '4', name: 'Security+', image: 'security-plus-logo.png' }
-- { number: '5', name: 'Constitutional Communications', image: 'constitutional-logo.png' }
-- { number: '6', name: 'EFF', image: 'eff-logo.png' }
-- { number: '7', name: 'Security First', image: 'security-first-logo.png' }
-- { number: '8', name: 'eQualitie', image: 'equalitie-logo.png' }
+- { number: '1', name: 'Guardian Project', image: 'guardian-logo.png', url: 'https://guardianproject.info'}
+- { number: '2', name: 'Access Now', image: 'access-logo.png', url: 'https://www.accessnow.org' }
+- { number: '3', name: 'Freedom of the Press', image: 'freedom-logo.png', url: 'https://freedom.press' }
+- { number: '4', name: 'Security+', image: 'security-plus-logo.png', url: 'https://www.securitypositive.com' }
+- { number: '5', name: 'Constitutional Communications', image: 'constitutional-logo.png', url: 'https://constitutionalcommunications.org' }
+- { number: '6', name: 'EFF', image: 'eff-logo.png', url: 'https://www.eff.org' }
+- { number: '7', name: 'Security First', image: 'security-first-logo.png', url: 'https://secfirst.org' }
+- { number: '8', name: 'eQualitie', image: 'equalitie-logo.png', url: 'https://equalit.ie' }
 
 tagLine:
   line1: 'Keeping U.S. civil society'
