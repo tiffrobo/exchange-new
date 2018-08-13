@@ -3,3 +3,5 @@
 submissions
 .vagrant
 _site/
+.DS_Store
+.vscode

@@ -36,26 +36,17 @@ plugins:
 livereload: false     # You no longer need to include --livereload
 reload_port: 5678    # If you don't want to use the default port
 
-topnav:
-- { title: 'About', href: '/about/' }
-- { title: 'Support the DSX', href: '/support/' }
-# - { title: 'Partner Log In', href: 'https://staging.civicdr.org' }
-
 footernav:
-- { title: 'How It Works', href: '#howItWorks' }
-- { title: 'Become a Provider', href: '/become-a-provider/' }
-- { title: 'Request Assistance', href: '/request-assistance/' }
-
 - { title: 'About', href: '/about' }
-# - { title: 'Updates', href: '/updates' }
-# - { title: 'Partnerships', href: '/partnerships' }
-# - { title: 'Code of Practice and Conduct', href: '/code' }
-# - { title: 'Trust', href: '/trust' }
+- { title: 'How We Help', href: '#howWeHelp' }
+- { title: 'Providers', href: '#providers' }
+- { title: 'News', href: '/updates' }
+- { title: 'Support the DSX', href: '/support' }
 
 mainnav:
-- { title: 'How It Works', href: '#howItWorks' }
-- { title: 'Request Assistance', href: '/request-assistance/' }
-- { title: 'Become a Provider', href: '/become-a-provider/' }
+- { title: 'About', href: '/about' }
+- { title: 'How We Help', href: '#howWeHelp' }
+- { title: 'Providers', href: '#providers' }
 - { title: 'News', href: '/updates' }
 
 finenav:
@@ -63,16 +54,21 @@ finenav:
 - { title: 'Security', href: '/security' }
 - { title: 'Terms', href: '/terms' }
 - { title: 'Conduct', href: '/code' }
-# - { title: 'Trust', href: '/trust' }
 
-getStartedCardData:
-- { number: '1', title: 'Request assistance', content: 'Get assistance for you or your organization', color: '$cyan', link: '/request-assistance' }
-- { number: '2', title: 'Become a provider', content: 'Request to become a digital security provider with the DSX', color: '$peach', link: '/become-a-provider' }
+howWeHelpCardData:
+- { number: '1', title: 'Store information safely', content: 'Get help learning which apps are best for storing donor lists and collaborating on important documents.', image: 'store-info-securely.svg' }
+- { number: '2', title: 'Secure your communications', content: 'Ensure that communication between your team, volunteers and citizens are private and your response protocols are secured.', image: 'secure-communications.svg' }
+- { number: '3', title: 'Protect private information', content: 'Keep private matters within your team. Learn best practices for protecting accounts and identities.', image: 'protect-private-info.svg' }
 
-howItWorksCardData:
-- { number: '1', title: 'Request digital security assistance', href: '/request-assistance', content: 'Civil society organizations come to the Digital Security Exchange seeking help with digital security assessments and training.', graphic: 'svg-howItWorks1.html' }
-- { number: '2', title: 'Request to become a provider', href: '/become-a-provider', content: 'Digital security experts interested in assisting organizations request to become providers with the DSX.', graphic: 'svg-howItWorks2.html' }
-- { number: '3', title: 'Learn more about partnerships', href: '/partnerships', content: 'Organizations in need connect with digital security experts who can provide support.', graphic: 'svg-howItWorks3.html' }
+providerCardData:
+- { number: '1', name: 'Guardian Project', image: 'guardian-logo.png' }
+- { number: '2', name: 'Access Now', image: 'access-logo.png' }
+- { number: '3', name: 'Freedom of the Press', image: 'freedom-logo.png' }
+- { number: '4', name: 'Security+', image: 'security-plus-logo.png' }
+- { number: '5', name: 'Constitutional Communications', image: 'constitutional-logo.png' }
+- { number: '6', name: 'EFF', image: 'eff-logo.png' }
+- { number: '7', name: 'Security First', image: 'security-first-logo.png' }
+- { number: '8', name: 'eQualitie', image: 'equalitie-logo.png' }
 
 tagLine:
   line1: 'Keeping U.S. civil society'

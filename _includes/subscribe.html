@@ -38,7 +38,9 @@
     max-width: 1040px;
     padding-left: 75px !important;
     padding-right: 75px !important;
+    padding-bottom: 44px !important;
     margin: 0 auto;
+    @include mq(sm) { padding: 0px !important; }
     @include mq(md) { padding: 0px !important; }
 
     hr{
@@ -84,14 +86,10 @@
       }
 
       .button{
-       @extend .button;
        padding: 12px 32px;
        margin-left: 8px;
-       @include mq(sm) { display: inline-block; padding: 10px 20px; width: 100px; box-sizing: border-box; float: left; }
+       @include mq(sm) { display: inline-block; box-sizing: border-box; float: left; margin-top: 4px; }
        @include mq(md) { display: inline-block; padding: 10px 20px; width: 94px; box-sizing: border-box; }
-       &:hover{
-        //padding: 12px 40px;
-       }
       }
     }
   }

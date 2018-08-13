@@ -1,0 +1,94 @@
+<div id="goHome">
+  <div id="stats">
+    <h3>Last year, there were 1,579 data breaches in the United States.</h3>
+    <p>According to <a href='https://www.statista.com/statistics/273550/data-breaches-recorded-in-the-united-states-by-number-of-breaches-and-records-exposed/'>Statista</a></p>
+  </div>
+  <div id="assist">
+    <h2>Go home with a clear conscience.</h2>
+    <p>Know the people you serve are protected online. Begin with a free security assessment.</p>
+    <a href='/request-assistance' class='button'>Get Help</a>
+  </div>
+</div>
+
+<style lang="scss" scoped>{% capture to_scss %}@import 'vars';
+
+#goHome{
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 88px 16px 64px 16px;
+  position: relative;
+  background: $white;
+  color: $royal;
+  @include mq(sm) { padding: 0px; }
+  @include mq(md) { padding: 44px 88px 44px 88px; }
+
+  #stats{
+    width: 290px;
+    background-color: $royal;
+    color: $white;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    padding: 64px 48px 64px 64px;
+    @include mq(sm) { width: 100%; padding: 32px; }
+    @include mq(md) { width: 200px; }
+
+    h3{
+      background-color: $royal;
+      color: $white;
+      font-size: 44px;
+      padding-right: 48px;
+      @include mq(smd) { font-size: 32px; }
+    }
+
+    p{
+      margin-top: 16px;
+      color: $white;
+      font-size: 18px;
+    }
+
+    a{
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+  #assist{
+    width: 500px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 64px;
+    padding-top: 60px;
+    @include mq(sm) { width: 80%; margin: 0 auto; padding: 64px 64px 50px 64px; }
+    @include mq(md) { width: 30%; padding-left: 36px; }
+
+    h2{
+      font-size: 64px;
+      line-height: 105%;
+      font-weight: 600;
+      @include mq(sm) { font-size: 32px; }
+      @include mq(md) { font-size: 44px; }
+    }
+
+    p{
+      color: $black;
+      font-size: 22px;
+      padding-top: 24px;
+      width: 360px;
+      margin: 0;
+      line-height: 150%;
+      @include mq(sm) { font-size: 18px; padding: 12px 0px 12px 0px; width: 100%; }
+      @include mq(md) { font-size: 18px; padding: 12px 0px 12px 0px; }
+    }
+
+    .button{
+      margin-top: 32px;
+      font-size: 17px;
+      @include mq(sm) { display: inline-block; padding: 12px 24px; margin-bottom: 24px; }
+      @include mq(md) { display: inline-block; padding: 12px 24px; }
+    }
+  }
+}
+
+{% endcapture %}{{ to_scss | scssify }}</style>
