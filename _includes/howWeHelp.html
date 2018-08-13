@@ -1,0 +1,63 @@
+<div id="howWeHelp">
+  <h4>How we help</h4>
+  <h3>Civil Society Organizations face a number of different threats.<br>
+      We link them with digital security providers to help.</h3>
+  <div id="howWeHelpCards">
+    {% for data in site.howWeHelpCardData %}
+      {% include howWeHelpCard.html data=data %}
+    {% endfor %}
+  </div>
+  <p>These are just a few ways we help. Visit our <a href='/case-studies/'>case studies</a> to learn more.</p>
+</div>
+
+<style lang="scss" scoped>{% capture to_scss %}@import 'vars';
+
+#howWeHelp{
+  padding: 88px 16px 88px 16px;
+  background: $mist;
+  color: $white;
+  @include mq(smd) { padding-top: 44px; padding-bottom: 44px; }
+
+  h3{
+    max-width: 1040px;
+    margin: 0 auto;
+    font-size: 36px;
+    text-align: center;
+    padding: 12px 0;
+    color: $royal;
+    @include mq(smd) { font-size: 24px; max-width: 80%; margin-bottom: 32px; }
+  }
+
+  h4{
+    max-width: 960px;
+    margin: 0 auto;
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16px;
+    padding-bottom: 24px;
+    letter-spacing: 1px;
+  } 
+
+  p{
+    color: $black;
+    font-size: 22px;
+    text-align: left;
+    padding: 0px;
+    padding-top: 24px;
+    max-width: 960px;
+    margin: 0 auto;
+    line-height: 150%;
+    @include mq(smd) { font-size: 18px; padding: 12px 12px 24px; }
+  }
+
+  #howWeHelpCards{
+    max-width: 1040px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+
+{% endcapture %}{{ to_scss | scssify }}</style>

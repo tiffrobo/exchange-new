@@ -1,0 +1,56 @@
+<div id="providers">
+  <h4>Some of our digital security providers</h4>
+  <div id="providerCards">
+      {% for data in site.providerCardData %}
+        {% include providerCard.html data=data %}
+      {% endfor %}
+  </div>
+  <p>Are you a digital security expert? <a href=''>Offer Help →</a></p>
+</div>
+
+<style lang="scss" scoped>{% capture to_scss %}@import 'vars';
+
+#providers{
+  padding-top: 88px;
+  padding-bottom: 64px;
+  position: relative;
+  overflow:hidden;
+  background: $gold;
+  color: $black;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  h4{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 16px;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+  } 
+
+  p{
+    font-size: 22px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 32px;
+    max-width: 960px;
+    @include mq(smd) { font-size: 18px; padding: 12px 12px 24px; }
+  }
+
+  #providerCards{
+    text-align: justify;
+    max-width: 1040px;
+    margin: 0 auto;
+    vertical-align: top;
+    position: relative;
+
+   &:after {
+      content: '';
+      width: 100%; 
+      display: inline-block;
+    }
+  }
+}
+
+{% endcapture %}{{ to_scss | scssify }}</style>

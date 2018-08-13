@@ -14,22 +14,6 @@
     <a href="/">{% include svg-logo.html %}</a>
   </h1>
 
-  {% include signup.html %}  
-
-  <nav id="topnav">
-    <ul>
-      {% for item in site.topnav %}
-      <li>
-      {% if item.href contains 'http' %}
-        <a href="{{ item.href }}">{{ item.title }}</a>
-      {% else %}
-        <a href="{{ item.href | relative_url }}">{{ item.title }}</a>
-      {% endif %}
-      </li>
-    {% endfor %}
-    </ul>
-  </nav>
-
   <nav id="mainnav">
     <ul>
     {% for item in site.mainnav %}
@@ -43,6 +27,10 @@
     {% endfor %}
     </ul>
   </nav>
+  <div id="help">
+    <a href='/become-a-provider' class='buttonOutlined'>Offer Help</a>
+    <a href='/request-assistance' class='button'>Get Help</a>
+  </div>
   </div>
 </header>
 
@@ -69,7 +57,7 @@
   header.header{
     .inner{
       @extend .inner;
-      padding-bottom: 128px;
+      padding-bottom: 44px;
       padding-top: 27px;
       @include mq(smd) {position: static;}
 
@@ -120,7 +108,7 @@
 
       #mainnav{
         float: left;
-        padding-top: 60px;
+        padding-top: 44px;
         padding-left: 87px;
         margin-top: 12px;
         @include mq(lg){
@@ -158,6 +146,26 @@
               @include mq(sm) { font-size: 28px; text-transform: unset; letter-spacing: 0;} 
             }
           }
+        }
+      }
+
+      #help{
+        margin-top: 12px;
+        padding: 36px 0px 36px 24px;
+        float: right;
+        tex-align: justify;
+
+        @include mq(smd) { display: none; }
+
+        .button {
+          display: inline-block;
+          margin-left: 24px;
+          font-size: 17px;
+        }
+
+        .buttonOutlined {
+          display: inline-block;
+          font-size: 17px;
         }
       }
     }        
