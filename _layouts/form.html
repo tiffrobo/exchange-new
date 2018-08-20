@@ -8,12 +8,10 @@
 {% include header.html %}
 
 <div id="content" class="formPageContent">
-  {% include svg-how2.html %}
   <div class="formPageWrap"> 
     {{ content }}
   </div>
 </div>
-<hr/>
 
 <div id="{{ page.formName }}-wrapper"></div>
 
@@ -24,11 +22,6 @@
 </html>
 <style lang="scss" scoped>{% capture to_scss %} @import 'vars';
 .formPage{
-  svg.how2{
-    position: relative;
-    left: -50px;
-  }
-
   input[name^='service']{
     z-index: 2;
     position: relative;
@@ -58,21 +51,45 @@
     margin: 0 auto;
     position: relative;
 
-    &:after{
-      content: "";
-      width: 60%;
-      background: $mint;
-      position: absolute;
-      right: -140px;
-      top: 12px;
-      z-index: 1;
-      height: 465px;
-      @include mq(smd) { display:none; content: none; }
-    }
-
     .formPageWrap{
       position: relative;
       z-index: 2;
+
+      .intro{
+        width: 60%;
+        display: inline-block;
+        margin-right: 44px;
+        @include mq(sm) { width: 100%; }
+
+        img{
+          width: 100%;
+          padding: 12px 0px 48px 0px;
+        }
+
+        p {
+          font-size: 28px;
+          line-height: 130%;
+        }
+      }
+
+      .otherForm{
+        vertical-align: top;
+        width: 20%;
+        display: inline-block;
+        background-color: $mint;
+        padding: 80px 44px 80px 44px;
+        @include mq(sm) { display: none; }
+
+        p{
+          font-size: 26px;
+          line-height: 130%;
+        }
+
+        a{
+          font-size: 26px;
+          line-height: 130%;
+        }
+      }
     }
   }
 
@@ -87,12 +104,11 @@
   // Form styles.
   .bigForm{
   max-width: 1040px;
-  margin: 220px auto 16px;
+  margin: 44px auto 16px;
 
   .formSection{
     overflow: hidden;
     padding-top: 64px;
-    padding-bottom: 64px;
     @include mq(smd) { padding: 8px 16px }
 
     &.formSectionSubmit{
@@ -110,9 +126,11 @@
         font-size: 48px;
         position: relative;
         color: $royal;
-        top: -10px;        
+        top: -10px;
+        line-height: 110%;        
         // Adjustment for font discrepancies.
         padding-bottom: 20px;
+        padding-top: 20px;
       }
 
       p{
@@ -121,12 +139,44 @@
         padding-bottom: 18px;
         font-size: 18px;
       }
+
+      .indent{
+        padding-left: 32px;
+      }
+
+      .lock{
+        float: left;
+        margin: 8px 16px 8px 0px;
+      }
     }
 
     .right{
       width: 61%;
       float: right;
+      padding-bottom: 44px;
       @include mq(smd) { width: 100%; float: none; }
+
+      h4{
+        color: $royal;
+        font-weight: 600;
+        font-size: 22px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: block;
+        width: 100%;
+        clear: both;
+      }
+
+      h5{
+        padding-top: 20px;
+        padding-bottom: 12px;
+        display: block;
+        width: 100%;
+        font-weight: 600;
+        font-size: 17px;
+        color: $black;
+        clear: both;
+      }
 
       .rad{
         overflow: hidden;
@@ -157,17 +207,55 @@
 
       .checkWrap{
         padding-top: 6px;
-        padding-bottom: 32px;
-        font-weight: bold;
+        padding-bottom: 6px;
         color: $darkBlue;
-        font-size: 20px;
+        font-size: 17px;
+        position: relative;
+        vertical-align: top;
 
-        &:last-of-type{
-          padding-bottom: 32px;
+        &.detailed{
+          font-weight: bold;
+          margin-bottom: 16px;
+        }
+
+        &.half{
+          width: 47%;
+          padding-bottom: 0px;
+          padding-right: 32px;
+          padding-left: 40px;
+          box-sizing: border-box;
+          display: inline-block;
         }
 
         .ch5{
-          margin-right: 12px;
+          position: absolute;
+          margin-top: 6px;
+          left: 0;
+        }
+
+        p {
+          padding-top: 6px;
+          font-weight: normal;
+          line-height: 130%;
+        }
+
+        .indent{
+          padding-top: 0px;
+          padding-left: 40px;
+        }
+
+        label{
+          background-color: $white;
+          border: 1px solid $black;
+          font-size: 18px;
+          height: 23px;
+          width: 23px;
+        }
+
+         &:after {
+          content: '';
+          width: 100%; 
+          display: inline-block;
         }
       }
 
@@ -226,9 +314,6 @@
   }
   input[type="submit"]{
     @extend .button;
-    background: $peach;
-    color: $black;
-    @include mq(sm) { margin: 16px 0 0 16px; }
     padding: 16px 64px;
     font-size: 22px;
     &:hover{
@@ -278,6 +363,20 @@
 }
 
 // End form styles.
+}
+
+#help{
+  display: none;
+}
+
+#subscribe{
+  display: none;
+}
+
+#rightFoot{
+  .buttonOutlined{
+    display: none;
+  }
 }
 
 {% endcapture %}{{ to_scss | scssify }}</style>
