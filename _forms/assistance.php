@@ -4,7 +4,7 @@
     <div class="left">
       <h3>Let's get acquainted</h3>
       <img src="/assets/img/lock-small.png" class="lock"/>
-      <p class="indent">Everything you share is secured via encryption while it travels and while we have it.</p>
+      <p class="indent">Everything you share is encrypted while it travels and while we have it.</p>
     </div>
     <div class="right">
       <div class="inputWrap cb">
