@@ -8,8 +8,8 @@
     </div>
     <div class="right">
       <div class="inputWrap">
-        <label for="other">Name or alias </label>
-        <input type="text" name="other"/>
+        <label for="name">Name or alias </label>
+        <input type="text" name="name"/>
       </div>
       <div class="inputWrap">
         <label for="title">Title/role</label>
@@ -20,7 +20,7 @@
         <input type="text" name="organization"/>
       </div>
       <div class="inputWrap">
-        <label for="organization">Organization website</label>
+        <label for="website">Organization website</label>
         <input type="text" name="website"/>
       </div>
       <div class="inputWrap">
@@ -470,12 +470,12 @@
         <input type="text" name="pgp"/>
       </div>
       <div class="inputWrap half">
-        <label for="service1handle">Other</label>
-        <input type="text" name="service1handle" placeholder="Username, handle, number"/>
+        <label for="servicehandle">Other</label>
+        <input type="text" name="servicehandle" placeholder="Username, handle, number"/>
       </div>
       <div class="inputWrap half fr">
-        <label for="service1">Provider</label>
-        <input type="text" name="service1" placeholder="Example: WhatsApp, Skype"/>
+        <label for="service">Provider</label>
+        <input type="text" name="service" placeholder="Example: WhatsApp, Skype"/>
       </div>
       <div class="inputWrap">
         <label for="qualifications">Certifications & qualifications</label>
