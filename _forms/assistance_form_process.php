@@ -3,31 +3,19 @@ include "config.php";
 include "functions.php";
 
 $fields = array(
+  'name',
+  'title',
+  'organization',
+  'website',
+  'affiliates',
+  'moreInfo',
+  'helpNotSureCheck',
   'phone',
   'email',
   'signal',
-  'service1',
-  'service1handle',
-  'service2',
-  'service2handle',
-  'service3',
-  'service3handle',
-  'first',
-  'last',
-  'other',
-  'organization',
-  'title',
-  'affiliates',
   'pgp',
-  'language',
-  'otherlanguage',
-  'country',
-  'remoteOrganization',
-  'urgentCheck',
-  'ongoingRadio',
-  'supportAreas',
-  'moreInfo',
-  'hearAbout'
+  'serviceHandle',
+  'service',
   );
 
 session_start();

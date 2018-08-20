@@ -8,7 +8,7 @@
     </div>
     <div class="right">
       <div class="inputWrap cb">
-        <label for="other">Name or alias </label>
+        <label for="name">Name or alias </label>
         <input type="text" name="name"/>
       </div>
       <div class="inputWrap">
@@ -20,7 +20,7 @@
         <input type="text" name="organization"/>
       </div>
       <div class="inputWrap">
-        <label for="organization">Organization website</label>
+        <label for="website">Organization website</label>
         <input type="text" name="website"/>
       </div>
       <div class="inputWrap">
@@ -35,7 +35,7 @@
       <h3>How can we help you?</h3>
     </div>
     <div class="right">
-      <div class="inputWrap">
+      <div class="inputWrap" style="padding-bottom: 0px">
         <label for="moreInfo">Tell us a little more about what you need.</label>
         <textarea name="moreInfo" placeholder="Example: I need help developing a security policy"></textarea>
       </div>
@@ -76,11 +76,11 @@
         <input type="text" name="pgp"/>
       </div>
       <div class="inputWrap half">
-        <label for="service1handle">Other</label>
+        <label for="serviceHandle">Other</label>
         <input type="text" name="service1handle" placeholder="Username, handle, number"/>
       </div>
       <div class="inputWrap half fr">
-        <label for="service1">Provider</label>
+        <label for="service">Provider</label>
         <input type="text" name="service1" placeholder="Example: WhatsApp, Skype"/>
       </div>
     </div>
