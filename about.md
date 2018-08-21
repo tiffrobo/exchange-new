@@ -147,6 +147,14 @@ Josh is a digital strategist, technologist, and rights advocate. For more than a
 
 [PGP key](/levy_key.txt)
 
+**Tiffany Robertson**, Project Manager
+
+Tiffany is the community ambassador and quality assurance gal at [Okthanks](https://okthanks.com), a design firm focused on bridging the gap between users and product teams and specializing in human-centered design, clear brand messaging, and usable security products. She has a degree in Peace and Justice from the Joan B. Kroc Institute for Peace and Justice at the University of San Diego and enjoys learning about all aspects of empowering and protecting lives.
+
+[tiffany@digitalsecurityexchange.org](mailto:tiffany@digitalsecurityexchange.org)
+
+[PGP key](/tiffany_key.txt)
+
 <p></p>
 
 ## *Advisory committee*:
