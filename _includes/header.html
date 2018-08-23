@@ -153,7 +153,6 @@
         margin-top: 12px;
         padding: 36px 0px 36px 24px;
         float: right;
-        tex-align: justify;
 
         @include mq(smd) { display: none; }
 
@@ -161,11 +160,13 @@
           display: inline-block;
           margin-left: 24px;
           font-size: 17px;
+          @include mq(xlg) { font-size: 14px; margin-left: 12px; padding: 10px 30px; }
         }
 
         .buttonOutlined {
-          display: inline-block;
+          display: inline-block; 
           font-size: 17px;
+          @include mq(xlg) { font-size: 14px; padding: 8px 28px; }
         }
       }
     }        
