@@ -56,6 +56,17 @@ $break-xlarge: 1300px;
   } 
 }
 
+.profile {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: -5px;
+    left: -75px;
+    width: 55px;
+  }
+}
+
 .inner{  
   padding: 40px 75px;
   position: relative;

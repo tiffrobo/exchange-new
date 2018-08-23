@@ -139,7 +139,10 @@ The project has received support from the Mozilla Foundation, Omidyar Network Fu
 <p></p>
 ## *Staff*:
 
-**Josh Levy**, Founder and Director
+<p class="profile">
+  <strong>Josh Levy</strong>, Founder and Director
+  <img src ="/assets/img/desktop-levy.png"/>
+</p>
 
 Josh is a digital strategist, technologist, and rights advocate. For more than a decade - including as advocacy director at Access Now and campaign director at Free Press - he's helped lead global efforts to protect free expression online, fight for privacy and the right to encryption, secure strong open internet rules, reign in overreaching government surveillance, and otherwise protect the rights of at-risk internet users. He's also co-founder of the Center for Digital Resilience and a non-resident fellow at Stanford's Digital Civil Society Lab.
 
@@ -147,7 +150,10 @@ Josh is a digital strategist, technologist, and rights advocate. For more than a
 
 [PGP key](/levy_key.txt)
 
-**Tiffany Robertson**, Project Manager
+<p class="profile">
+  <strong>Tiffany Robertson</strong>, Project Manager
+  <img src ="/assets/img/desktop-robertson.png"/>
+</p>
 
 Tiffany is the community ambassador and quality assurance gal at [Okthanks](https://okthanks.com), a design firm focused on bridging the gap between users and product teams and specializing in human-centered design, clear brand messaging, and usable security products. She has a degree in Peace and Justice from the Joan B. Kroc Institute for Peace and Justice at the University of San Diego and enjoys learning about all aspects of empowering and protecting lives.
 
@@ -159,25 +165,55 @@ Tiffany is the community ambassador and quality assurance gal at [Okthanks](http
 
 ## *Advisory committee*:
 
-**Nathan Freitas** leads the Guardian Project, an open-source mobile security software project, and directs technology strategy and training at the Tibet Action Institute.
+<p class="profile">
+  <strong>Nathan Freitas</strong> leads the Guardian Project, an open-source mobile security software project, and directs technology strategy and training at the Tibet Action Institute.
+  <img src ="/assets/img/desktop-freitas.png"/>
+</p>
 
-**Sara Haghdoosti** founded Berim.org, an organization focused on supporting Iranian changemakers. She is also a campaigns expert that has worked with groups such as Mozilla, Change.org, GetUp and others.
+<p class="profile">
+  <strong>Sara Haghdoosti</strong> founded Berim.org, an organization focused on supporting Iranian changemakers. She is also a campaigns expert that has worked with groups such as Mozilla, Change.org, GetUp and others.
+  <img src ="/assets/img/silhouette-avatar.png"/>
+</p>
 
-**Matt Holland**, co-founder of Affinity.works. Tech advisor to international NGO's, previously CTO at Avaaz.org.
+<p class="profile">
+  <strong>Matt Holland</strong>, co-founder of Affinity.works. Tech advisor to international NGO's, previously CTO at Avaaz.org.
+  <img src ="/assets/img/silhouette-avatar.png"/>
+</p>
 
-**Harlo Holmes**, Director of Newsroom Digital Security at Freedom of the Press Foundation. Harlo is a media scholar, software programmer, and activist and contributes regularly to the open source mobile security collective The Guardian Project.
+<p class="profile">
+  <strong>Harlo Holmes</strong>, Director of Newsroom Digital Security at Freedom of the Press Foundation. Harlo is a media scholar, software programmer, and activist and contributes regularly to the open source mobile security collective The Guardian Project.
+  <img src ="/assets/img/silhouette-avatar.png"/>
+</p>
 
-**Holly Kilroy** is Communities Director of Center for Digital Resilience and is co-founder of Security First. She has spent the past ten years building projects that leverage technology and civil society coordination to address issues of human rights and conflict.
+<p class="profile">
+  <strong>Holly Kilroy</strong> is Communities Director of Center for Digital Resilience and is co-founder of Security First. She has spent the past ten years building projects that leverage technology and civil society coordination to address issues of human rights and conflict.
+  <img src ="/assets/img/desktop-kilroy.png"/>
+</p>
 
-**Matt Mitchell** is a hacker and the Director of Digital Safety & Privacy, at Tactical Tech (also known as the Tactical Technology Collective). In his work there Matt leads security training efforts, curricula, and organizational security for the organization in their mission to raise awareness about privacy, provide tools for digital security, and mobilize people to turn information into action. Matt is a well known security researcher, operational security trainer, and data journalist who founded & leads [CryptoHarlem](https://twitter.com/cryptoHarlem), impromptu workshops teaching basic cryptography tools to the predominately African American community in upper Manhattan. Contact info can be found [here](https://medium.com/@geminiimatt/how-to-reach-me-securely-80d69a5ce38e).
+<p class="profile">
+  <strong>Matt Mitchell</strong> is a hacker and the Director of Digital Safety & Privacy, at Tactical Tech (also known as the Tactical Technology Collective). In his work there Matt leads security training efforts, curricula, and organizational security for the organization in their mission to raise awareness about privacy, provide tools for digital security, and mobilize people to turn information into action. Matt is a well known security researcher, operational security trainer, and data journalist who founded & leads <a href="https://twitter.com/cryptoHarlem">CryptoHarlem</a>, impromptu workshops teaching basic cryptography tools to the predominately African American community in upper Manhattan. Contact info can be found <a href="https://medium.com/@geminiimatt/how-to-reach-me-securely-80d69a5ce38e">here</a>.
+  <img src ="/assets/img/desktop-mitchell.png"/>
+</p>
 
-**Soraya Okuda** is a designer passionate about education, usable security, and media production. She manages EFF’s Security Education Companion (sec.eff.org), and is excited to support efforts in privacy, conveying technical concepts to beginners, and creating accessible materials for targeted and under-resourced groups. Previously, she was an English teacher to elementary school students, and was the development director for a nonprofit operating a secondary school. She has a B.A. in International Relations and a M.Ed. in Technology, Innovation, and Education.
+<p class="profile">
+  <strong>Soraya Okuda</strong> is a designer passionate about education, usable security, and media production. She manages EFF’s Security Education Companion (sec.eff.org), and is excited to support efforts in privacy, conveying technical concepts to beginners, and creating accessible materials for targeted and under-resourced groups. Previously, she was an English teacher to elementary school students, and was the development director for a nonprofit operating a secondary school. She has a B.A. in International Relations and a M.Ed. in Technology, Innovation, and Education.
+  <img src ="/assets/img/silhouette-avatar.png"/>
+</p>
 
-**Bruce Schneier**, internationally renowned security technologist, fellow at the Berkman Klein Center for Internet & Society at Harvard University; a Lecturer in Public Policy at the Harvard Kennedy School; a board member of the Electronic Frontier Foundation, AccessNow, and the Tor Project; an Advisory Board Member of the Electronic Privacy Information Center and VerifiedVoting.org; and a special advisor to IBM Security and the Chief Technology Officer at IBM Resilient.
+<p class="profile">
+  <strong>Bruce Schneier</strong>, internationally renowned security technologist, fellow at the Berkman Klein Center for Internet & Society at Harvard University; a Lecturer in Public Policy at the Harvard Kennedy School; a board member of the Electronic Frontier Foundation, AccessNow, and the Tor Project; an Advisory Board Member of the Electronic Privacy Information Center and VerifiedVoting.org; and a special advisor to IBM Security and the Chief Technology Officer at IBM Resilient.
+  <img src ="/assets/img/desktop-schneier.png"/>
+</p>
 
-**Jamie Tomasello**, Senior Manager, Security Operations at Duo Security. Previously, Jamie has been the Technology Director for Access Now and Head of Policy and Investigation at Cloudflare, and is a Certified Information Privacy Professional (CIPP) and Certified Information Privacy Technologist (CIPT).
+<p class="profile">
+  <strong>Jamie Tomasello</strong>, Senior Manager, Security Operations at Duo Security. Previously, Jamie has been the Technology Director for Access Now and Head of Policy and Investigation at Cloudflare, and is a Certified Information Privacy Professional (CIPP) and Certified Information Privacy Technologist (CIPT).
+  <img src ="/assets/img/desktop-tomasello.png"/>
+</p>
 
-**Ethan Zuckerman**, director of the Center for Civic Media at MIT, and an Associate Professor of the Practice at the MIT Media Lab.
+<p class="profile">
+  <strong>Ethan Zuckerman</strong>, director of the Center for Civic Media at MIT, and an Associate Professor of the Practice at the MIT Media Lab.
+  <img src ="/assets/img/desktop-zuckerman.png"/>
+</p>
 
 <p></p>
 <a name="faq"></a>
