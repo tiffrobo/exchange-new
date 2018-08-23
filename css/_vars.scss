@@ -14,7 +14,7 @@ $darkBlue: #06255F;
 
 $break-small: 768px;
 $break-large: 1046px;
-$break-xlarge: 1200px;
+$break-xlarge: 1300px;
 
 @mixin mq($media) {
   @if $media == sm {
