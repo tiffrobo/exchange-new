@@ -66,6 +66,7 @@
         position: absolute;
         right: 16px;
         top: 28px;
+        z-index: 1;
         font-weight: bold;
       }
 
@@ -126,7 +127,7 @@
             bottom: -17px;
           }
         }
-        @include mq(sm) { float: none; padding-left: 0; }
+        @include mq(sm) { float: none; padding-left: 0; padding-top: 0px; }
         @include mq(md) { padding-left: 0; float: none; clear: both; padding-top: 32px; }
 
         ul{
@@ -154,19 +155,22 @@
         padding: 36px 0px 36px 24px;
         float: right;
 
-        @include mq(smd) { margin-top: -160px; }
+        @include mq(md) { margin-top: -160px; }
+        @include mq(sm) { margin-top: 50px; text-align: center; float: none; padding-left: 0px; }
 
         .button {
           display: inline-block;
           margin-left: 24px;
           font-size: 17px;
           @include mq(xlg) { font-size: 14px; margin-left: 12px; padding: 10px 30px; }
+          @include mq(sm) { font-size: 17px; margin-left: 24px; padding: 10px 30px; }
         }
 
         .buttonOutlined {
           display: inline-block; 
           font-size: 17px;
           @include mq(xlg) { font-size: 14px; padding: 8px 28px; }
+          @include mq(sm) { font-size: 17px; margin-left: 0px; padding: 8px 28px; }
         }
       }
     }        
